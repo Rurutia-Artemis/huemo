@@ -1,0 +1,15 @@
+/* 本地字体：Geist / Geist Mono 可变字重（文件来自 geist 包）。这份 CSS 不经打包器处理，url 相对本文件，托管页面与本地都能解析。 */
+@font-face {
+  font-family: "Geist";
+  src: url("Geist-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geist Mono";
+  src: url("GeistMono-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+/* FangYuanTi is fetched once by huemo-font-init and installed with FontFace. Original TTF only. */

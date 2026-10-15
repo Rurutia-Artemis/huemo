@@ -1,0 +1,6014 @@
+{
+  "locale": "ja",
+  "entries": {
+    "BEUI-animated-number": {
+      "name": "カウントアップ数字",
+      "summary": "0から目標値まで、イーズアウトの曲線で前半は速く後半はゆっくり数え上げ、桁区切りも付きます。ビューポートに入ってから始まり、「動きを減らす」設定では最終値をすぐに表示します。",
+      "hint": "「再生し直す」を押してもう一度数えてみてください",
+      "controls": {
+        "duration": {
+          "label": "カウント時間"
+        },
+        "value": {
+          "label": "目標値"
+        }
+      },
+      "presets": [
+        "速め",
+        "ゆっくり"
+      ]
+    },
+    "BEUI-animated-toast-stack": {
+      "name": "スプリング通知スタック",
+      "summary": "新しい通知はぼかしを伴って下からスプリングで浮かび上がり、古い通知は列ごと場所を譲ります。読み込み中から成功に変わるとアイコンと文字がその場で入れ替わり、横にドラッグすると払いのけられ、時間が経つと自然に消えます。",
+      "hint": "ボタンで通知を出し、横にドラッグして消してみてください",
+      "controls": {
+        "position": {
+          "label": "表示位置",
+          "options": {
+            "bottom-right": "右下",
+            "bottom-center": "下中央",
+            "bottom-left": "左下",
+            "top-right": "右上",
+            "top-center": "上中央",
+            "top-left": "左上"
+          }
+        },
+        "maxVisible": {
+          "label": "最大表示数"
+        }
+      },
+      "presets": [
+        "上に1件"
+      ]
+    },
+    "BEUI-bouncy-accordion": {
+      "name": "弾んで離れるアコーディオン",
+      "summary": "開いた行がリストから弾むように離れ、上下に隙間ができて四隅が丸くなり、中身の高さがバウンス付きのスプリングで広がります。もう一度押すと、元の一枚のブロックに戻ります。",
+      "hint": "どの行でもタップして開き、もう一度タップして閉じてみてください",
+      "controls": {
+        "collapsible": {
+          "label": "すべて閉じられる"
+        }
+      },
+      "presets": [
+        "1つは開いたまま"
+      ]
+    },
+    "BEUI-button-base": {
+      "name": "押すと弾むボタン",
+      "summary": "押すとボタン全体がスプリングの曲線で縮み、離すと弾んで戻ります。ホバーでわずかに拡大し、4種類の外観と3段階のサイズが同じ操作感を共有します。",
+      "hint": "押したまま、離してみてください",
+      "controls": {
+        "variant": {
+          "label": "外観",
+          "options": {
+            "primary": "プライマリ",
+            "secondary": "セカンダリ",
+            "outline": "アウトライン",
+            "ghost": "ゴースト"
+          }
+        },
+        "size": {
+          "label": "サイズ",
+          "options": {
+            "sm": "小",
+            "md": "中",
+            "lg": "大"
+          }
+        },
+        "pressScale": {
+          "label": "押下時の縮小率"
+        }
+      },
+      "presets": [
+        "控えめ",
+        "強く押す"
+      ]
+    },
+    "BEUI-button-magnetic": {
+      "name": "マグネットボタン",
+      "summary": "ポインターが近づくとボタンがそちらへ引き寄せられ、動きはスプリングで追従し、離れると元の位置に戻ります。タッチ操作と「動きを減らす」設定では自動的にオフになります。",
+      "hint": "ポインターをボタンの周りで動かしてみてください",
+      "controls": {
+        "strength": {
+          "label": "吸引力"
+        },
+        "variant": {
+          "label": "外観",
+          "options": {
+            "primary": "プライマリ",
+            "secondary": "セカンダリ",
+            "outline": "アウトライン"
+          }
+        }
+      },
+      "presets": [
+        "弱く吸う",
+        "強く吸う"
+      ]
+    },
+    "BEUI-button-stateful": {
+      "name": "状態が移り変わるボタン",
+      "summary": "タップすると文字が1文字ずつぼかしながら上へ流れ出て新しい状態の文字が入り、アイコンは幅ゼロからスプリングで開いて、ボタンの幅もなめらかに変わります。待機 → 読み込み中 → 完了と進んでから待機に戻ります。",
+      "hint": "1回タップして、3つの状態を見届けてみてください",
+      "controls": {
+        "variant": {
+          "label": "外観",
+          "options": {
+            "primary": "プライマリ",
+            "secondary": "セカンダリ",
+            "outline": "アウトライン"
+          }
+        },
+        "loadingText": {
+          "label": "読み込み中の文言"
+        },
+        "successText": {
+          "label": "完了時の文言"
+        }
+      },
+      "presets": [
+        "英語"
+      ]
+    },
+    "BEUI-digit-swap": {
+      "name": "桁ごとに回る数字",
+      "summary": "数字は桁の位置を固定したまま、変わった桁だけが回転します。古い文字は上（または下）へ滑って消え、新しい文字は反対側から入ってきて、隣の桁とは数ミリ秒ずつずれます。",
+      "hint": "タップして別の数字に入れ替えてみてください",
+      "controls": {
+        "direction": {
+          "label": "回転の向き",
+          "options": {
+            "up": "上",
+            "down": "下"
+          }
+        },
+        "duration": {
+          "label": "1桁あたりの時間"
+        }
+      },
+      "presets": [
+        "ゆっくり下へ"
+      ]
+    },
+    "BEUI-dock": {
+      "name": "すべるドックバー",
+      "summary": "すりガラスのバーにアイコンが並び、選択中は半透明のプレートが示します。別のアイコンをタップするとプレートがスプリングで新しい位置へ滑り、間に区切り線も入れられます。",
+      "hint": "いろいろなアイコンをタップしてみてください",
+      "controls": {
+        "size": {
+          "label": "アイコンサイズ"
+        }
+      },
+      "presets": [
+        "コンパクト",
+        "ゆったり"
+      ]
+    },
+    "BEUI-expandable-control": {
+      "name": "広がる丸ボタン",
+      "summary": "丸いアイコンボタンをタップすると横に文字ラベルが伸び、カプセル形は1枚の面のまま広がって、文字は軽いぼかしとともにフェードインします。隣のタグチップをタップすると操作スロットが現れます。",
+      "hint": "アイコンをタップして広げ、もう一度タップして戻してみてください",
+      "controls": {
+        "label": {
+          "label": "展開時の文字"
+        },
+        "defaultExpanded": {
+          "label": "最初から展開"
+        }
+      },
+      "presets": [
+        "最初から展開"
+      ]
+    },
+    "BEUI-hold-action-button": {
+      "name": "長押し確認ボタン",
+      "summary": "押し続けると、波打つ縁を持つ液面が下（または左）から一定の速さでボタン全体を満たし、満ちた時点で実行されます。途中で指を離すと、液面は素早く引いていきます。",
+      "hint": "液面が満ちるまで押し続けてみてください",
+      "controls": {
+        "type": {
+          "label": "満ちる向き",
+          "options": {
+            "vertical": "下から上",
+            "horizontal": "左から右"
+          }
+        },
+        "holdDuration": {
+          "label": "長押し時間"
+        },
+        "fillColor": {
+          "label": "塗りの色"
+        }
+      },
+      "presets": [
+        "素早く",
+        "じっくり"
+      ]
+    },
+    "BEUI-morphing-modal": {
+      "name": "かたちが変わるモーダル",
+      "summary": "背景全体がぼけて暗くなり、パネルが下（または中央）からスプリングで立ち上がります。モーダル内でビューを切り替えてもパネルは閉じず、高さが新しい内容に合わせて連続的に変形し、古い内容はぼかしながら上へ抜け、新しい内容は下から入ります。",
+      "hint": "タップして開き、パネル内でビューを切り替えてみてください",
+      "controls": {
+        "placement": {
+          "label": "表示位置",
+          "options": {
+            "bottom": "下（モバイル風）",
+            "center": "中央"
+          }
+        }
+      },
+      "presets": [
+        "中央"
+      ]
+    },
+    "BEUI-range-slider": {
+      "name": "弾むスライダー",
+      "summary": "トラックをドラッグまたはタップすると、細い縦棒のつまみと塗りがスプリングで目標位置を追い、押している間はつまみが縦に伸びて弾み、離すと元に戻ります。刻み幅に合わせて目盛りを表示でき、矢印キーでも操作できます。",
+      "hint": "つまみをドラッグするか、トラックのどこかをタップしてみてください",
+      "controls": {
+        "showTicks": {
+          "label": "目盛りを表示"
+        },
+        "step": {
+          "label": "刻み幅"
+        }
+      },
+      "presets": [
+        "連続・目盛りなし",
+        "4段階"
+      ]
+    },
+    "BEUI-slide-action-button": {
+      "name": "スライドで解除バー",
+      "summary": "つまみを右端までドラッグすると、ドラッグの進み具合に合わせて背景色が広がり、矢印アイコンは途中でチェックマークに変形します。しきい値を超えて離すとスプリングで端まで吸い込まれて完了し、届かなければ最初の位置に戻ります。",
+      "hint": "つまみを右端までドラッグしてみてください",
+      "controls": {
+        "threshold": {
+          "label": "完了のしきい値"
+        },
+        "resetDelay": {
+          "label": "リセットまでの時間"
+        },
+        "fillColor": {
+          "label": "塗りの色"
+        }
+      },
+      "presets": [
+        "ゆるめ"
+      ]
+    },
+    "BEUI-switch": {
+      "name": "どっしりスイッチ",
+      "summary": "つまみは重みがあり減衰の強いスプリングで端から端へ滑り、揺れずに落ち着きます。押している間はつまみが平たくつぶれて進行方向に伸び、背景色も同時に変わっていきます。",
+      "hint": "タップで切り替え、押し続けてつまみがつぶれる様子を見てみてください",
+      "controls": {
+        "label": {
+          "label": "テキスト"
+        },
+        "disabled": {
+          "label": "無効"
+        }
+      },
+      "presets": [
+        "無効状態"
+      ]
+    },
+    "BEUI-tabs": {
+      "name": "すべる指示タブ",
+      "summary": "選択中のプレートがタブの間をオーバーシュートなしでなめらかに滑り、プレートが通る位置に合わせて文字色がピクセル単位で反転し、内容エリアは少し浮き上がりながら切り替わります。カプセル、下線、セグメントの3種類の外観があります。",
+      "hint": "いろいろなタブをタップしてみてください",
+      "controls": {
+        "variant": {
+          "label": "外観",
+          "options": {
+            "pill": "カプセル",
+            "underline": "下線",
+            "segment": "セグメント"
+          }
+        }
+      },
+      "presets": [
+        "下線",
+        "セグメント"
+      ]
+    },
+    "BEUI-text-reveal": {
+      "name": "単語ごとに浮かぶ文字",
+      "summary": "単語（または1文字）ごとに、ぼかしを伴って下からスプリングで浮かび上がり、順番にずれて現れます。複数行のテキストは行ごとにまとめられ、長い文は単語の間で折り返されます。",
+      "hint": "「再生し直す」を押してもう一度見てみてください",
+      "controls": {
+        "split": {
+          "label": "分割の単位",
+          "options": {
+            "word": "単語",
+            "char": "文字"
+          }
+        },
+        "stagger": {
+          "label": "時間差"
+        },
+        "blur": {
+          "label": "開始時のぼかし"
+        }
+      },
+      "presets": [
+        "1文字ずつ素早く",
+        "控えめ"
+      ]
+    },
+    "BEUI-text-scramble": {
+      "name": "文字化けから解読される文字",
+      "summary": "文を切り替えると、まず全体がランダムな文字になり、左から1文字ずつ新しい文に落ち着いていきます。ノイズは40msごとに入れ替わり、全体の長さも調整でき、「動きを減らす」設定ではそのまま切り替わります。",
+      "hint": "タップして別の文に切り替えてみてください",
+      "controls": {
+        "duration": {
+          "label": "デコードにかかる時間"
+        },
+        "glyphs": {
+          "label": "ノイズの文字"
+        }
+      },
+      "presets": [
+        "一瞬",
+        "ゆっくりデコード"
+      ]
+    },
+    "BEUI-text-shimmer": {
+      "name": "光が走る文字",
+      "summary": "明るい光の帯がグレーの文字の上を左から右へ一定の速さで流れて繰り返し、CSSのグラデーション移動だけで実現しています。「生成中」のような待機中の文言によく使われ、「動きを減らす」設定では静止します。",
+      "hint": "光が流れる様子を見てみてください",
+      "controls": {
+        "duration": {
+          "label": "1回の所要時間"
+        }
+      },
+      "presets": [
+        "速い",
+        "ゆっくり"
+      ],
+      "changes": [
+        "src/registry/beui/motion/text-shimmer.tsx: shadcnが誤って書いた自己参照のimportを修正 → @/lib/text-shimmer"
+      ]
+    },
+    "BEUI-tilt-card": {
+      "name": "パースで傾くカード",
+      "summary": "ポインターの位置に合わせてカードが3Dの遠近感で傾き、表面には光が追いかけます。ポインターが離れるとスプリングで元に戻ります。",
+      "hint": "カードの上でポインターを動かしてみてください",
+      "controls": {
+        "max": {
+          "label": "最大傾き"
+        },
+        "glare": {
+          "label": "スポットライト"
+        }
+      },
+      "presets": [
+        "控えめ",
+        "大げさ"
+      ]
+    },
+    "BEUI-tooltip": {
+      "name": "ふわっと出るツールチップ",
+      "summary": "ホバーまたはフォーカスして少し待つと、トリガーの横からわずかに拡大しながらフェードインし、場所が足りなければ反対側に自動で切り替わります。直前に閉じたばかりなら隣の要素ではすぐに表示され、ポインターへの追従も選べます。",
+      "hint": "ボタンにホバーするか、Tabキーでフォーカスしてみてください",
+      "controls": {
+        "side": {
+          "label": "表示する側",
+          "options": {
+            "top": "上",
+            "right": "右",
+            "bottom": "下",
+            "left": "左"
+          }
+        },
+        "delay": {
+          "label": "表示までの遅延"
+        },
+        "followCursor": {
+          "label": "ポインターに追従"
+        }
+      },
+      "presets": [
+        "ポインターに追従",
+        "右側にゆっくり"
+      ]
+    },
+    "FANCY-animated-gradient-with-svg": {
+      "name": "漂うカラーブロブのグラデ背景",
+      "summary": "大きな色の円がそれぞれランダムな軌道でゆっくり漂い、強くぼかされて、グラスの中で揺れるシロップのような流れるグラデーションに溶け合います。動きはCSSアニメーションだけで、ランダムな位置はマウント時に一度だけ決まります。",
+      "hint": "色のかたまりがゆっくり漂う様子を見てみてください",
+      "controls": {
+        "speed": {
+          "label": "1周の時間"
+        },
+        "blur": {
+          "label": "ぼかしの強さ",
+          "options": {
+            "light": "弱",
+            "medium": "中",
+            "heavy": "強"
+          }
+        },
+        "colors": {
+          "label": "グラデーションの配色"
+        }
+      },
+      "presets": [
+        "キャンディ",
+        "ゆっくり海",
+        "夕焼け"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-basic-number-ticker": {
+      "name": "目標値まで走る数字",
+      "summary": "数字が開始値から目標値まで、最初は速く、だんだんゆっくりと収まるように数え上げます。めくりやスライドはなく、数字をすっきり走らせるだけなので、統計値や価格に向いています。",
+      "hint": "「再生し直す」を押してもう一度数えてみてください",
+      "controls": {
+        "target": {
+          "label": "目標値"
+        },
+        "duration": {
+          "label": "時間"
+        }
+      },
+      "presets": [
+        "一瞬で",
+        "ゆっくり数える"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-box-carousel": {
+      "name": "箱が回るカルーセル",
+      "summary": "画像が3Dボックスの4つの面に貼られ、切り替えるとボックス全体が90°回り、ゆっくり始まりゆっくり止まるので重みがあります。ドラッグで回して離すと最も近い面に吸着し、矢印キーも使えます。",
+      "hint": "ボックスをドラッグするか、矢印キーで回してみてください",
+      "controls": {
+        "direction": {
+          "label": "回転の向き",
+          "options": {
+            "left": "左へ",
+            "right": "右へ",
+            "top": "上へ",
+            "bottom": "下へ"
+          }
+        },
+        "autoPlay": {
+          "label": "自動再生"
+        },
+        "perspective": {
+          "label": "遠近距離"
+        }
+      },
+      "presets": [
+        "自動で上へ"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-breathing-text": {
+      "name": "太さが呼吸する文字",
+      "summary": "各文字の太さが細いと太いの間で呼吸するように変わり、順番にずれながら、1行の文字がゆっくり波打つように見えます。可変フォントのwght軸を使っていて、ここではプロジェクト同梱のGeist可変フォントを使っています。",
+      "hint": "文字が順番に太く細くなる様子を見てみてください",
+      "controls": {
+        "staggerFrom": {
+          "label": "開始位置",
+          "options": {
+            "first": "先頭から",
+            "last": "末尾から",
+            "center": "中央から"
+          }
+        },
+        "staggerDuration": {
+          "label": "時間差"
+        }
+      },
+      "presets": [
+        "中央から広がる"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-circling-elements": {
+      "name": "円を描いて公転する要素",
+      "summary": "いくつでも置ける要素が円周上に等間隔で並び、常に上向きのまま一定の速さで公転して、見えない惑星を回る衛星のようです。CSSのキーフレームだけで、逆回転やホバーでの一時停止もできます。",
+      "hint": "周回する様子を見て、ホバーで止めてみてください",
+      "controls": {
+        "radius": {
+          "label": "半径"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "direction": {
+          "label": "向き",
+          "options": {
+            "normal": "時計回り",
+            "reverse": "反時計回り"
+          }
+        }
+      },
+      "presets": [
+        "小さく速く"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-css-box": {
+      "name": "ドラッグで回せる3Dボックス",
+      "summary": "6つの面にそれぞれ内容を置いて本物の3Dボックスに組み上げ、押したままドラッグすると回り、離すとスプリングでゆっくり止まります。refで指定した面に回すこともでき、CSSのtransformだけで作られています。",
+      "hint": "ボックスをドラッグするか、下のボタンを押してみてください",
+      "controls": {
+        "stiffness": {
+          "label": "スプリングの硬さ"
+        },
+        "damping": {
+          "label": "スプリングの減衰"
+        },
+        "perspective": {
+          "label": "遠近距離"
+        }
+      },
+      "presets": [
+        "ゆるく揺れる"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-cursor-attractor-and-gravity": {
+      "name": "中心に集まりポインターでかき混ぜられる球",
+      "summary": "たくさんの剛体がステージの中心にずっと引き寄せられて押し合い、ぎゅっと固まります。ポインターが近づくと一定の半径内で余分な力が加わって散り、離れるとゆっくり集まり直します（matter-js駆動）。",
+      "hint": "ポインターを球の山に入れて、かき混ぜてみてください",
+      "controls": {
+        "attractorStrength": {
+          "label": "中心の引力"
+        },
+        "cursorStrength": {
+          "label": "ポインターの力"
+        },
+        "cursorFieldRadius": {
+          "label": "ポインターの影響半径"
+        }
+      },
+      "presets": [
+        "ゆるめ・ポインター強め"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え",
+        "cursor-attractor-and-gravity.tsx: @ts-nocheck を追加（型のずれ。実行時に確認済み）"
+      ]
+    },
+    "FANCY-drag-elements": {
+      "name": "好きに散らせるメモの束",
+      "summary": "メモの束から好きなものをつかんで、どこにでも放り投げられます。離すと慣性で滑って端で跳ね返り、持ち上げたメモは自動で最前面に出るので、トップページに置く遊べるカードや写真の山に向いています。",
+      "hint": "メモをつかんで引き離してみてください",
+      "controls": {
+        "dragElastic": {
+          "label": "端でのゴム感"
+        },
+        "dragMomentum": {
+          "label": "離したときの慣性"
+        }
+      },
+      "presets": [
+        "離した場所で止まる"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-elastic-line": {
+      "name": "はじけるゴム線",
+      "summary": "ステージを横切る1本の線にポインターが触れると引っかかってついていき、しきい値を超える距離で離すと、ギターの弦をはじいたように震えて元に戻ります。横線にも縦線にもでき、区切り線のちょっとした仕掛けに向いています。",
+      "hint": "ポインターで線を横切り、そのまま引っ張ってみてください",
+      "controls": {
+        "isVertical": {
+          "label": "縦線"
+        },
+        "strokeWidth": {
+          "label": "線の太さ"
+        },
+        "releaseThreshold": {
+          "label": "離す距離"
+        }
+      },
+      "presets": [
+        "太い縦弦"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-element-along-svg-path": {
+      "name": "軌道に沿って並走する要素",
+      "summary": "好きな要素がSVGパスに沿って一定の速さで周回し、時間差で出発して小さな列車のように並びます。CSSのoffset-pathで作られていて描いたとおりの経路をたどり、スクロール連動にも切り替えられます。",
+      "hint": "小さな列車が軌道を周回する様子を見てみてください",
+      "controls": {
+        "duration": {
+          "label": "1周の時間"
+        },
+        "direction": {
+          "label": "向き",
+          "options": {
+            "normal": "順方向",
+            "reverse": "逆方向"
+          }
+        },
+        "showPath": {
+          "label": "軌道を表示"
+        }
+      },
+      "presets": [
+        "逆向き・軌道非表示・速め"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-float": {
+      "name": "ふわふわ浮遊",
+      "summary": "要素が3つの軸でそれぞれ異なる周期の正弦波に合わせてゆっくり上下し、わずかに傾いて、水面に浮かんだようにいつまでも止まりません。要素ごとに時間のずれを与えると同期せず、カードのグループが呼吸しているように見えます。",
+      "hint": "ふわふわ漂う様子を見てみてください",
+      "controls": {
+        "speed": {
+          "label": "速度"
+        },
+        "amplitudeY": {
+          "label": "上下の振れ幅"
+        },
+        "rotation": {
+          "label": "傾きの振れ幅"
+        }
+      },
+      "presets": [
+        "ほとんど動かない",
+        "風が強い"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-gooey-svg-filter": {
+      "name": "ねばっと融合するフィルター",
+      "summary": "SVGフィルター（ぼかし＋コントラスト強調＋合成）をコンテナにかけると、中で近づいた円が水滴のようにくっついて溶け合い、離れるときは糸を引きます。デモでは色のかたまりがいくつも行き来して、くっつく様子が見られます。",
+      "hint": "色のかたまりがくっついて離れる様子を見てみてください",
+      "controls": {
+        "strength": {
+          "label": "ねばり"
+        }
+      },
+      "presets": [
+        "とても粘る"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-gravity": {
+      "name": "重力で落ちる要素",
+      "summary": "任意のDOM要素が質量を持つ剛体になり、マウント後に開始位置から落下して床にぶつかり、積み重なって隅へ転がり、つかんで投げればまた跳ねます。matter-jsで動き、要素のスタイルは普通のCSSで書けます。",
+      "hint": "落ちるのを待ってから、つかんで投げてみてください",
+      "controls": {
+        "gravityY": {
+          "label": "重力"
+        },
+        "restitution": {
+          "label": "反発"
+        }
+      },
+      "presets": [
+        "月面の弾み",
+        "ずっしり落ちる"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え",
+        "gravity.tsx: @ts-nocheck を追加（型のずれ。実行時に確認済み）"
+      ]
+    },
+    "FANCY-image-trail": {
+      "name": "ポインターが引く画像の軌跡",
+      "summary": "ポインターが一定の距離を動くたびに背後に画像が置かれ、ぽんと現れて慣性で少し滑り、やがて縮んで消えます。素早く動かすと画像がずらりと連なり、新しい画像が古い画像の上に重なって、道すがら写真をまいたようです。",
+      "hint": "ステージの上でポインターを動かしてみてください",
+      "controls": {
+        "threshold": {
+          "label": "置く間隔"
+        },
+        "intensity": {
+          "label": "追従の慣性"
+        }
+      },
+      "presets": [
+        "密に・遠くまで漂う"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-letter-3d-swap": {
+      "name": "立方体のように文字が反転",
+      "summary": "ホバーすると、各文字が小さな立方体のように丸ごと反転して、反対の面に同じ文字が現れます。1文字ずつ時間差で動き、スプリングで収まるので、1行がドミノのように転がっていきます。",
+      "hint": "文字の上にポインターを動かしてみてください",
+      "controls": {
+        "rotateDirection": {
+          "label": "反転の向き",
+          "options": {
+            "top": "上へ",
+            "right": "右へ",
+            "bottom": "下へ",
+            "left": "左へ"
+          }
+        },
+        "staggerFrom": {
+          "label": "開始位置",
+          "options": {
+            "first": "先頭から",
+            "last": "末尾から",
+            "center": "中央から",
+            "random": "ランダム"
+          }
+        },
+        "staggerDuration": {
+          "label": "時間差"
+        }
+      },
+      "presets": [
+        "横に反転・ランダム順",
+        "中央からゆっくり反転"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-letter-swap-forward-anim": {
+      "name": "文字が順に押し替わる",
+      "summary": "ホバーすると、各文字が下（または上）から来た同じ文字に押し出され、順番に時間差がつき、スプリングで収まります。1周すると一瞬で元に戻って次を待ち、ナビのリンクやボタンの文字に向いていて、軽快でくどくありません。",
+      "hint": "文字の上にポインターを動かしてみてください",
+      "controls": {
+        "reverse": {
+          "label": "上から下へ押す"
+        },
+        "staggerDuration": {
+          "label": "時間差"
+        },
+        "staggerFrom": {
+          "label": "開始位置",
+          "options": {
+            "first": "先頭から",
+            "last": "末尾から",
+            "center": "中央から"
+          }
+        }
+      },
+      "presets": [
+        "末尾から上へ押す"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-letter-swap-pingpong-anim": {
+      "name": "押し上げて押し戻す文字",
+      "summary": "入るときは同じ文字に押し上げられ、出るときは押し戻されて、卓球のラリーのように行き来します。1文字ずつ時間差で動き、スプリングで収まり、ホバー中の状態もそれ自体がひとつの見た目になります。",
+      "hint": "ポインターを入れて、また出してみてください",
+      "controls": {
+        "reverse": {
+          "label": "上から下へ押す"
+        },
+        "staggerDuration": {
+          "label": "時間差"
+        },
+        "staggerFrom": {
+          "label": "開始位置",
+          "options": {
+            "first": "先頭から",
+            "last": "末尾から",
+            "center": "中央から"
+          }
+        }
+      },
+      "presets": [
+        "中央から広がる"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-marquee-along-svg-path": {
+      "name": "曲線をたどるマーキー",
+      "summary": "要素の列が任意のSVGパスに沿って首尾をつなぎながら流れ続け、パス上の前後の位置に応じて重なり順が自動で入れ替わるので、カーブでも重なるべきほうが上に来ます。ホバーで減速し、手でドラッグして動かすこともできます。",
+      "hint": "ステッカーが曲線を流れる様子を見て、ホバーで減速、ドラッグで動かしてみてください",
+      "controls": {
+        "baseVelocity": {
+          "label": "速度"
+        },
+        "direction": {
+          "label": "向き",
+          "options": {
+            "normal": "順方向",
+            "reverse": "逆方向"
+          }
+        },
+        "slowdownOnHover": {
+          "label": "ホバーで減速"
+        }
+      },
+      "presets": [
+        "逆向きに全力疾走"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-media-between-text": {
+      "name": "言葉の間から現れる画像",
+      "summary": "ホバーすると、2つの言葉の間から画像（または動画）が横に押し広がり、両側の文字がなめらかに押しのけられ、離れると閉じます。大きな見出しにちょっとした驚きを仕込むのに向いていて、ビューポートに入ったときに自動で開くようにもできます。",
+      "hint": "文字の上にポインターを動かしてみてください",
+      "controls": {
+        "triggerType": {
+          "label": "きっかけ",
+          "options": {
+            "hover": "ホバー",
+            "inView": "ビューポートに入る"
+          }
+        }
+      },
+      "presets": [
+        "ビューポートに入ると開く"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-parallax-floating": {
+      "name": "ポインターに合わせて浮かぶパララックス",
+      "summary": "ステージに散らばった要素にはそれぞれ奥行きがあり、ポインターが動くと奥のものは大きく、手前のものは小さく動いて、全体が前景と背景のあるように手の動きについてふわっと漂います。位置はイージングで追うので、カクつきません。",
+      "hint": "ステージの上でポインターを動かしてみてください",
+      "controls": {
+        "sensitivity": {
+          "label": "感度"
+        },
+        "easingFactor": {
+          "label": "追従の速さ"
+        }
+      },
+      "presets": [
+        "敏感に追従"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-pixel-trail": {
+      "name": "ポインターのピクセル軌跡",
+      "summary": "領域全体に見えない格子が敷かれ、ポインターが通ったマスが一瞬で光ってゆっくり消えていきます。速く動かすほど尾が長くなり、低解像度の画面でカーソルを引きずったようで、マスの大きさと消えるまでの時間は調整できます。",
+      "hint": "ステージの上を自由に動かしてみてください",
+      "controls": {
+        "pixelSize": {
+          "label": "マスの大きさ"
+        },
+        "fadeDuration": {
+          "label": "消えるまでの時間"
+        },
+        "delay": {
+          "label": "消え始めるまでの遅延"
+        }
+      },
+      "presets": [
+        "細かいマス・長い尾",
+        "大きなマス・一瞬だけ光る"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-pixelate-svg-filter": {
+      "name": "モザイクのピクセル化フィルター",
+      "summary": "SVGフィルターでどんな要素もブロック状のモザイクに変えられ、マスの大きさも調整できます。デモの画像は最初モザイクがかかっていて、ホバーするとマスが少しずつ小さくなって鮮明になり、昔のゲームのアンロックのようです。",
+      "hint": "画像の上にポインターを動かして、くっきりしていく様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "マスの大きさ"
+        },
+        "crossLayers": {
+          "label": "格子を重ねる（より細かく）"
+        }
+      },
+      "presets": [
+        "大きなマスを重ねる"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-random-letter-swap-forward-anim": {
+      "name": "ランダムに押し替わる文字",
+      "summary": "順番に押し替わるタイプと同じ仕掛けで、順序だけが毎回ランダムに入れ替わります。ホバーすると文字があちこちで押し出され、キーボードを適当に叩いたようになり、1周すると一瞬で元に戻ります。",
+      "hint": "文字の上にポインターを動かしてみてください",
+      "controls": {
+        "reverse": {
+          "label": "上から下へ押す"
+        },
+        "staggerDuration": {
+          "label": "時間差"
+        }
+      },
+      "presets": [
+        "ゆっくりランダム"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-random-letter-swap-pingpong-anim": {
+      "name": "ランダムに押し上げて戻す文字",
+      "summary": "入るときは文字がランダムな順に押し上げられ、出るときも同じようにランダムな順で押し戻されます。ポインターが乗っている間は行全体が入れ替わった状態を保ち、跳ねるピアノの鍵盤のようです。",
+      "hint": "ポインターを入れて、また出してみてください",
+      "controls": {
+        "reverse": {
+          "label": "上から下へ押す"
+        },
+        "staggerDuration": {
+          "label": "時間差"
+        }
+      },
+      "presets": [
+        "ゆっくりランダム"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-scramble-hover": {
+      "name": "ホバーで文字化けして元に戻る",
+      "summary": "ホバーすると行全体がちらつくランダムな文字に変わり、何周かしたあと一気に元に戻ります。順番モードでは、先頭（または末尾、中央）から1文字ずつ元の文字を取り戻し、ターミナルやハッカー映画のような雰囲気になります。",
+      "hint": "文字の上にポインターを動かしてみてください",
+      "controls": {
+        "scrambleSpeed": {
+          "label": "ちらつきの間隔"
+        },
+        "sequential": {
+          "label": "1文字ずつ復元"
+        },
+        "revealDirection": {
+          "label": "復元の開始位置",
+          "options": {
+            "start": "先頭から",
+            "end": "末尾から",
+            "center": "中央から"
+          }
+        }
+      },
+      "presets": [
+        "全体を何周かシャッフル",
+        "中央から広げる"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-scramble-in": {
+      "name": "文字化けタイプライターで登場",
+      "summary": "文字が空白から1文字ずつ現れ、カーソルの前には常にちらつくランダムな文字がいくつか付いていて、デコーダーが推測しながら確定していくようです。最後にノイズが消え、本文だけが残ります。",
+      "hint": "「再生し直す」を押してもう一度解読してみてください",
+      "controls": {
+        "scrambleSpeed": {
+          "label": "表示の間隔"
+        },
+        "scrambledLetterCount": {
+          "label": "先行する乱字の数"
+        }
+      },
+      "presets": [
+        "速い",
+        "のんびり"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-screensaver": {
+      "name": "DVDスクリーンセーバー風のバウンド",
+      "summary": "要素が一定の速さでまっすぐ漂い、容器の端に当たると入射角どおりに跳ね返ります。角には決して当たらない、あの昔のDVDのスクリーンセーバーのようで、要素ごとに開始位置と角度を変えるとステージがにぎやかになります。",
+      "hint": "壁に当たって跳ね返る様子を見てみてください",
+      "controls": {
+        "speed": {
+          "label": "速度"
+        },
+        "startAngle": {
+          "label": "開始角度"
+        }
+      },
+      "presets": [
+        "猛スピードで跳ね回る"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-scroll-and-swap-text": {
+      "name": "スクロールで押し替わる行",
+      "summary": "スクロールの進み具合に合わせて、各行が下にある同じ行にゆっくり押し上げられます。進み具合はスプリングでなめらかにされるので速くスクロールしても硬くならず、各行は容器を通り抜ける間に1回入れ替わります。",
+      "hint": "ステージの中でスクロールしてみてください",
+      "controls": {
+        "stiffness": {
+          "label": "スプリングの硬さ"
+        },
+        "damping": {
+          "label": "スプリングの減衰"
+        }
+      },
+      "presets": [
+        "やわらかめ"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-simple-carousel": {
+      "name": "ドラッグできる無限カードバンド",
+      "summary": "カードの列がつなぎ目なく一定の速さでループして流れ、つかんでドラッグでき、勢いよく放すと慣性で滑ってからゆっくり通常の速さに戻ります。ドラッグで進む向きを反転でき、ホバーで減速します（上流ではマーキーの仲間で、同じ実装が入ります）。",
+      "hint": "流れる様子を見て、つかんでドラッグしてみてください",
+      "controls": {
+        "baseVelocity": {
+          "label": "速度"
+        },
+        "direction": {
+          "label": "向き",
+          "options": {
+            "left": "左",
+            "right": "右"
+          }
+        },
+        "draggable": {
+          "label": "ドラッグ可能"
+        }
+      },
+      "presets": [
+        "右へゆっくり・ドラッグ不可"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-simple-marquee": {
+      "name": "マーキー",
+      "summary": "コンテンツがつなぎ目なくループしてスクロールし、横にも縦にも流せ、ホバーで減速し、ドラッグもでき、ページのスクロールの速さと向きに合わせて変わることもできます。CSSのマーキーより優れているのは手触りで、ドラッグすると慣性が付き、そのあと通常の速さに戻ります。",
+      "hint": "流れる様子を見て、ホバーで減速してみてください",
+      "controls": {
+        "direction": {
+          "label": "向き",
+          "options": {
+            "left": "左",
+            "right": "右",
+            "up": "上",
+            "down": "下"
+          }
+        },
+        "baseVelocity": {
+          "label": "速度"
+        },
+        "slowdownOnHover": {
+          "label": "ホバーで減速"
+        }
+      },
+      "presets": [
+        "縦に速く流す"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-stacking-cards": {
+      "name": "スクロールで重なるカード",
+      "summary": "下へスクロールすると、カードが1枚ずつ上に貼り付いていき、前のカードは次のカードに覆われるときに少し縮んで沈み、最後には奥行きのある重なりになります。スクロールで語る構成の定番です。",
+      "hint": "ステージの中で下へスクロールしてみてください",
+      "controls": {
+        "scaleMultiplier": {
+          "label": "1枚ごとの縮小"
+        },
+        "topPosition": {
+          "label": "積み重ねる位置の上端"
+        }
+      },
+      "presets": [
+        "より強く縮める"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-text-along-path": {
+      "name": "パスをめぐる文字",
+      "summary": "文字の列がSVGパスに沿って一定の速さで周回し、首尾がつながっているので途切れず、印鑑の外周の文字が回っているようです。パスは直線でも波でも円でも、好きに描けます。",
+      "hint": "文字がぐるぐる回る様子を見てみてください",
+      "controls": {
+        "duration": {
+          "label": "1周の時間"
+        },
+        "showPath": {
+          "label": "パスを表示"
+        }
+      },
+      "presets": [
+        "線ありで速く回す"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-text-cursor-proximity": {
+      "name": "ポインターに近い文字が大きく色づく",
+      "summary": "ポインターが通ると、半径内の文字が距離に応じて拡大し色づき、近いほど変化が大きく、行の上を虫眼鏡でなぞったようです。CSSのプロパティなら何でもfrom/toで指定できます。",
+      "hint": "文字の上でポインターを動かしてみてください",
+      "controls": {
+        "radius": {
+          "label": "影響半径"
+        },
+        "falloff": {
+          "label": "減衰カーブ",
+          "options": {
+            "linear": "リニア",
+            "exponential": "指数（近いほど強い）",
+            "gaussian": "ガウス（やわらかい）"
+          }
+        },
+        "colorFrom": {
+          "label": "開始時の文字の色"
+        },
+        "colorTo": {
+          "label": "近づいたときの文字の色"
+        }
+      },
+      "presets": [
+        "狭い範囲で大きく拡大"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-text-highlighter": {
+      "name": "蛍光ペンでなぞる文字",
+      "summary": "蛍光ペン色のブロックが片側からもう片側へ走り、その一文を明るく塗ります。ビューポートに入ると自動で走り、ホバー時だけにも切り替えられ、向きも色も自由で、改行をまたいで塗り続けます。",
+      "hint": "「再生し直す」を押してもう一度なぞるか、ホバーに切り替えてみてください",
+      "controls": {
+        "triggerType": {
+          "label": "きっかけ",
+          "options": {
+            "inView": "ビューポートに入る",
+            "hover": "ホバー"
+          }
+        },
+        "direction": {
+          "label": "なぞる向き",
+          "options": {
+            "ltr": "左から右",
+            "rtl": "右から左",
+            "ttb": "上から下",
+            "btt": "下から上"
+          }
+        },
+        "highlightColor": {
+          "label": "蛍光色"
+        }
+      },
+      "presets": [
+        "ホバーでなぞる",
+        "下から上"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-text-rotate": {
+      "name": "言葉が入れ替わるローテーション",
+      "summary": "いくつかの言葉が時間ごとに入れ替わり、古い言葉は1文字ずつ跳ね上がって消え、新しい言葉は1文字ずつ下から跳ねて入り、容器の幅も新しい言葉に合わせてなめらかに伸び縮みします。見出しのキーワード入れ替えで最もよく使われる形です。",
+      "hint": "言葉が自動で入れ替わるのを待ってみてください",
+      "controls": {
+        "rotationInterval": {
+          "label": "入れ替えの間隔"
+        },
+        "staggerDuration": {
+          "label": "文字ごとの時間差"
+        },
+        "splitBy": {
+          "label": "分割の単位",
+          "options": {
+            "characters": "文字",
+            "words": "単語"
+          }
+        }
+      },
+      "presets": [
+        "単語ごと素早く入れ替え"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-typewriter": {
+      "name": "タイプライター",
+      "summary": "1文字ずつ打ち出され、後ろでカーソルが点滅します。複数の文があるときは、打ち終えて少し止まり、バックスペースで消してから次の文を打ち、これを繰り返します。",
+      "hint": "文字を打って消す様子を見てみてください",
+      "controls": {
+        "speed": {
+          "label": "入力の間隔"
+        },
+        "waitTime": {
+          "label": "打ち終えてからの待ち時間"
+        },
+        "deleteSpeed": {
+          "label": "削除の間隔"
+        }
+      },
+      "presets": [
+        "せっかち"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-underline-center": {
+      "name": "中央から伸びる下線",
+      "summary": "ホバーすると、下線が文字の中央から両端へ伸びて全体を覆い、離れると中央へ縮みます。太さはフォントサイズに比例するので調整は要らず、リンクやナビの基本形です。",
+      "hint": "文字の上にポインターを動かしてみてください",
+      "controls": {
+        "underlineHeightRatio": {
+          "label": "線の太さ（フォントサイズ比）"
+        },
+        "duration": {
+          "label": "時間"
+        }
+      },
+      "presets": [
+        "太い線・ゆっくり伸びる"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-underline-comes-in-goes-out": {
+      "name": "下線が入って出ていく",
+      "summary": "ホバーすると、下線が片側から行全体に伸び、すぐに同じ側から抜けていきます。ペンで線を引いて消したような一度の出入りで、動きが終わるまでは次の反応をしません。",
+      "hint": "文字の上にポインターを動かしてみてください",
+      "controls": {
+        "direction": {
+          "label": "始まる側",
+          "options": {
+            "left": "左から",
+            "right": "右から"
+          }
+        },
+        "underlineHeightRatio": {
+          "label": "線の太さ（フォントサイズ比）"
+        },
+        "duration": {
+          "label": "片道の時間"
+        }
+      },
+      "presets": [
+        "右から太い線"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-underline-goes-out-comes-in": {
+      "name": "下線が出て戻ってくる",
+      "summary": "普段は下線が付いたままで、ホバーするとまず片側へ縮んで消え、反対側から伸びて戻り、引き抜かれて送り返されたようです。すでに下線のあるリンクにちょっとした動きを付けるのに向いています。",
+      "hint": "文字の上にポインターを動かしてみてください",
+      "controls": {
+        "direction": {
+          "label": "抜ける側",
+          "options": {
+            "left": "左",
+            "right": "右"
+          }
+        },
+        "underlineHeightRatio": {
+          "label": "線の太さ（フォントサイズ比）"
+        },
+        "duration": {
+          "label": "片道の時間"
+        }
+      },
+      "presets": [
+        "細い線・右へ"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-underline-to-background": {
+      "name": "下線が背景色に膨らむ",
+      "summary": "ホバーすると、細い下線がスプリングで高さを増して行全体を覆う文字の背景色になり、文字の色も同時に反転します。離れると再び1本の線に縮み、蛍光ペンとハイライトブロックを合わせたような動きです。",
+      "hint": "文字の上にポインターを動かしてみてください",
+      "controls": {
+        "stiffness": {
+          "label": "スプリングの硬さ"
+        },
+        "damping": {
+          "label": "スプリングの減衰"
+        },
+        "underlineHeightRatio": {
+          "label": "初期の線の太さ（フォントサイズ比）"
+        },
+        "targetTextColor": {
+          "label": "ホバー時の文字の色"
+        }
+      },
+      "presets": [
+        "より弾む"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-variable-font-and-cursor": {
+      "name": "ポインター位置で太さが変わる文字",
+      "summary": "容器内のポインターの横位置が可変フォントの太さにそのまま対応し、左へ行くほど細く、右へ行くほど太くなって、行全体が手の動きにつれてつまみを回すように連続的に変形します。縦位置は2つ目の軸に割り当てられますが、ここで使うGeist可変フォントにはwght軸しかないため、縦方向では変化しません。",
+      "hint": "ステージの上でポインターを左右に動かしてみてください",
+      "controls": {
+        "minWeight": {
+          "label": "最も細い太さ"
+        },
+        "maxWeight": {
+          "label": "最も太い太さ"
+        }
+      },
+      "presets": [
+        "狭い範囲"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-variable-font-cursor-proximity": {
+      "name": "ポインターに近い文字が太くなる",
+      "summary": "ポインターの半径内にある文字が距離に応じて太字へ近づき、近いほど太くなって、なぞると太字の波が手についてくるようです。可変フォントのwght軸を使っていて、ここではプロジェクト同梱のGeistを使っています。",
+      "hint": "文字の上でポインターを動かしてみてください",
+      "controls": {
+        "radius": {
+          "label": "影響半径"
+        },
+        "falloff": {
+          "label": "減衰カーブ",
+          "options": {
+            "linear": "リニア",
+            "exponential": "指数（近いほど強い）",
+            "gaussian": "ガウス（やわらかい）"
+          }
+        }
+      },
+      "presets": [
+        "広くやわらかく"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-variable-font-hover-by-letter": {
+      "name": "ホバーで1文字ずつ太くなる",
+      "summary": "ホバーすると、文字が先頭から（または中央から）次々と太字に跳ね、離れると同じ順で戻って、文字の中を波が通り抜けるようです。可変フォントのwght軸を使っていて、ここではプロジェクト同梱のGeistを使っています。",
+      "hint": "文字の上にポインターを動かしてみてください",
+      "controls": {
+        "staggerDuration": {
+          "label": "文字ごとの時間差"
+        },
+        "staggerFrom": {
+          "label": "開始位置",
+          "options": {
+            "first": "先頭から",
+            "last": "末尾から",
+            "center": "中央から"
+          }
+        }
+      },
+      "presets": [
+        "中央からゆっくりの波"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-variable-font-hover-by-random-letter": {
+      "name": "ランダムな順に太くなる文字",
+      "summary": "ホバーすると、文字がランダムな順に1つずつ太字へ跳ね、離れるとまた順不同で戻って、行が気ままに点いたり消えたりするようです。順序はマウント時に決まるので更新のたびに変わり、Geist可変フォントのwght軸を使っています。",
+      "hint": "文字の上にポインターを動かしてみてください",
+      "controls": {
+        "staggerDuration": {
+          "label": "文字ごとの時間差"
+        },
+        "fromWeight": {
+          "label": "開始時の太さ"
+        },
+        "toWeight": {
+          "label": "ホバー時の太さ"
+        }
+      },
+      "presets": [
+        "ゆっくり点灯"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "FANCY-vertical-cut-reveal": {
+      "name": "切れ目から飛び出す文字",
+      "summary": "単語（または文字、行）が、見えない切れ目からスプリングで飛び出し、順番に時間差がつき、少し弾みます。複数行のテキストでは各行がそれぞれの切れ目を持ち、見出しの登場に向いています。",
+      "hint": "「再生し直す」を押してもう一度見てみてください",
+      "controls": {
+        "splitBy": {
+          "label": "分割の単位",
+          "options": {
+            "words": "単語",
+            "characters": "文字",
+            "lines": "行"
+          }
+        },
+        "staggerDuration": {
+          "label": "時間差"
+        },
+        "staggerFrom": {
+          "label": "開始位置",
+          "options": {
+            "first": "先頭から",
+            "last": "末尾から",
+            "center": "中央から",
+            "random": "ランダム"
+          }
+        }
+      },
+      "presets": [
+        "単語ごと・末尾から",
+        "文字ごと・ランダム"
+      ],
+      "changes": [
+        "src/registry/fancy/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-action-search-bar": {
+      "name": "コマンド検索ドロップダウン",
+      "summary": "入力欄にフォーカスすると結果パネルが下へ広がり、5つのコマンドが1つずつ浮かび上がります。文字を打つと右のアイコンが検索から送信に切り替わり、リストは入力に合わせて絞り込まれて並び直され、上下キーでハイライト、Escで閉じます。",
+      "hint": "入力欄をクリックして、何文字か打ってみてください",
+      "controls": {
+        "defaultOpen": {
+          "label": "最初から展開"
+        }
+      },
+      "presets": [
+        "最初から展開"
+      ]
+    },
+    "KOKO-ai-input-search": {
+      "name": "ネット検索スイッチ付き入力欄",
+      "summary": "複数行の入力欄は内容に合わせて自動で高くなり、左下の地球ボタンでネット検索を切り替えると、アイコンがスプリングで半回転して拡大し、「Search」の文字が横に広がって空色のカプセルになります。ホバーするとアイコンがもう少し傾きます。",
+      "hint": "地球ボタンで切り替えるか、文字を打って入力欄が高くなる様子を見てみてください",
+      "controls": {
+        "placeholder": {
+          "label": "プレースホルダー"
+        },
+        "searchLabel": {
+          "label": "スイッチの文言"
+        }
+      },
+      "presets": [
+        "中国語"
+      ]
+    },
+    "KOKO-ai-loading": {
+      "name": "AIタスクログのローディング",
+      "summary": "左上の6色の同心円リングは進捗に合わせて現れて回転し、その下の行番号付きタスクログが2秒ごとに1行ずつ上へスクロールします。1組のタスクが終わると、自動で次の組に切り替わります。",
+      "hint": "ログが1行ずつ上へ流れる様子を見てみてください",
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-ai-prompt": {
+      "name": "モデル選択付きプロンプト入力",
+      "summary": "入力欄は内容に合わせて高くなり、送信の矢印は入力があるときだけ点灯します。左下のモデルピッカーを開くとドロップダウンが出て、モデルを切り替えるとボタンの中のアイコンと名前が上下に入れ替わりながらクロスフェードします。",
+      "hint": "モデル名で切り替え、文字を打って矢印が点灯する様子を見てみてください",
+      "controls": {
+        "defaultModel": {
+          "label": "既定のモデル",
+          "options": {
+            "Claude Fable 5": "Claude Fable 5",
+            "Gemini 3 Pro": "Gemini 3 Pro",
+            "GPT-5.6 Mini": "GPT-5.6 Mini",
+            "GPT-5.6 Codex": "GPT-5.6 Codex",
+            "GPT-5.6": "GPT-5.6"
+          }
+        },
+        "placeholder": {
+          "label": "プレースホルダー"
+        }
+      },
+      "presets": [
+        "中国語"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-ai-text-loading": {
+      "name": "AIステータス語のローテーション",
+      "summary": "「Thinking… / Processing…」のようなステータス語が一定の間隔で入れ替わります。新しい言葉は下からフェードインし、古い言葉は上へフェードアウトして、文字の上では常に光が走っています。",
+      "hint": "ステータス語が入れ替わる様子を見てみてください",
+      "controls": {
+        "interval": {
+          "label": "入れ替えの間隔"
+        }
+      },
+      "presets": [
+        "速く入れ替え"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-ai-voice": {
+      "name": "音声録音ウェーブ",
+      "summary": "マイクをタップすると「聞き取り」が始まり、アイコンはゆっくり自転する四角に変わってタイマーが進み、48本の細い棒がランダムな高さでずれながら脈動して波形になります。もう一度タップすると止まってゼロに戻り、マウント後にはまず自動で一度デモが再生されます。",
+      "hint": "マイクをタップして開始と停止を試してみてください",
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-apple-activity-card": {
+      "name": "アクティビティリングカード",
+      "summary": "3つの同心円リングが外側から内側へ0.2秒ずつずれてフェードインしながら拡大し、各リングのグラデーションの線が0からそれぞれの割合まで描かれます。右側の数値の列は右からスライドして入ってきます。",
+      "hint": "リングが順に満ちていく様子を見てみてください",
+      "controls": {
+        "title": {
+          "label": "タイトル"
+        }
+      },
+      "presets": [
+        "中国語"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-attract-button": {
+      "name": "粒子が集まるマグネットボタン",
+      "summary": "紫色の小さな点がボタンの周りに散らばっていて、ホバーするとすべてがスプリングでボタンの中心へ引き寄せられます。離れるとそれぞれの位置に弾んで戻ります。",
+      "hint": "ホバーして、粒子が引き寄せられる様子を見てみてください",
+      "controls": {
+        "particleCount": {
+          "label": "粒子の数"
+        }
+      },
+      "presets": [
+        "密"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-avatar-picker": {
+      "name": "アバター選択の登録カード",
+      "summary": "4つのサムネイルのアバターが1つずつフェードインし、どれかをタップすると、大きなアバター枠で古いアバターが退場して新しいアバターが入り、外側のリングがその主色に変わって名前がクロスフェードします。サムネイルはホバーで拡大して押すと縮み、ユーザー名が3文字未満だとエラーが表示されます。",
+      "hint": "いろいろなアバターをタップして、ユーザー名を入力してみてください"
+    },
+    "KOKO-background-paths": {
+      "name": "流線パスの背景",
+      "summary": "紫・ピンク・青のグラデーションのベジェ曲線が30本あまり、右下から左上へ広がり、マウント時にフェードインして拡大し、その後は3つの異なる周期で上下にゆるく漂って、風に吹かれた糸のようです。タイトルは中央でフェードインして浮かび上がり、ステージでは高さ300pxに抑えています。",
+      "hint": "曲線の群れがゆっくり揺れる様子を見てみてください",
+      "controls": {
+        "title": {
+          "label": "タイトル"
+        }
+      },
+      "presets": [
+        "中国語のタイトル"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-beams-background": {
+      "name": "光線が漂う背景",
+      "summary": "キャンバス上の30本の斜めの色付き光線は強くぼかされ、ゆっくり上へ漂いながら明るさが脈動し、画面の外へ出たものは下から再生成されて、全体の上には呼吸する暗いベールが重なります。ステージでは高さ300pxに抑えています。",
+      "hint": "光線が上へ漂う様子を見てみてください",
+      "controls": {
+        "intensity": {
+          "label": "明るさ",
+          "options": {
+            "subtle": "弱",
+            "medium": "中",
+            "strong": "強"
+          }
+        }
+      },
+      "presets": [
+        "淡くやさしく"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-bento-grid": {
+      "name": "ベントーグリッド（特長版）",
+      "summary": "4マスのベントーレイアウトが、ビューポートに入ると順にフェードインして浮かび上がり、マスの中も数字のカウント、コードが1文字ずつ打たれる様子、脈動する音声波形とそれぞれ動き、ホバーしたマスは5px浮き上がります。全体のサイズは大きいので、ステージでは上下の余白だけを詰めています。",
+      "hint": "スクロールして現れたら、マスにホバーしてみてください",
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-card-flip": {
+      "name": "ホバーで裏返るカード",
+      "summary": "ホバーするとカード全体が縦軸を中心に180°回転して裏面が現れ、裏面の機能項目が左から1つずつスライドして入ります。表面ではオレンジ色の光の点が連なって拡大縮小を繰り返し、ホバーすると速くなります。",
+      "hint": "ホバーして裏面に裏返してみてください",
+      "controls": {
+        "title": {
+          "label": "タイトル"
+        },
+        "subtitle": {
+          "label": "サブタイトル"
+        }
+      },
+      "presets": [
+        "中国語"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-card-stack": {
+      "name": "クリックで広がるカードの束",
+      "summary": "すりガラスの製品カード4枚が少しずれて重なり、1回タップするとスプリングで順に横へ扇形に広がってそれぞれが傾き、もう一度タップすると畳まれます。「動きを減らす」設定のときは傾かず、平行移動だけになります。",
+      "hint": "1回タップして広げ、もう一度タップして畳んでみてください",
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え",
+        "リモートのサンプル画像を /placeholder/*.svg に置き換え（オフラインで表示可）"
+      ]
+    },
+    "KOKO-carousel-cards": {
+      "name": "横スクロールの体験カード",
+      "summary": "Airbnb風の体験カードが横に並んでスナップしながらスクロールし、右上の左右の矢印で1枚ずつなめらかに送れます。カードにホバーするとカバー画像が拡大して影が濃くなり、ステージには最初の1列だけを残しています。",
+      "hint": "右上の矢印をタップするか、カードにホバーしてみてください",
+      "changes": [
+        "リモートのサンプル画像を /placeholder/*.svg に置き換え（オフラインで表示可）"
+      ]
+    },
+    "KOKO-command-button": {
+      "name": "光が走るショートカットボタン",
+      "summary": "グレーの小さなボタンで、ホバーすると藍色の光の帯が左から右へ走り、同時に⌘アイコンが拡大してわずかに左へ傾きます。押すとアイコンが縮みます。",
+      "hint": "ホバーで光が走る様子を、押してアイコンが縮む様子を見てみてください",
+      "controls": {
+        "label": {
+          "label": "テキスト"
+        }
+      },
+      "presets": [
+        "検索"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-currency-transfer": {
+      "name": "送金完了のレシート",
+      "summary": "処理中の円が2秒回ったあと、スプリングで描かれる緑のチェックマークに切り替わります。タイトルは「Processing」から「Transfer Successful」に変わり、金額と為替レートの説明の2行が順にフェードインします。",
+      "hint": "2秒待って、チェックマークが描かれる様子を見てみてください"
+    },
+    "KOKO-dynamic-text": {
+      "name": "多言語あいさつの高速切り替え",
+      "summary": "8つの言語の「こんにちは」が300msごとに入れ替わります。新しい言葉は下からフェードインし、古い言葉は上へ飛び出し、最後の1つはそのまま止まります。",
+      "hint": "言葉が1つずつ上へ飛んでいく様子を見てみてください",
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-file-upload": {
+      "name": "ドラッグ＆ドロップのアップロードカード",
+      "summary": "ファイルをカードの上にドラッグすると、四辺に青いグラデーションが広がり、中央の領域が脈動します。ファイルを選ぶとアップロード画面に切り替わり、環状の進捗が模擬の時間をかけて100%まで進み、エラー時には下部に赤い通知バーが現れます。",
+      "hint": "「Upload File」でファイルを選ぶか、ドラッグして入れてみてください",
+      "controls": {
+        "uploadDelay": {
+          "label": "模擬アップロード時間"
+        }
+      },
+      "presets": [
+        "素早く"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-flow-field": {
+      "name": "粒子フローフィールド背景",
+      "summary": "数千の光る粒子が、時間とともに変化するノイズのベクトル場に沿って漂い、毎フレーム前の画面を少しだけ薄めるので、色鮮やかな長い尾の流線を引きます。カラーテーマは3種類から選べ、ステージでは高さ300pxに抑えています。",
+      "hint": "粒子が場に沿って漂う様子を見てみてください",
+      "controls": {
+        "theme": {
+          "label": "カラーテーマ",
+          "options": {
+            "aurora": "オーロラ",
+            "ember": "残り火",
+            "ocean": "深海"
+          }
+        },
+        "density": {
+          "label": "粒子の密度",
+          "options": {
+            "sparse": "まばら",
+            "medium": "中",
+            "dense": "密"
+          }
+        }
+      },
+      "presets": [
+        "残り火・まばら",
+        "深海・密"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-glitch-text": {
+      "name": "グリッチして震える文字",
+      "summary": "同じ文字が3層重なり、それぞれ別の方向に震え、傾き、点滅して、色がRGBに分離した信号の乱れのような見た目になります。強さを上げるほど、速く大きく震えます。",
+      "hint": "3層がずれて震える様子を見てみてください",
+      "controls": {
+        "glitchIntensity": {
+          "label": "グリッチの強さ",
+          "options": {
+            "light": "弱",
+            "medium": "中",
+            "heavy": "強",
+            "extreme": "極端"
+          }
+        },
+        "color": {
+          "label": "配色",
+          "options": {
+            "gradient-orange": "オレンジのグラデーション",
+            "orange": "オレンジ",
+            "blue": "青",
+            "purple": "紫",
+            "cyan": "シアン",
+            "pink": "ピンク",
+            "rainbow": "レインボー"
+          }
+        },
+        "backgroundColor": {
+          "label": "背景色"
+        }
+      },
+      "presets": [
+        "弱・シアン",
+        "極端・紫"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-gradient-button": {
+      "name": "多層グラデーションの発光ボタン",
+      "summary": "半透明のグラデーションが5、6層重なって、厚みのあるガラスのような質感になり、文字もグラデーションです。ホバーすると、いちばん上の明るいグラデーションがフェードインして、ボタン全体が点灯したように見えます。",
+      "hint": "ホバーして、表面が光る様子を見てみてください",
+      "controls": {
+        "label": {
+          "label": "テキスト"
+        },
+        "variant": {
+          "label": "配色",
+          "options": {
+            "emerald": "エメラルド",
+            "purple": "紫",
+            "orange": "オレンジ"
+          }
+        }
+      },
+      "presets": [
+        "紫"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-hold-button": {
+      "name": "長押しで進む確認ボタン",
+      "summary": "押し続けている間、半透明のブロックが左から右へ一定の速さでボタンを満たしていき、文字は「Release」に切り替わります。途中で離すと、ブロックはすぐに縮んで戻ります。",
+      "hint": "押し続けて、進捗が満ちる様子を見てみてください",
+      "controls": {
+        "variant": {
+          "label": "配色",
+          "options": {
+            "red": "赤（削除）",
+            "green": "緑（アーカイブ）",
+            "blue": "青",
+            "orange": "オレンジ（警告）",
+            "grey": "グレー（無効）"
+          }
+        },
+        "holdDuration": {
+          "label": "長押し時間"
+        }
+      },
+      "presets": [
+        "すばやく確定"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-liquid-glass-card": {
+      "name": "リキッドグラスのプレーヤーカード",
+      "summary": "カードとボタンには、SVGの乱流ディスプレイスメントフィルターで作ったリキッドグラスの屈折する縁があり、内側に何層もの内側の影が重なります。再生中は進捗バーが進み、右上のボリュームバーが跳ね、ホバーすると表面を柔らかい光が走ります。",
+      "hint": "再生と一時停止を押すか、進捗バーをタップしてみてください",
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え",
+        "リモートのサンプル画像を /placeholder/*.svg に置き換え（オフラインで表示可）"
+      ]
+    },
+    "KOKO-loader": {
+      "name": "同心円リングのローダー",
+      "summary": "太さの違う4本の円錐グラデーションのリングが、それぞれ別の速さで正逆に回転し、全体はゆっくり呼吸するように拡大縮小します。タイトルとサブタイトルは時間差でフェードインし、そのあと明暗の脈動を続けます。",
+      "hint": "リングが正逆に回る様子を見てみてください",
+      "controls": {
+        "title": {
+          "label": "タイトル"
+        },
+        "size": {
+          "label": "サイズ",
+          "options": {
+            "sm": "小",
+            "md": "中",
+            "lg": "大"
+          }
+        }
+      },
+      "presets": [
+        "小・中国語"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-matrix-text": {
+      "name": "マトリックス風デコード文字",
+      "summary": "等幅の文字が左から右へ1つずつ緑の0 / 1のノイズに変わり、ひと呼吸おいて元の文字に戻ります。映画『マトリックス』のデコードのスキャンのようです。",
+      "hint": "文字が1つずつ解読される様子を見てみてください",
+      "controls": {
+        "text": {
+          "label": "テキスト"
+        },
+        "letterInterval": {
+          "label": "文字ごとの間隔"
+        }
+      },
+      "presets": [
+        "ゆっくりスキャン"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-morphic-navbar": {
+      "name": "分離するナビゲーションバー",
+      "summary": "黒いナビゲーションバーから、選択した項目が独立した丸いカプセルとして「抜け出し」、左右に分かれた部分の角の丸みも計算し直されます。切り替えるたびに、CSSトランジションで分かれ目がなめらかに移動します。",
+      "hint": "いろいろなナビ項目をタップしてみてください",
+      "controls": {
+        "defaultPath": {
+          "label": "最初の選択",
+          "options": {
+            "/": "home",
+            "/works": "works",
+            "/blog": "blog",
+            "/about": "about"
+          }
+        }
+      },
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-mouse-effect-card": {
+      "name": "ドットが避けるカード",
+      "summary": "カードの全面に呼吸するように瞬くドットの格子が敷かれ、ポインターが近づくと半径内のドットがスプリングで押しのけられて、近いほど遠くへ動き、同時に明るくなります。離れるとすべて元の位置に弾んで戻り、キーボードの矢印キーでもフォーカスを動かせます。",
+      "hint": "カードの上でポインターを動かしてみてください",
+      "controls": {
+        "dotSpacing": {
+          "label": "ドットの間隔"
+        },
+        "repulsionRadius": {
+          "label": "避ける半径"
+        },
+        "repulsionStrength": {
+          "label": "押しのける強さ"
+        }
+      },
+      "presets": [
+        "控えめ",
+        "広い範囲"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-particle-button": {
+      "name": "クリックで粒子が弾けるボタン",
+      "summary": "クリックするとボタンがわずかに縮み、6つの小さな点が中心から上と左右へ弾け出て、大きくなってから消えます。時間差があり、ひとつかみの火花のようです。",
+      "hint": "クリックして火花を見てみてください",
+      "controls": {
+        "label": {
+          "label": "テキスト"
+        },
+        "successDuration": {
+          "label": "火花の長さ"
+        }
+      },
+      "presets": [
+        "短め"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-profile-dropdown": {
+      "name": "アカウントのドロップダウン",
+      "summary": "アバターのカードをタップすると、右側の曲線のインジケーターが青くなって大きくなり、メニューが右上から拡大しながらフェードインします。各項目はホバーで薄い背景と細い枠が浮かび、ログアウトの項目は赤です。",
+      "hint": "アバターのカードをタップしてメニューを開いてみてください",
+      "controls": {
+        "name": {
+          "label": "ユーザー名"
+        }
+      },
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え",
+        "profile-dropdown.tsx: @ts-nocheck を追加（型のずれ。実行時に確認済み）",
+        "リモートのサンプル画像を /placeholder/*.svg に置き換え（オフラインで表示可）"
+      ]
+    },
+    "KOKO-scroll-text": {
+      "name": "スクロールで焦点が合う単語リスト",
+      "summary": "大きな文字の列が固定の高さのコンテナの中でスクロールし、各単語は入ってくるときに左右どちらかから回転しながら弾み入ります。中央線に来た単語はくっきりした色になり、ほかはグレーになります。",
+      "hint": "リストの中で上下にスクロールしてみてください",
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-shape-hero": {
+      "name": "浮かぶ色ブロックのヒーロー",
+      "summary": "色も角の丸みも異なる8枚の半透明の長方形が、回転しながら上から落ちてそれぞれの位置に収まり、そのあとゆっくり上下に漂います。タイトルの2行は時間差でフェードインして浮かび上がり、2行目は手書き風の書体で、ステージでは高さ300pxに抑えてタイトルも小さくしています。",
+      "hint": "色ブロックが落ちてから浮かぶ様子を見てみてください",
+      "controls": {
+        "title1": {
+          "label": "タイトル1行目"
+        },
+        "title2": {
+          "label": "タイトル2行目"
+        }
+      },
+      "presets": [
+        "中国語"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え",
+        "next/font/google の Pacifico をやめ、ローカルの font-serif italic に変更"
+      ]
+    },
+    "KOKO-shimmer-text": {
+      "name": "光が走る見出し",
+      "summary": "見出しがまずフェードインして浮かび上がり、そのあと明るい帯が文字の上を左から右へ繰り返し走ります。背景グラデーションの移動で、金属の反射のような光り方を作っています。",
+      "hint": "明るい帯が繰り返し走る様子を見てみてください",
+      "controls": {
+        "text": {
+          "label": "テキスト"
+        }
+      },
+      "presets": [
+        "中国語のタイトル"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-sliced-text": {
+      "name": "上下にスライスされた文字",
+      "summary": "文字が横に上下2つに切られ、少し隙間があいています。ホバーすると2つが合わさり、上半分がフェードアウトして、完全な1行が現れます。",
+      "hint": "ホバーして、2つの半分が合わさる様子を見てみてください",
+      "controls": {
+        "text": {
+          "label": "テキスト"
+        },
+        "splitSpacing": {
+          "label": "切れ目の幅"
+        }
+      },
+      "presets": [
+        "広い隙間"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-slide-text-button": {
+      "name": "文字が上へ入れ替わるボタン",
+      "summary": "マウント時にボタンが右からスライドして入ります。ホバーすると、今の文字が枠の外へ上に抜け、下にある差し替えの文字がスライドしてその位置に入ります。",
+      "hint": "ホバーして、文字が上へ入れ替わる様子を見てみてください",
+      "controls": {
+        "text": {
+          "label": "テキスト"
+        },
+        "hoverText": {
+          "label": "ホバー時の文字"
+        },
+        "variant": {
+          "label": "スタイル",
+          "options": {
+            "default": "塗りつぶし",
+            "ghost": "アウトライン"
+          }
+        }
+      },
+      "presets": [
+        "アウトライン"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-smooth-drawer": {
+      "name": "スプリングのドロワー（料金カード）",
+      "summary": "ボタンをタップすると、下のドロワーがスプリングで立ち上がり、X軸でわずかに回転します。パネルの中ではロゴ、タイトル、価格、ボタンが70ms間隔で順に浮かび上がり、購入ボタンの指紋アイコンはゆるく揺れ続けます。",
+      "hint": "「Open Drawer」をタップしてみてください",
+      "controls": {
+        "title": {
+          "label": "タイトル"
+        },
+        "discountedPrice": {
+          "label": "割引後の価格"
+        }
+      },
+      "presets": [
+        "低価格"
+      ]
+    },
+    "KOKO-smooth-tab": {
+      "name": "スライドするタブ",
+      "summary": "下部に4マスのタブバーがあり、色付きの選択ブロックがスプリングで新しいタブの下へ滑ってそのタブの色に変わります。上のコンテンツカードは移動の向きに合わせて横へ丸ごと出入りし、ぼかしとわずかな拡大縮小を伴い、カードの下端にはゆっくり流れる波形もあります。",
+      "hint": "いろいろなタブをタップしてみてください",
+      "controls": {
+        "defaultTabId": {
+          "label": "最初のタブ",
+          "options": {
+            "Models": "Models",
+            "MCPs": "MCPs",
+            "Agents": "Agents",
+            "Users": "Users"
+          }
+        },
+        "activeColor": {
+          "label": "選択中の色"
+        }
+      },
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-social-button": {
+      "name": "シェアボタンから広がるアイコンバー",
+      "summary": "ホバーすると「Share」ボタンがフェードアウトし、同じ位置に黒いアイコンボタンの列が横に広がって、アイコンが左から順にスライドして入ります。アイコンをタップすると、少し縮んで白くひらめきます。",
+      "hint": "ホバーして広げ、アイコンをタップしてみてください",
+      "controls": {
+        "label": {
+          "label": "テキスト"
+        }
+      },
+      "presets": [
+        "中国語"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-spotlight-cards": {
+      "name": "スポットライトで傾く特長カード",
+      "summary": "特長カードのまとまりで、ホバーしたカードがポインターに合わせてスプリングで3D的に傾き、左上に色付きの光がにじみ、下端の線が左から右へ伸び、斜めの光が一筋走ります。ほかのカードは同時に縮んで暗くなり、ステージには3枚だけを置いています。",
+      "hint": "どれかのカードにホバーしてみてください",
+      "controls": {
+        "eyebrow": {
+          "label": "見出し上の小さな文字"
+        },
+        "heading": {
+          "label": "見出し"
+        },
+        "colors": {
+          "label": "カードの配色"
+        }
+      },
+      "presets": [
+        "中国語"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-switch-button": {
+      "name": "テーマ切り替えボタン",
+      "summary": "1回タップするとライトとダークのテーマが切り替わり、太陽のアイコンが半回転して「Light / Dark」の文字がクロスフェードします。ホバーするとアイコンが1回転し、ボタンの表面を明るい帯が走ります。",
+      "hint": "1回タップしてテーマを切り替えてみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ",
+          "options": {
+            "sm": "小",
+            "default": "標準",
+            "lg": "大"
+          }
+        },
+        "showLabel": {
+          "label": "文字を表示"
+        }
+      },
+      "presets": [
+        "アイコンのみ"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-swoosh-text": {
+      "name": "色が重なる影付き文字",
+      "summary": "太字のイタリック体の後ろに、ずれた4層の色付きの塗りの影と、ひとまわりの光が重なっています。ホバーするとすべての影が文字の下に引っ込み、離れるとまた飛び出します。",
+      "hint": "ホバーして、影が引っ込む様子を見てみてください",
+      "controls": {
+        "text": {
+          "label": "テキスト"
+        },
+        "shadowFirst": {
+          "label": "影1"
+        },
+        "shadowSecond": {
+          "label": "影2"
+        },
+        "shadowThird": {
+          "label": "影3"
+        },
+        "shadowFourth": {
+          "label": "影4"
+        },
+        "shadowGlow": {
+          "label": "発光色"
+        }
+      },
+      "presets": [
+        "ブランド名"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-team-selector": {
+      "name": "チーム人数のステッパー",
+      "summary": "人数を増減すると、重なって並ぶアバターが1つずつスプリングで拡大して現れたり、縮んで消えたりし、数字は増減の向きに合わせて上下にめくれます。上限や下限でもう一度押すと、行全体が左右に揺れて行き止まりを知らせます。",
+      "hint": "プラスとマイナスを押して、上限を超えてみてください",
+      "controls": {
+        "defaultValue": {
+          "label": "最初の人数"
+        },
+        "label": {
+          "label": "ラベル"
+        }
+      },
+      "presets": [
+        "中国語・満員"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え",
+        "リモートのサンプル画像を /placeholder/*.svg に置き換え（オフラインで表示可）"
+      ]
+    },
+    "KOKO-toolbar": {
+      "name": "アイコンが広がるツールバー",
+      "summary": "アイコンだけのボタンが並び、タップしたものが青くなってスプリングで広がり文字ラベルが現れ、ほかのボタンはアイコンに縮みます。クリックのたびに上に「xx clicked!」という通知が出て左から伸びる下線が付き、ステージには6つのツールだけを置いています。",
+      "hint": "いろいろなアイコンをタップしてみてください",
+      "controls": {
+        "defaultSelected": {
+          "label": "最初の選択",
+          "options": {
+            "select": "Select",
+            "move": "Move",
+            "shapes": "Shapes",
+            "layers": "Layers",
+            "export": "Export",
+            "share": "Share"
+          }
+        },
+        "activeColor": {
+          "label": "選択中の色"
+        }
+      },
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-tweet-card": {
+      "name": "すりガラスのツイートカード",
+      "summary": "すりガラスを2層重ねたツイートカードで、認証バッジと返信が1件付いています。ホバーすると内側の面にほのかな光がにじみ、投稿者名に下線が付きます。",
+      "hint": "ホバーして、表面の光を見てみてください",
+      "controls": {
+        "authorName": {
+          "label": "投稿者名"
+        }
+      },
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え",
+        "リモートのサンプル画像を /placeholder/*.svg に置き換え（オフラインで表示可）"
+      ]
+    },
+    "KOKO-type-writer": {
+      "name": "タイプライター見出し",
+      "summary": "等幅の文字が1文字ずつ打たれ、止まってから1文字ずつ消えて次の文に移り、カーソルは一定のリズムで点滅します。「自然なリズム」をオンにすると速さがランダムに変わり、人が打っているようになります。",
+      "hint": "1文打ち終えて消す様子を見てみてください",
+      "controls": {
+        "typingSpeed": {
+          "label": "入力の速さ"
+        },
+        "naturalVariance": {
+          "label": "自然なリズム"
+        }
+      },
+      "presets": [
+        "機械的に速く打つ"
+      ],
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "KOKO-v0-button": {
+      "name": "「Open in v0」ボタン",
+      "summary": "黒地に白い文字の小さなカプセルでv0のロゴが付き、ホバーすると背景が濃いグレーへ移ります。クリックするとv0.devのインポートリンクが開きます。",
+      "hint": "ホバーして、背景色が移り変わる様子を見てみてください",
+      "controls": {
+        "name": {
+          "label": "レジストリ名"
+        }
+      },
+      "changes": [
+        "src/registry/kokonutui/components に戻し、importを書き換え"
+      ]
+    },
+    "LOAD-accordion-loader": {
+      "name": "文字ブロックの伸縮",
+      "summary": "濃淡の文字ブロック3つが、薄い色の軌道の上を行ったり来たり押し合い、アコーディオンを開閉しているようです。等幅フォントのターミナル風の待ち表示で、CLIやコード系のプロダクトに向いています。",
+      "hint": "1回の伸び縮みを見てみてください",
+      "controls": {
+        "fontSize": {
+          "label": "フォントサイズ"
+        },
+        "trackLength": {
+          "label": "軌道の長さ"
+        },
+        "duration": {
+          "label": "往復1回の時間"
+        },
+        "color": {
+          "label": "色"
+        },
+        "maskColor": {
+          "label": "マスクの色"
+        }
+      }
+    },
+    "LOAD-analyzing-image": {
+      "name": "画像スキャン",
+      "summary": "縦長の光の棒が画像アイコンの上を右から左へ走り、通った場所の線画がピクセルのドット表現に変わり、戻ってくるときに元に戻ることを繰り返します。AIの画像認識や画像分析の待ち時間に向いています。",
+      "hint": "光の棒が走る様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-arc": {
+      "name": "単弧スピナー",
+      "summary": "薄い色の下地のリングの上で、色の付いた太い弧が一定の速さで回ります。最もよく見る読み込み表示で、ボタンの中や小さな領域での軽い待ち表示に使えます。",
+      "hint": "1周する様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-bars": {
+      "name": "3本バーの伸縮",
+      "summary": "数本の縦棒が順に縮んでは伸び、イコライザーのように動きます。軽い待ち表示です。",
+      "hint": "バーが順に縮む様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "bars": {
+          "label": "バーの数"
+        },
+        "duration": {
+          "label": "1サイクルの時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-bobbing-dots": {
+      "name": "3つの点が浮き沈み",
+      "summary": "3つの点が順に沈んでは浮かび、わずかに影を落とします。チャットの「入力中」や軽い待ち表示に向いていて、motionで動いています。",
+      "hint": "3つの点が順に浮き沈みする様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "全体の幅"
+        },
+        "dots": {
+          "label": "点の数"
+        },
+        "duration": {
+          "label": "1サイクルの時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-bouncing-dots": {
+      "name": "3つの点が弾む",
+      "summary": "3つの点が順に大きく明るくなり、そのあと小さく薄くなって、その場で弾んでいるように見えます。軽い待ち表示です。",
+      "hint": "3つの点が順に弾む様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "全体の幅"
+        },
+        "dots": {
+          "label": "点の数"
+        },
+        "duration": {
+          "label": "1サイクルの時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-classic": {
+      "name": "クラシックなスピナー",
+      "summary": "12本の短い棒が輪になって順に薄くなる、iOS風のクラシックなスピナーです。どこに置いても浮かない軽い待ち表示です。",
+      "hint": "1周する様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-clock-ring": {
+      "name": "時計の針のリング",
+      "summary": "リングの中で、1本の針が中心から12時の方向を指して一定の速さで回り、時計が秒を刻んでいるようです。時間の経過を強調したい待ち表示に向いています。",
+      "hint": "針が1周する様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-comet-spinner": {
+      "name": "彗星の尾",
+      "summary": "明るい点が円の軌道を飛び、その後ろに細くなる尾を引いて、彗星が周回しているようです。少し儀式めいた、ページ全体の読み込みに向いています。",
+      "hint": "彗星が1周する様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "headScale": {
+          "label": "先頭の大きさ"
+        },
+        "color": {
+          "label": "色"
+        }
+      },
+      "presets": [
+        "大きな先頭"
+      ]
+    },
+    "LOAD-concentric-ring": {
+      "name": "二重の同心円弧",
+      "summary": "薄い外側のリングの中に、色の付いた内側の弧が入れ子になり、全体がいっしょに回ります。単弧よりも輪郭が1層多い、軽い待ち表示です。",
+      "hint": "1周する様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-conveyor-loop": {
+      "name": "文字のコンベヤー",
+      "summary": "3つの文字ブロックが薄い色の軌道を左から右へ一定の速さで通り抜け、外に出たら左からまた入ってくる、コンベヤーのような動きです。ターミナル風の待ち表示です。",
+      "hint": "1回通り抜ける様子を見てみてください",
+      "controls": {
+        "fontSize": {
+          "label": "フォントサイズ"
+        },
+        "trackLength": {
+          "label": "軌道の長さ"
+        },
+        "duration": {
+          "label": "通過1回の時間"
+        },
+        "color": {
+          "label": "色"
+        },
+        "maskColor": {
+          "label": "マスクの色"
+        }
+      }
+    },
+    "LOAD-dash-ring": {
+      "name": "伸び縮みする線のリング",
+      "summary": "リング上の破線の弧が、回りながら伸びては縮む、JSに頼らない純粋なSVGアニメーションです。軽い待ち表示です。",
+      "hint": "弧が伸び縮みする様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-diamond": {
+      "name": "ピクセルのひし形",
+      "summary": "8つのピクセルの四角がひし形を作り、時計回りに順に点灯してから薄くなる、ピクセルゲーム風の回転です。レトロなUIやツール系のUIでの軽い待ち表示に向いています。",
+      "hint": "1周する様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-dots-ring": {
+      "name": "点のリングが脈打つ",
+      "summary": "輪になった点が時計回りに順に大きく明るくなり、追いかけ合う光の点が周回しているように見えます。軽い待ち表示です。",
+      "hint": "光の点が1周する様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "dots": {
+          "label": "点の数"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-dots": {
+      "name": "3つの点の点滅",
+      "summary": "3つの点が順に暗いところから明るく点滅します。いちばん軽い待ち表示で、文字の横にもボタンの中にも合います。",
+      "hint": "3つの点が順に光る様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "全体の幅"
+        },
+        "dots": {
+          "label": "点の数"
+        },
+        "duration": {
+          "label": "1サイクルの時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-dual-arc": {
+      "name": "対称な2本の弧スピナー",
+      "summary": "上下に対称な色付きの太い弧が2本いっしょに回り、単弧よりもバランスが取れています。軽い待ち表示です。",
+      "hint": "1周する様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-fade-arc": {
+      "name": "尾が薄れる弧",
+      "summary": "色の付いた弧が薄れていく尾を引いて回り、尾の先は少しずつ透明になります。普通の弧よりも向きがわかりやすい、軽い待ち表示です。",
+      "hint": "尾が薄れていく様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-infinity-square-snake": {
+      "name": "8の字を走るブロックのヘビ",
+      "summary": "濃淡の文字ブロック4つが首尾をつないで8の字のコースを周回し、スネークゲームのようです。ターミナル風の待ち表示です。",
+      "hint": "8の字を回りきる様子を見てみてください",
+      "controls": {
+        "fontSize": {
+          "label": "フォントサイズ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-infinity-track": {
+      "name": "8の字軌道のブロック",
+      "summary": "薄い文字で8の字の軌道を描き、濃い色のブロック3つがそれに沿って周回します。ターミナル風の待ち表示です。",
+      "hint": "8の字を回りきる様子を見てみてください",
+      "controls": {
+        "fontSize": {
+          "label": "フォントサイズ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "color": {
+          "label": "色"
+        },
+        "maskColor": {
+          "label": "マスクの色"
+        }
+      }
+    },
+    "LOAD-infinity": {
+      "name": "無限記号の輪郭トレース",
+      "summary": "無限記号 ∞ の輪郭の上を、実線の一部がずっと滑り続け、光の帯がなぞっているように見えます。少しゆっくりめの待ち表示に向いています。",
+      "hint": "光の帯が1周する様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-morphing-infinity": {
+      "name": "円から無限記号へ",
+      "summary": "円がゆっくり無限記号に変形してまた円に戻り、パスは点ごとに補間されます。「AIが考え中」のようなゆったりした待ち表示に向いています。",
+      "hint": "円が ∞ になって戻る様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-orbit-ring": {
+      "name": "外周を巡る弧",
+      "summary": "薄い内側のリングの外に、さらに大きな色付きの弧が重なっていっしょに回り、外周をめぐります。軽い待ち表示です。",
+      "hint": "1周する様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-pulsating-dots": {
+      "name": "3つの点の脈動",
+      "summary": "3つの点が順に1.5倍まで大きくなってから縮み、不透明度も呼吸するように変わります。軽い待ち表示で、motionで動いています。",
+      "hint": "3つの点が順に膨らむ様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "全体の幅"
+        },
+        "dots": {
+          "label": "点の数"
+        },
+        "duration": {
+          "label": "1サイクルの時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-pulse-dot": {
+      "name": "1点の脈動",
+      "summary": "塗りつぶしの点が1.5倍まで大きくなって縮み、心拍のようです。ステータスの点や行内の待ち表示に向いています。",
+      "hint": "1回脈打つ様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "duration": {
+          "label": "1拍の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-pulse": {
+      "name": "細いリングの呼吸",
+      "summary": "細い線のリングがわずかに大きくなっては縮み、薄くなってはまたくっきりして、呼吸しているようです。いちばん静かな待ち表示です。",
+      "hint": "1回呼吸する様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "duration": {
+          "label": "1呼吸の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-quarter-ring": {
+      "name": "四分円スピナー",
+      "summary": "4分の1だけ残した細い弧が一定の速さで回る、いちばんシンプルな回転表示です。行内やボタンの中での軽い待ち表示に使えます。",
+      "hint": "1周する様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-ring": {
+      "name": "リングスピナー",
+      "summary": "約4分の3周の弧が一定の速さで回り、SVGのストロークで作られていて行内にもボタンの中にも合います。最も汎用的な軽い待ち表示です。",
+      "hint": "1周する様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      },
+      "presets": [
+        "小さく速く"
+      ]
+    },
+    "LOAD-ripple": {
+      "name": "水の波紋",
+      "summary": "2つの細い線のリングが中心から外へ広がり続け、大きくなりながら薄れていく、水面の波紋のような動きです。軽い待ち表示です。",
+      "hint": "波紋が広がる様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-satellite-ring": {
+      "name": "衛星が回るリング",
+      "summary": "薄い色のリングに小さな塗りの球が乗って周回し、衛星が軌道を回っているようです。軽い待ち表示です。",
+      "hint": "球が1周する様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-skeleton": {
+      "name": "スケルトンの呼吸",
+      "summary": "グレーのプレースホルダーのブロックが全体で明暗を呼吸するように変わり、内容が入る場所を確保します。ページ全体やリストの読み込みで最もよく使われる方法です。",
+      "hint": "ブロックが明暗に呼吸する様子を見てみてください",
+      "controls": {
+        "duration": {
+          "label": "1呼吸の時間"
+        },
+        "color": {
+          "label": "スケルトンの色"
+        },
+        "radius": {
+          "label": "バーの角丸"
+        }
+      }
+    },
+    "LOAD-spiral": {
+      "name": "ドットの螺旋",
+      "summary": "輪になった点が順に、何もないところから大きくなって縮んで消え、光の点が輪に沿って走っているようです。軽い待ち表示で、motionで動いています。",
+      "hint": "光の点が1周する様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "dots": {
+          "label": "点の数"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-spokes": {
+      "name": "スポークスピナー",
+      "summary": "8本のスポークでできたアイコンが一定の速さで回り、クラシックなスピナーをより線で見せたものです。軽い待ち表示です。",
+      "hint": "1周する様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-square-accordion": {
+      "name": "四角の枠を進む伸縮",
+      "summary": "薄い文字で四角い枠を作り、濃い色のブロック3つが枠に沿って少し進んでは止まり、またアコーディオンのように1マスずつ進みます。ターミナル風の待ち表示です。",
+      "hint": "4辺を回りきる様子を見てみてください",
+      "controls": {
+        "fontSize": {
+          "label": "フォントサイズ"
+        },
+        "cells": {
+          "label": "辺の長さ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "color": {
+          "label": "色"
+        },
+        "maskColor": {
+          "label": "マスクの色"
+        }
+      }
+    },
+    "LOAD-square-grid": {
+      "name": "四角の枠をたどるブロック",
+      "summary": "薄い文字でできた四角い枠の辺に沿って、濃い色のブロック3つが一定の速さで周回します。ターミナル風の待ち表示です。",
+      "hint": "4辺を回りきる様子を見てみてください",
+      "controls": {
+        "fontSize": {
+          "label": "フォントサイズ"
+        },
+        "cells": {
+          "label": "辺の長さ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "color": {
+          "label": "色"
+        },
+        "maskColor": {
+          "label": "マスクの色"
+        }
+      }
+    },
+    "LOAD-square-snake": {
+      "name": "ブロックのスネーク",
+      "summary": "濃淡の文字ブロック4つが首尾をつないで四角いコースを周回し、スネークゲームのようです。ターミナル風の待ち表示です。",
+      "hint": "1周する様子を見てみてください",
+      "controls": {
+        "fontSize": {
+          "label": "フォントサイズ"
+        },
+        "cells": {
+          "label": "辺の長さ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-swirling": {
+      "name": "渦巻きの輪郭",
+      "summary": "太い輪郭のリングが回りながら一点から全周まで伸びてまた縮み、渦が広がっては収まるようです。ページ全体の読み込みや、広い面積を占める場面に向いています。",
+      "hint": "広がって収まる様子を1回見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "duration": {
+          "label": "広がって収まる1回の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-symmetric-wave": {
+      "name": "左右対称の文字ウェーブ",
+      "summary": "10個の文字ブロックの明るさが両端から中央へ、そしてまた両端へと行き来する、左右対称の波です。ターミナル風の待ち表示です。",
+      "hint": "明るさが両端から中央へ寄せていく様子を見てみてください",
+      "controls": {
+        "fontSize": {
+          "label": "フォントサイズ"
+        },
+        "duration": {
+          "label": "1サイクルの時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-terminal": {
+      "name": "ターミナルのカーソル",
+      "summary": "プロンプトの後ろで四角いカーソルが段階的に点滅し、ターミナルが入力を待っているようです。コマンドライン風の、文字に並べる待ち表示に向いています。",
+      "hint": "カーソルが点滅する様子を見てみてください",
+      "controls": {
+        "text": {
+          "label": "プロンプト記号"
+        },
+        "fontSize": {
+          "label": "フォントサイズ"
+        },
+        "duration": {
+          "label": "1回の点滅の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-text-blink": {
+      "name": "呼吸する文字",
+      "summary": "文字全体が、くっきりした状態と半透明の状態の間をゆっくり呼吸します。「生成中…」のような文字に並べる待ち表示の中で、いちばん静かなものです。",
+      "hint": "文字が明暗に呼吸する様子を見てみてください",
+      "controls": {
+        "text": {
+          "label": "文言"
+        },
+        "minOpacity": {
+          "label": "いちばん暗いときの不透明度"
+        },
+        "duration": {
+          "label": "1呼吸の時間"
+        }
+      }
+    },
+    "LOAD-text-dots": {
+      "name": "点が増える省略記号",
+      "summary": "文字の後ろのいくつかの点が1つずつ点灯してまとめて消え、手で打つ省略記号が進んでいくようです。文字に並べる待ち表示です。",
+      "hint": "点が順に現れる様子を見てみてください",
+      "controls": {
+        "text": {
+          "label": "文言"
+        },
+        "dots": {
+          "label": "点の数"
+        },
+        "duration": {
+          "label": "1サイクルの時間"
+        }
+      }
+    },
+    "LOAD-text-shimmer-wave": {
+      "name": "1文字ずつ波打つ光",
+      "summary": "文字が1つずつ順に明るくなり、わずかに拡大して前に傾いてから元に戻り、波が左から右へ走るようです。「AIが考え中」のように、少し存在感がほしい文字の待ち表示に向いています。",
+      "hint": "文字が1つずつ傾く様子を見てみてください",
+      "controls": {
+        "text": {
+          "label": "文言"
+        },
+        "duration": {
+          "label": "1文字の時間"
+        },
+        "spread": {
+          "label": "波の密度"
+        },
+        "baseColor": {
+          "label": "ベースの色"
+        },
+        "shimmerColor": {
+          "label": "光の色"
+        }
+      }
+    },
+    "LOAD-text-shimmer": {
+      "name": "文字をなぞる光",
+      "summary": "明るい光の帯が半透明の文字の上を左から右へ一定の速さで走って繰り返し、グラデーションの移動で実現しています。「生成中」のような、文字に並べる待ち表示です。",
+      "hint": "光が流れる様子を見てみてください",
+      "controls": {
+        "text": {
+          "label": "文言"
+        },
+        "duration": {
+          "label": "1回の所要時間"
+        },
+        "spread": {
+          "label": "光の帯の幅"
+        },
+        "baseColor": {
+          "label": "ベースの色"
+        },
+        "shimmerColor": {
+          "label": "光の色"
+        }
+      },
+      "presets": [
+        "速い"
+      ]
+    },
+    "LOAD-triple-dot-spinner": {
+      "name": "3つの点が回る",
+      "summary": "横に並んだ3つの点がまとまって回り、回転の速さに緩急があります。軽い待ち表示です。",
+      "hint": "1周する様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-twin-orbit": {
+      "name": "双子の周回",
+      "summary": "中心に点が1つあり、2つの小さな球が前後に並んで外側の輪を周回し、速さには緩急があります。軽い待ち表示です。",
+      "hint": "2つの球が1周する様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-typing": {
+      "name": "入力中の3つの点",
+      "summary": "3つの点が順に跳ねて落ちる、チャットの「入力中」の表示です。メッセージの吹き出しの中に合います。",
+      "hint": "3つの点が順に跳ねる様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "全体の幅"
+        },
+        "dots": {
+          "label": "点の数"
+        },
+        "duration": {
+          "label": "1サイクルの時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-wandering-eyes": {
+      "name": "きょろきょろまばたき",
+      "summary": "一対の瞳が左を見て、右を見て、下をのぞき、ときどきまばたきします。「AIが考え中」や、ちょっと遊び心のある待ち表示に向いています。",
+      "hint": "きょろきょろして、まばたきする様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "目の高さ"
+        },
+        "duration": {
+          "label": "きょろきょろ1回の時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "LOAD-wave": {
+      "name": "5本バーの音波",
+      "summary": "先が丸い5本の縦棒が弧を描くように高さを変えて並び、順に伸び縮みして音波のようです。音声や再生まわりの待ち表示に向いています。",
+      "hint": "バーが順に伸び縮みする様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "サイズ"
+        },
+        "duration": {
+          "label": "1サイクルの時間"
+        },
+        "color": {
+          "label": "色"
+        }
+      }
+    },
+    "MAGIC-animated-circular-progress-bar": {
+      "name": "円形プログレス",
+      "summary": "円形のプログレスが2秒ごとに10%進み、弧と中央の数字がいっしょになめらかに新しい値へ移って、100に達するとゼロに戻ります。タップすると手動で進められます。",
+      "hint": "タップして手動で10%進めてみてください",
+      "controls": {
+        "gaugePrimaryColor": {
+          "label": "進捗の色"
+        },
+        "gaugeSecondaryColor": {
+          "label": "トラックの色"
+        }
+      },
+      "presets": [
+        "緑"
+      ]
+    },
+    "MAGIC-animated-list": {
+      "name": "通知フィードのリスト",
+      "summary": "新しい通知が上からスプリングで入り、すでにある項目は全体が下へ移って場所を空けます。スマホのロック画面にメッセージが積み上がっていくようです。",
+      "hint": "通知が1件ずつ入ってくる様子を見てみてください",
+      "controls": {
+        "delay": {
+          "label": "項目の間隔"
+        }
+      },
+      "presets": [
+        "密に届く"
+      ]
+    },
+    "MAGIC-animated-shiny-text": {
+      "name": "光がかすめる文字",
+      "summary": "細い光の帯が定期的にグレーの文字の上をかすめ、文字自体は動きません。ページ上部のお知らせのカプセルによく置かれます。",
+      "hint": "光の帯が文字の上をかすめる様子を見てみてください",
+      "controls": {
+        "shimmerWidth": {
+          "label": "光の帯の幅"
+        },
+        "text": {
+          "label": "テキスト"
+        }
+      },
+      "presets": [
+        "幅広の光の帯"
+      ]
+    },
+    "MAGIC-blur-fade": {
+      "name": "ぼかしフェードイン",
+      "summary": "要素が、わずかにぼけて半透明で少しずれた状態から、はっきりした元の位置へ収まります。複数の要素は遅延をつけて順に入ります。",
+      "hint": "「再生し直す」を押して、ブロックが順に現れる様子を見てみてください",
+      "controls": {
+        "direction": {
+          "label": "入ってくる向き",
+          "options": {
+            "up": "下から上",
+            "down": "上から下",
+            "left": "右から左",
+            "right": "左から右"
+          }
+        },
+        "duration": {
+          "label": "1つあたりの時間"
+        },
+        "offset": {
+          "label": "ずれの距離"
+        }
+      },
+      "presets": [
+        "大きなずれ・ゆっくり浮かぶ"
+      ],
+      "changes": [
+        "リモートのサンプル画像を /placeholder/*.svg に置き換え（オフラインで表示可）"
+      ]
+    },
+    "MAGIC-border-beam": {
+      "name": "枠を巡る光線",
+      "summary": "グラデーションの光線がカードの枠に沿って一定の速さで周回し、残りの枠はそのままです。輪郭だけを光らせ、内容には触れません。",
+      "hint": "カードの縁を光が回る様子を見てみてください",
+      "controls": {
+        "duration": {
+          "label": "1周の時間"
+        },
+        "colorFrom": {
+          "label": "開始色"
+        },
+        "colorTo": {
+          "label": "終了色"
+        }
+      },
+      "presets": [
+        "寒色・ゆっくり"
+      ]
+    },
+    "MAGIC-confetti": {
+      "name": "紙吹雪でお祝い",
+      "summary": "タップするとボタンの位置から紙吹雪が噴き出し、重力で散らばって消えます。マウント時にも、全画面のキャンバスでまず1回まかれます。",
+      "hint": "ボタンをタップして紙吹雪をまいてみてください",
+      "controls": {
+        "particleCount": {
+          "label": "紙吹雪の数"
+        },
+        "spread": {
+          "label": "広がる角度"
+        }
+      },
+      "presets": [
+        "大きな噴出"
+      ]
+    },
+    "MAGIC-dock": {
+      "name": "macOS風ドック",
+      "summary": "ポインターが近づくと、アイコンが距離に応じてスプリングで拡大し、隣のアイコンも連動して大きくなります。離れるといっしょに縮み、macOSのDockの手触りを再現しています。",
+      "hint": "ポインターをアイコンバーに沿って横に動かしてみてください",
+      "controls": {
+        "iconMagnification": {
+          "label": "拡大サイズ"
+        },
+        "iconDistance": {
+          "label": "影響半径"
+        }
+      },
+      "presets": [
+        "大げさ"
+      ]
+    },
+    "MAGIC-hyper-text": {
+      "name": "ランダム文字からのデコード",
+      "summary": "文字はまずランダムな大文字に変わりながら跳ね、そのあと左から1文字ずつ本来の文字に落ち着きます。ホバーするともう一度デコードできます。",
+      "hint": "ホバーして、もう一度デコードしてみてください",
+      "controls": {
+        "duration": {
+          "label": "デコードにかかる時間"
+        },
+        "animateOnHover": {
+          "label": "ホバーで再生"
+        }
+      },
+      "presets": [
+        "ゆっくりデコード"
+      ]
+    },
+    "MAGIC-interactive-hover-button": {
+      "name": "ホバーで塗りつぶされるボタン",
+      "summary": "ホバーすると、左側の小さな点がボタン全体に広がって塗りつぶしの背景になり、元の文字は滑って消え、同じ文字に矢印が付いたものが右から入ってきます。",
+      "hint": "ボタンの上にポインターを置いてみてください",
+      "controls": {
+        "label": {
+          "label": "ボタンの文字"
+        }
+      }
+    },
+    "MAGIC-magic-card": {
+      "name": "スポットライトカード",
+      "summary": "カードの上でポインターを動かすと、枠に沿って2色のグラデーションのハイライトが点灯し、カードの面にも柔らかい光の塊が浮かびます。離れるとフェードアウトします。",
+      "hint": "カードの上でポインターを動かしてみてください",
+      "controls": {
+        "gradientSize": {
+          "label": "光の大きさ"
+        },
+        "gradientFrom": {
+          "label": "枠のハイライト開始色"
+        },
+        "gradientTo": {
+          "label": "枠のハイライト終了色"
+        },
+        "gradientColor": {
+          "label": "光の色"
+        },
+        "glowFrom": {
+          "label": "光球の開始色"
+        },
+        "glowTo": {
+          "label": "光球の終了色"
+        },
+        "mode": {
+          "label": "光の表現",
+          "options": {
+            "gradient": "グラデーション",
+            "orb": "光球"
+          }
+        }
+      },
+      "presets": [
+        "大きな青緑の光"
+      ]
+    },
+    "MAGIC-marquee": {
+      "name": "3Dマーキー",
+      "summary": "4列のレビューカードが、傾いた遠近のある面の上を一定の速さで上下にスクロールし、隣り合う列は逆向きに流れます。ホバーすると全体が止まります。",
+      "hint": "ホバーして止めてみてください",
+      "controls": {
+        "pauseOnHover": {
+          "label": "ホバーで一時停止"
+        },
+        "reverse": {
+          "label": "逆向き"
+        },
+        "duration": {
+          "label": "1周の時間",
+          "options": {
+            "12s": "12秒",
+            "20s": "20秒",
+            "40s": "40秒"
+          }
+        }
+      },
+      "presets": [
+        "ゆっくり止まらない"
+      ],
+      "changes": [
+        "リモートのサンプル画像を /placeholder/*.svg に置き換え（オフラインで表示可）"
+      ]
+    },
+    "MAGIC-meteors": {
+      "name": "流星群の背景",
+      "summary": "小さな光の点が、薄れていく尾を引きながら上から斜めに走って消えます。ランダムな遅延と長さで、本物の流星群のように見えます。",
+      "hint": "流星が斜めに走る様子を見てみてください",
+      "controls": {
+        "number": {
+          "label": "流星の数"
+        },
+        "angle": {
+          "label": "落ちる角度"
+        }
+      },
+      "presets": [
+        "密で急な角度"
+      ]
+    },
+    "MAGIC-number-ticker": {
+      "name": "転がる数字",
+      "summary": "数字が0から目標値まで、スプリングのように加速して転がり、終点の近くで減速して落ち着きます。データダッシュボードの主要な指標に向いています。",
+      "hint": "「再生し直す」を押して、もう一度転がしてみてください",
+      "controls": {
+        "value": {
+          "label": "目標値"
+        },
+        "decimalPlaces": {
+          "label": "小数桁数"
+        },
+        "direction": {
+          "label": "向き",
+          "options": {
+            "up": "目標値まで上へ",
+            "down": "目標値から0へ戻す"
+          }
+        }
+      },
+      "presets": [
+        "大きな数に小数付き"
+      ]
+    },
+    "MAGIC-orbiting-circles": {
+      "name": "軌道を回るアイコン",
+      "summary": "2周分のアイコンが同心円の軌道に沿って一定の速さで公転し、内側と外側は逆向きで速さも違い、アイコン自体は常に正立したままです。",
+      "hint": "内側と外側が逆向きに回る様子を見てみてください",
+      "controls": {
+        "radius": {
+          "label": "外側の輪の半径"
+        },
+        "duration": {
+          "label": "1周の時間"
+        },
+        "speed": {
+          "label": "速度の倍率"
+        }
+      },
+      "presets": [
+        "コンパクトで速く回る"
+      ]
+    },
+    "MAGIC-pulsating-button": {
+      "name": "脈打つボタン",
+      "summary": "ボタンの下の同じ色の光の輪が定期的に外へ広がっては消え、そっと呼吸しているように見えて、ここが押せることを知らせます。",
+      "hint": "ボタンの外側の呼吸を見てみてください",
+      "controls": {
+        "duration": {
+          "label": "脈動の周期",
+          "options": {
+            "1s": "1秒",
+            "1.5s": "1.5秒",
+            "3s": "3秒"
+          }
+        },
+        "distance": {
+          "label": "広がる距離",
+          "options": {
+            "4px": "4px",
+            "8px": "8px",
+            "16px": "16px"
+          }
+        },
+        "variant": {
+          "label": "スタイル",
+          "options": {
+            "pulse": "全体の脈動",
+            "ripple": "外側の波紋"
+          }
+        },
+        "pulseColor": {
+          "label": "パルスの色"
+        }
+      },
+      "presets": [
+        "ゆっくり波紋"
+      ]
+    },
+    "MAGIC-ripple-button": {
+      "name": "波紋ボタン",
+      "summary": "押した場所から半透明の水の波紋が広がり、広がりながら薄れていきます。フィードバックは指が触れた位置に現れ、内容の邪魔をしません。",
+      "hint": "ボタンのいろいろな場所を押してみてください",
+      "controls": {
+        "rippleColor": {
+          "label": "波紋の色"
+        },
+        "duration": {
+          "label": "広がる時間",
+          "options": {
+            "300ms": "0.3秒",
+            "600ms": "0.6秒",
+            "1200ms": "1.2秒"
+          }
+        }
+      },
+      "presets": [
+        "ゆっくり深く"
+      ]
+    },
+    "MAGIC-shimmer-button": {
+      "name": "流れる光のボタン",
+      "summary": "細い光の線がボタンの縁に沿って一定の速さで周回し、押すとわずかに沈みます。トップページのメインボタンに向いています。",
+      "hint": "縁の光が1周する様子を見てみてください",
+      "controls": {
+        "shimmerDuration": {
+          "label": "1周の時間",
+          "options": {
+            "1.5s": "1.5秒",
+            "3s": "3秒",
+            "6s": "6秒"
+          }
+        },
+        "shimmerColor": {
+          "label": "光の色"
+        },
+        "borderRadius": {
+          "label": "角丸",
+          "options": {
+            "100px": "カプセル",
+            "12px": "12px",
+            "0px": "角なし"
+          }
+        },
+        "background": {
+          "label": "背景色"
+        }
+      },
+      "presets": [
+        "ゆっくり暗め"
+      ]
+    },
+    "MAGIC-shine-border": {
+      "name": "流れる光の枠",
+      "summary": "カードの枠の上を多色のグラデーションがゆっくり流れ、光は枠線の上だけを走って内容の領域には入りません。呼吸のように感じるほどゆっくりです。",
+      "hint": "枠の色がゆっくり流れる様子を見てみてください",
+      "controls": {
+        "duration": {
+          "label": "1周の時間"
+        },
+        "borderWidth": {
+          "label": "枠の太さ"
+        },
+        "shineColor": {
+          "label": "配色"
+        }
+      },
+      "presets": [
+        "紫・ピンク・オレンジ",
+        "シアン・青",
+        "純白",
+        "太い枠・速く回る"
+      ]
+    },
+    "MAGIC-text-animate": {
+      "name": "分割して登場する文字",
+      "summary": "文全体を文字、単語、行のどれかで分けて、1つずつ時間差で登場させます。ぼかしながら現れるものから、弾むように拡大するものまで、10種類の登場方法から選べます。",
+      "hint": "登場方法を変えて、もう一度再生してみてください",
+      "controls": {
+        "animation": {
+          "label": "登場方法",
+          "options": {
+            "fadeIn": "フェードインして浮かぶ",
+            "blurIn": "ぼかしながら現れる",
+            "blurInUp": "ぼかして浮かぶ",
+            "blurInDown": "ぼかして落ちる",
+            "slideUp": "上へスライド",
+            "slideDown": "下へスライド",
+            "slideLeft": "左へスライド",
+            "slideRight": "右へスライド",
+            "scaleUp": "拡大して弾み入る",
+            "scaleDown": "縮小して弾み入る"
+          }
+        },
+        "by": {
+          "label": "分割の単位",
+          "options": {
+            "text": "全体",
+            "word": "単語",
+            "character": "文字",
+            "line": "行"
+          }
+        },
+        "duration": {
+          "label": "全体の時間"
+        }
+      },
+      "presets": [
+        "単語ごと・弾んで入る",
+        "全体・ゆっくりフェード"
+      ]
+    },
+    "MAGIC-word-rotate": {
+      "name": "入れ替わる言葉",
+      "summary": "いくつかの言葉が同じ位置で一定のリズムで入れ替わり、古い言葉は下へフェードアウトして、新しい言葉は上から落ちてきます。キャッチコピーの中で変わる一語によく使われます。",
+      "hint": "次の言葉に変わるのを待ってみてください",
+      "controls": {
+        "duration": {
+          "label": "表示時間"
+        },
+        "words": {
+          "label": "単語リスト（カンマ区切り）"
+        }
+      },
+      "presets": [
+        "3語を速く入れ替え"
+      ]
+    },
+    "MP-accordion": {
+      "name": "1つだけ開くアコーディオン",
+      "summary": "一度に開くのは1項目だけで、見出しをタップすると内容の高さが0から自然な高さまで広がりながらフェードインし、それまで開いていた項目は同時に閉じます。開くときと閉じるときは同じ曲線で、矢印もいっしょに反転します。",
+      "hint": "見出しをタップして開閉してみてください",
+      "controls": {
+        "duration": {
+          "label": "時間"
+        },
+        "bounce": {
+          "label": "弾み"
+        }
+      },
+      "presets": [
+        "きびきび",
+        "やわらかく弾む"
+      ],
+      "changes": [
+        "@ts-nocheck を追加（型のずれ。実行時に確認済み）"
+      ]
+    },
+    "MP-animated-background": {
+      "name": "すべるハイライト板",
+      "summary": "複数のボタンが1枚のハイライト板を共有し、別のボタンをタップ（またはホバー）すると、板がスプリングで元の位置から新しい位置へ滑って新しいボタンの大きさに変わります。ホバーモードでは、ポインターが離れると板はフェードアウトします。",
+      "hint": "いろいろな選択肢をタップするか、ホバーモードに切り替えて順になぞってみてください",
+      "controls": {
+        "enableHover": {
+          "label": "ホバーで切り替え"
+        },
+        "bounce": {
+          "label": "弾み"
+        },
+        "duration": {
+          "label": "時間"
+        }
+      },
+      "presets": [
+        "ホバーに追従",
+        "ひと弾み"
+      ]
+    },
+    "MP-animated-group": {
+      "name": "グループの時間差登場",
+      "summary": "子要素のグループが0.1秒間隔で順に登場し、登場の仕方はプリセットで決まります。フェード、上へのスライド、拡大縮小、ぼかし、あるいはスプリングによるバウンド、反転、回転、揺れがあり、カスタムのvariantsでどの層も置き換えられます。",
+      "hint": "「再生し直す」でブロックが順に登場する様子を見て、プリセットを変えていろいろな登場を試してみてください",
+      "controls": {
+        "preset": {
+          "label": "登場のプリセット",
+          "options": {
+            "fade": "フェード",
+            "slide": "上へスライド",
+            "scale": "拡大縮小",
+            "blur": "ぼかし",
+            "blur-slide": "ぼかして上へスライド",
+            "zoom": "ズーム（スプリング）",
+            "flip": "反転（スプリング）",
+            "bounce": "バウンド（スプリング）",
+            "rotate": "回転（スプリング）",
+            "swing": "揺れ（スプリング）"
+          }
+        }
+      },
+      "presets": [
+        "バウンド",
+        "反転"
+      ],
+      "changes": [
+        "@ts-nocheck を追加（型のずれ。実行時に確認済み）"
+      ]
+    },
+    "MP-animated-number": {
+      "name": "スプリングで数える数字",
+      "summary": "値が変わるとき、ぱっと切り替わらず、スプリングが古い値から新しい値へ運び、桁区切りも付きます。弾みが0なら素直なイーズアウトで、弾みを上げると目標値の前後で揺れてから止まります。",
+      "hint": "数字をタップして、もう一件足してみてください",
+      "controls": {
+        "duration": {
+          "label": "時間"
+        },
+        "bounce": {
+          "label": "弾み"
+        }
+      },
+      "presets": [
+        "速め",
+        "ひと揺れ"
+      ],
+      "changes": [
+        "@ts-nocheck を追加（型のずれ。実行時に確認済み）"
+      ]
+    },
+    "MP-border-trail": {
+      "name": "枠を走る光",
+      "summary": "光るブロックがカードの枠に沿って一定の速さで周回し、offset-pathで角丸に沿って進み、マスクで枠のリングだけを見せています。速さと光の長さは調整でき、処理中のカードに呼吸するような感じを加えられます。",
+      "hint": "光が枠を周回する様子を見てみてください",
+      "controls": {
+        "size": {
+          "label": "光の長さ"
+        },
+        "duration": {
+          "label": "1周の時間"
+        }
+      },
+      "presets": [
+        "細く速く",
+        "長くゆっくり"
+      ]
+    },
+    "MP-carousel": {
+      "name": "ドラッグできるカルーセル",
+      "summary": "トラック全体が指に合わせてドラッグで動き、離すとドラッグした向きの隣のページへスプリングで吸い付きます。両側の矢印と下部のドットでもページを切り替えられ、矢印は初期設定ではホバー時にだけ現れます。",
+      "hint": "左右にドラッグするか、矢印やドットをタップしてみてください",
+      "controls": {
+        "disableDrag": {
+          "label": "ドラッグを無効にする"
+        },
+        "alwaysShow": {
+          "label": "矢印を常に表示"
+        }
+      },
+      "presets": [
+        "ボタンだけで操作"
+      ]
+    },
+    "MP-cursor": {
+      "name": "追従するカスタムカーソル",
+      "summary": "システムのカーソルを隠して、任意の要素にポインターを追わせます。領域に入ると拡大しながらフェードインし、出るとフェードアウトして、追従は即時にも、スプリングの時間を与えて半拍遅れの尾を引かせることもできます。",
+      "hint": "ポインターをグラデーションの領域に入れてみてください",
+      "controls": {
+        "attachToParent": {
+          "label": "親要素の中だけ"
+        },
+        "duration": {
+          "label": "追従の時間"
+        },
+        "bounce": {
+          "label": "弾み"
+        }
+      },
+      "presets": [
+        "即時に追従",
+        "尾を引いて揺れる"
+      ]
+    },
+    "MP-dialog": {
+      "name": "ズームフェードのダイアログ",
+      "summary": "ネイティブのdialogをもとにしたモーダルで、背景は暗くなって軽くぼけ、パネルは一回り小さい状態から拡大しながらフェードインして、閉じるときは逆に縮みます。Esc、背景のクリック、閉じるボタンのどれでも閉じられ、開いている間はページのスクロールが固定されます。",
+      "hint": "タップして開き、Escか背景のクリックで閉じてみてください",
+      "controls": {
+        "duration": {
+          "label": "時間"
+        },
+        "scaleFrom": {
+          "label": "開始時の拡大率"
+        }
+      },
+      "presets": [
+        "フェードのみ",
+        "小さい状態から弾み出す"
+      ]
+    },
+    "MP-disclosure": {
+      "name": "1項目の開閉",
+      "summary": "1つのトリガーと1つの内容の組で、タップすると内容の高さが0から広がりながらフェードインし、もう一度タップすると閉じます。扱うのは1項目だけでアコーディオンのように排他的ではないので、「詳細を見る」「補足」のような小さな展開に向いています。",
+      "hint": "見出しをタップして開閉してみてください",
+      "controls": {
+        "duration": {
+          "label": "時間"
+        },
+        "ease": {
+          "label": "イージング",
+          "options": {
+            "easeInOut": "イーズインアウト",
+            "easeOut": "イーズアウト",
+            "linear": "リニア"
+          }
+        }
+      },
+      "presets": [
+        "ゆっくり開く"
+      ],
+      "changes": [
+        "@ts-nocheck を追加（型のずれ。実行時に確認済み）"
+      ]
+    },
+    "MP-dock": {
+      "name": "拡大ドック",
+      "summary": "macOS風のドックで、ポインターがなぞるといちばん近いアイコンが最大まで大きくなり、両側は距離に応じて小さくなり、ドック全体の高さも持ち上がります。幅も高さも同じスプリングのパラメータで動き、ホバー中のアイコンの上にはラベルが出ます。",
+      "hint": "アイコンの上でポインターを左右になぞってみてください",
+      "controls": {
+        "magnification": {
+          "label": "最大の拡大サイズ"
+        },
+        "distance": {
+          "label": "影響半径"
+        }
+      },
+      "presets": [
+        "控えめ",
+        "大げさ"
+      ],
+      "changes": [
+        "@ts-nocheck を追加（型のずれ。実行時に確認済み）"
+      ]
+    },
+    "MP-glow-effect": {
+      "name": "カードの下を流れる光",
+      "summary": "カードの下に敷かれたぼかしのグラデーションがモードに応じて変化し続け、円錐グラデーションの回転、放射グラデーションの呼吸や脈動、色相の入れ替え、横方向の流れがあります。カード自体は動かず、縁の光だけが動きます。",
+      "hint": "カードの縁の光を見て、モードを変えていろいろな動きを試してみてください",
+      "controls": {
+        "mode": {
+          "label": "モード",
+          "options": {
+            "rotate": "回転",
+            "colorShift": "色相の入れ替え",
+            "pulse": "脈動",
+            "breathe": "呼吸",
+            "flowHorizontal": "横方向の流れ",
+            "static": "静止"
+          }
+        },
+        "blur": {
+          "label": "ぼかし",
+          "options": {
+            "softest": "最弱",
+            "soft": "弱",
+            "medium": "中",
+            "strong": "強",
+            "strongest": "最強"
+          }
+        },
+        "duration": {
+          "label": "1周期の時間"
+        },
+        "colors": {
+          "label": "グローの配色"
+        }
+      },
+      "presets": [
+        "回転するハロー",
+        "やさしい呼吸"
+      ],
+      "changes": [
+        "@ts-nocheck を追加（型のずれ。実行時に確認済み）"
+      ]
+    },
+    "MP-image-comparison": {
+      "name": "ビフォーアフタースライダー",
+      "summary": "2枚の画像が重なり真ん中に分割線があって、ドラッグすると両側の切り抜きが変わり、それぞれの画像の見える範囲が変わります。分割線は手に直接ついてくるほか、スプリングで慣性を付けてポインターを追わせたり、ホバーだけで追わせたりもできます。",
+      "hint": "分割線を押したまま左右に動かすか、ホバーモードに切り替えてみてください",
+      "controls": {
+        "enableHover": {
+          "label": "ホバーで追従"
+        },
+        "bounce": {
+          "label": "弾み"
+        }
+      },
+      "presets": [
+        "ホバーで追従",
+        "慣性付きドラッグ"
+      ]
+    },
+    "MP-in-view": {
+      "name": "ビューポートに入ると現れる",
+      "summary": "要素がビューポートにスクロールで入った瞬間に、非表示から表示へ移ります（初期設定ではフェードインのみで、ここでは浮き上がりとぼかし解除を設定）。外に出たときは元に戻すことも1回だけにすることもでき、useInViewで監視するのでスクロールイベントは使いません。",
+      "hint": "ボックスの中で下へスクロールしてみてください",
+      "controls": {
+        "once": {
+          "label": "1回だけ再生"
+        },
+        "y": {
+          "label": "浮き上がる距離"
+        },
+        "duration": {
+          "label": "時間"
+        }
+      },
+      "presets": [
+        "フェードのみ",
+        "大きく浮き上がる"
+      ]
+    },
+    "MP-infinite-slider": {
+      "name": "継ぎ目のないループ帯",
+      "summary": "内容を複製して首尾をつなぎ、一定の速さで平行移動するので、つなぎ目で飛ぶことはありません。ホバーしても急停止せず、残りの距離に応じてなめらかに別の速さまで落ち、離れるとまた戻ります。",
+      "hint": "ホバーして減速させてみてください",
+      "controls": {
+        "speed": {
+          "label": "速度"
+        },
+        "speedOnHover": {
+          "label": "ホバー時の速度"
+        },
+        "reverse": {
+          "label": "逆向き"
+        }
+      },
+      "presets": [
+        "のんびり",
+        "逆向きに全力疾走"
+      ]
+    },
+    "MP-magnetic": {
+      "name": "マグネットボタン",
+      "summary": "ポインターが近づくと要素が引き寄せられ、近いほど強く引かれて、離れるとゆるいスプリングで揺れながら元の位置に戻ります。吸い寄せる範囲は、要素自身だけ、親コンテナ、ページ全体から選べます。",
+      "hint": "ポインターをボタンの近くでぐるぐる動かしてみてください",
+      "controls": {
+        "intensity": {
+          "label": "吸引力"
+        },
+        "range": {
+          "label": "吸引半径"
+        },
+        "actionArea": {
+          "label": "反応する範囲",
+          "options": {
+            "self": "要素の上だけ",
+            "parent": "親コンテナの中",
+            "global": "ページ全体"
+          }
+        }
+      },
+      "presets": [
+        "弱く吸う",
+        "広範囲で強く吸う"
+      ]
+    },
+    "MP-morphing-dialog": {
+      "name": "カードがダイアログに変形",
+      "summary": "カードをタップすると、新しいウィンドウが開くのではなく、カード自身が大きくなって画面中央に移りダイアログになります。カバー、タイトル、サブタイトルは共有レイアウトで連続的に移り、本文は別にフェードインして、閉じるときは元の位置に縮んで戻ります。",
+      "hint": "カードをタップして、ダイアログに育つ様子を見てみてください",
+      "controls": {
+        "bounce": {
+          "label": "弾み"
+        },
+        "duration": {
+          "label": "時間"
+        }
+      },
+      "presets": [
+        "きびきび",
+        "ひと弾み"
+      ]
+    },
+    "MP-morphing-popover": {
+      "name": "ボタンがポップオーバーに変形",
+      "summary": "ボタンをタップすると、ボタン自身が共有レイアウトでポップオーバーに育ち、ボタンの文字はポップオーバーの中でタイトルになります。外側をクリックするかEscを押すと、ポップオーバーはボタンの形に縮んで戻ります。",
+      "hint": "「メモを書く」をタップして、外側をクリックして閉じてみてください",
+      "controls": {
+        "bounce": {
+          "label": "弾み"
+        },
+        "duration": {
+          "label": "時間"
+        }
+      },
+      "presets": [
+        "きびきび",
+        "やわらかく弾む"
+      ],
+      "changes": [
+        "@ts-nocheck を追加（型のずれ。実行時に確認済み）"
+      ]
+    },
+    "MP-progressive-blur": {
+      "name": "プログレッシブぼかしマスク",
+      "summary": "複数のbackdrop-filterの層をグラデーションのマスクでずらして重ね、ぼかしが一方の端の0から反対側までなめらかに強まり、くっきり境目のあるすりガラスとは違います。画像やリストの縁に重ねて使うことが多く、ここではホバーでフェードインして説明文を引き立てます。",
+      "hint": "ホバーして、下部にプログレッシブぼかしが現れる様子を見てみてください",
+      "controls": {
+        "direction": {
+          "label": "ぼかしの向き",
+          "options": {
+            "bottom": "下ほど強く",
+            "top": "上ほど強く",
+            "left": "左ほど強く",
+            "right": "右ほど強く"
+          }
+        },
+        "blurIntensity": {
+          "label": "ぼかしの強さ"
+        },
+        "blurLayers": {
+          "label": "層の数"
+        }
+      },
+      "presets": [
+        "軽め",
+        "重め"
+      ]
+    },
+    "MP-scroll-progress": {
+      "name": "読み進めバー",
+      "summary": "細いバーがスクロール位置に合わせて左から右へ伸び、途中にスプリングが入っているので、速くスクロールしても硬くついてこずなめらかに追いつきます。ページのスクロールにも、指定したスクロールコンテナにも対応します。",
+      "hint": "ボックスの中でスクロールして、上の進捗バーを見てみてください",
+      "controls": {
+        "stiffness": {
+          "label": "スプリングの硬さ"
+        },
+        "damping": {
+          "label": "減衰"
+        }
+      },
+      "presets": [
+        "硬くついてくる",
+        "ゆっくり追う"
+      ],
+      "changes": [
+        "@ts-nocheck を追加（型のずれ。実行時に確認済み）"
+      ]
+    },
+    "MP-sliding-number": {
+      "name": "桁ごとのリール数字",
+      "summary": "各桁の数字は0から9までの縦のリールで、値が変わると変わった桁だけが最短の道筋で回ります（9から0へは、9つ戻らず前へめくります）。最後はスプリングで少し弾んで収まります。",
+      "hint": "秒の桁が1秒ごとに回る様子を見てみてください",
+      "controls": {
+        "padStart": {
+          "label": "1桁を0埋め"
+        }
+      },
+      "presets": [
+        "0埋めなし"
+      ],
+      "changes": [
+        "@ts-nocheck を追加（型のずれ。実行時に確認済み）"
+      ]
+    },
+    "MP-spinning-text": {
+      "name": "リング状に回る文字",
+      "summary": "1つの文が1文字ずつに分けられ、等しい角度で輪になって並び、輪全体が一定の速さで回り続けます。半径、フォントサイズ、回転の速さ、向きはすべてパラメータで、バッジやローディングの代わりによく使われます。",
+      "hint": "回る様子を見て、半径と向きを変えてみてください",
+      "controls": {
+        "duration": {
+          "label": "1周の時間"
+        },
+        "radius": {
+          "label": "半径"
+        },
+        "reverse": {
+          "label": "反時計回り"
+        }
+      },
+      "presets": [
+        "小さく速く",
+        "大きくゆっくり"
+      ],
+      "changes": [
+        "@ts-nocheck を追加（型のずれ。実行時に確認済み）"
+      ]
+    },
+    "MP-spotlight": {
+      "name": "スポットライトの縁",
+      "summary": "ぼかした放射状の光の点が、カードの中でポインターについて動きます。カードの内側の層は不透明で、光は枠のまわりのすき間からだけ漏れ出して、手に合わせて動く輪郭のハイライトのようで、入るとフェードイン、出るとフェードアウトします。",
+      "hint": "カードの上でポインターを動かしてみてください",
+      "controls": {
+        "size": {
+          "label": "光の直径"
+        },
+        "bounce": {
+          "label": "弾み"
+        }
+      },
+      "presets": [
+        "小さく正確に",
+        "大きく揺れる"
+      ]
+    },
+    "MP-text-effect": {
+      "name": "区切って登場する文字",
+      "summary": "1つの文を単語、文字、行のどれかで分けて順に登場させ、登場のしかたはプリセットで決まります。フェード、ぼかし解除、浮き上がりとぼかし解除、拡大縮小、上へのスライドがあり、リズムは全体の時間差の速さと各区切りの長さという2つの速さで決まります。",
+      "hint": "「再生し直す」でもう一度登場させ、プリセットと分割の単位を変えてみてください",
+      "controls": {
+        "preset": {
+          "label": "登場方法",
+          "options": {
+            "fade": "フェード",
+            "blur": "ぼかし解除",
+            "fade-in-blur": "浮き上がってぼかし解除",
+            "scale": "拡大縮小",
+            "slide": "上へスライド"
+          }
+        },
+        "per": {
+          "label": "分割の単位",
+          "options": {
+            "word": "単語",
+            "char": "文字",
+            "line": "行"
+          }
+        },
+        "speedReveal": {
+          "label": "全体の速さ"
+        }
+      },
+      "presets": [
+        "1文字ずつぼかし解除",
+        "行ごとに上へスライド"
+      ]
+    },
+    "MP-text-loop": {
+      "name": "時間で入れ替わる言葉",
+      "summary": "同じ位置で一組の言葉が一定の間隔で入れ替わり、古い言葉は上へ動いてフェードアウトし、新しい言葉は下から上がってきて、はみ出した部分はコンテナで切り取られます。トランジションの曲線もvariantsも差し替えられ、キャッチコピーの中で変わる一語によく使われます。",
+      "hint": "次の言葉に変わるのを待ってみてください",
+      "controls": {
+        "interval": {
+          "label": "表示時間"
+        },
+        "duration": {
+          "label": "切り替えの時間"
+        }
+      },
+      "presets": [
+        "速く入れ替え",
+        "ゆっくり入れ替え"
+      ]
+    },
+    "MP-text-morph": {
+      "name": "文字が並べ替わる変形",
+      "summary": "言葉が変わるとき、単語全体がフェードで入れ替わるのではなく、2つの言葉に共通する文字は残って共有レイアウトで新しい位置へ滑り、余った文字はフェードアウト、足りない文字はフェードインします。スプリングのパラメータで、滑り方のきびきびさが決まります。",
+      "hint": "タップして言葉を入れ替え、共通の文字が動く様子を見てみてください",
+      "controls": {
+        "stiffness": {
+          "label": "スプリングの硬さ"
+        },
+        "damping": {
+          "label": "減衰"
+        }
+      },
+      "presets": [
+        "きびきび",
+        "ゆるめ"
+      ]
+    },
+    "MP-text-roll": {
+      "name": "1文字ずつ回転する文字",
+      "summary": "各文字には上下2つの複製があり、上の文字はX軸を中心に後ろへめくれて去り、すぐ下の文字がめくれ上がってその場所に入ります。左から右へわずかにずれて動くパタパタ式の表示板のようで、ナビのリンクのホバー効果によく使われます。",
+      "hint": "ホバーして、もう一度めくってみてください",
+      "controls": {
+        "duration": {
+          "label": "1文字の時間"
+        },
+        "stagger": {
+          "label": "文字ごとの間隔"
+        }
+      },
+      "presets": [
+        "速くめくる",
+        "ゆっくりめくる"
+      ]
+    },
+    "MP-text-scramble": {
+      "name": "文字化けから落ち着く文字",
+      "summary": "文全体がまずランダムな文字になり、左から1文字ずつ本来の文字に落ち着いていき、毎フレーム新しいノイズに入れ替わります。全体の長さと更新の間隔は別々に調整でき、文字セットも数字や記号に変えられます。",
+      "hint": "ホバーして、もう一度デコードしてみてください",
+      "controls": {
+        "duration": {
+          "label": "デコードにかかる時間"
+        },
+        "speed": {
+          "label": "更新の間隔"
+        }
+      },
+      "presets": [
+        "一瞬",
+        "ゆっくりデコード"
+      ]
+    },
+    "MP-text-shimmer-wave": {
+      "name": "立体的な波打つ光の文字",
+      "summary": "文字が1つずつ順に前へ持ち上がり、拡大し、Y軸でわずかに回転して点灯し、また元に戻り、波が次々と左から右へ走ります。平面の光に3Dの起伏が1層加わるので、「生成中」のような待機状態に向いています。",
+      "hint": "波が何度も走り抜ける様子を見てみてください",
+      "controls": {
+        "duration": {
+          "label": "1文字の周期"
+        },
+        "spread": {
+          "label": "波長"
+        },
+        "scaleDistance": {
+          "label": "持ち上げの拡大"
+        },
+        "baseColor": {
+          "label": "ベースの色"
+        },
+        "shimmerColor": {
+          "label": "光の色"
+        }
+      },
+      "presets": [
+        "軽くなでる",
+        "大きな起伏"
+      ]
+    },
+    "MP-text-shimmer": {
+      "name": "光が走り抜ける文字",
+      "summary": "明るい光の帯が、グレーの文字の上を右から左へ一定の速さで走り抜け、背景を文字の形で切り抜いて途切れずに繰り返します。帯の幅は文字数に合わせて自動で変わり、色は2つのCSS変数で切り替えられ、「生成中」の待機表示によく使われます。",
+      "hint": "光の帯が繰り返し走り抜ける様子を見てみてください",
+      "controls": {
+        "duration": {
+          "label": "1回の所要時間"
+        },
+        "spread": {
+          "label": "光の帯の幅"
+        },
+        "baseColor": {
+          "label": "ベースの色"
+        },
+        "shimmerColor": {
+          "label": "光の色"
+        }
+      },
+      "presets": [
+        "細く速く",
+        "幅広くゆっくり"
+      ]
+    },
+    "MP-tilt": {
+      "name": "パースで追従して傾く",
+      "summary": "カードの上でポインターを動かすと、カードが1000pxのパースでX軸とY軸を中心に傾き、ポインターのある角が持ち上がります（逆向きにすると沈み込みます）。離れると2本のスプリングがゆっくり平らに戻します。",
+      "hint": "カードの上でポインターを動かしてみてください",
+      "controls": {
+        "rotationFactor": {
+          "label": "最大傾き"
+        },
+        "isRevese": {
+          "label": "逆向き（押し込む）"
+        }
+      },
+      "presets": [
+        "控えめ",
+        "大げさに押し込む"
+      ]
+    },
+    "MP-toolbar-dynamic": {
+      "name": "検索ボックスに広がるツールバー",
+      "summary": "アイコンが2つの小さなツールバーで、検索をタップするとバー全体がスプリングで98pxから300pxに広がり、中身は戻るボタンと入力欄に変わって自動でフォーカスされます。戻るをタップするか外側をクリックするとまた縮み、上流の完成した例なので調整できるpropsはありません。",
+      "hint": "虫眼鏡をタップして、戻るをタップするか外側をクリックしてみてください",
+      "changes": [
+        "@ts-nocheck を追加（型のずれ。実行時に確認済み）"
+      ]
+    },
+    "MP-toolbar-expandable": {
+      "name": "上へパネルが開くツールバー",
+      "summary": "アイコンが4つの下部ツールバーで、どれかをタップすると上にパネルがスプリングで広がり、対応する内容が表示されて、パネルの高さは内容に合わせて測られます。別のアイコンに切り替えると高さが連続的に変わり、同じアイコンをもう一度タップするか外側をクリックすると閉じます（上流の完成した例で、調整できるpropsはありません）。",
+      "hint": "いろいろなアイコンをタップして、パネルの内容が変わる様子を見てみてください",
+      "changes": [
+        "@ts-nocheck を追加（型のずれ。実行時に確認済み）"
+      ]
+    },
+    "MP-transition-panel": {
+      "name": "パネル切り替えのトランジション",
+      "summary": "一組のパネルをインデックスで切り替え、古いパネルはぼけて薄れながら片側へ滑り出て、新しいパネルは反対側から、はっきりした状態で滑り込みます。退場するほうは文書の流れから外されるので、2枚が同時にいてもぶつかりません。",
+      "hint": "上のタブをタップして切り替えてみてください",
+      "controls": {
+        "duration": {
+          "label": "時間"
+        },
+        "offset": {
+          "label": "ずれの距離"
+        }
+      },
+      "presets": [
+        "フェードのみ",
+        "大きなずれ"
+      ]
+    }
+  },
+  "palettes": {
+    "PAL--0DREY-01": {
+      "name": "クリスタルウィング"
+    },
+    "PAL--0DREY-02": {
+      "name": "キャンディコスモス"
+    },
+    "PAL--0DREY-03": {
+      "name": "ギャラクシーグミ"
+    },
+    "PAL--0DREY-04": {
+      "name": "フェアリーガーデン"
+    },
+    "PAL--0DREY-05": {
+      "name": "幻光の銀河"
+    },
+    "PAL--0DREY-06": {
+      "name": "魔法の黄昏"
+    },
+    "PAL--0DREY-07": {
+      "name": "幻彩のサンゴ"
+    },
+    "PAL--0DREY-08": {
+      "name": "オーロラのキス"
+    },
+    "PAL--0DREY-09": {
+      "name": "夢の溶岩"
+    },
+    "PAL--K9Glg-01": {
+      "name": "黒赤－極点"
+    },
+    "PAL--K9Glg-02": {
+      "name": "青赤－シグナル"
+    },
+    "PAL--K9Glg-03": {
+      "name": "青赤－ナラティブ"
+    },
+    "PAL--K9Glg-04": {
+      "name": "灰赤－ストラクチャー"
+    },
+    "PAL--K9Glg-05": {
+      "name": "緑赤－ワイルド"
+    },
+    "PAL--K9Glg-06": {
+      "name": "紫赤－ファンタジー"
+    },
+    "PAL--K9Glg-07": {
+      "name": "茶赤－再構築"
+    },
+    "PAL--K9Glg-08": {
+      "name": "黒赤－パルス"
+    },
+    "PAL-1Nzx-V-01": {
+      "name": "丹砂と淡い翡翠"
+    },
+    "PAL-1Nzx-V-02": {
+      "name": "藍の格子と米色の霜"
+    },
+    "PAL-1Nzx-V-03": {
+      "name": "墨茶と臙脂"
+    },
+    "PAL-1Nzx-V-04": {
+      "name": "蒼碧の石"
+    },
+    "PAL-1Nzx-V-05": {
+      "name": "鴉青と褪せた黄"
+    },
+    "PAL-1Nzx-V-06": {
+      "name": "檀の紅と杏色"
+    },
+    "PAL-1Nzx-V-07": {
+      "name": "古錦と淡い黛色"
+    },
+    "PAL-1Nzx-V-08": {
+      "name": "赭色と淡い杏色"
+    },
+    "PAL-1UtBTf-01": {
+      "name": "クラシック赤黒"
+    },
+    "PAL-1UtBTf-02": {
+      "name": "深海のブルー"
+    },
+    "PAL-1UtBTf-03": {
+      "name": "インダストリアルオレンジ"
+    },
+    "PAL-1UtBTf-04": {
+      "name": "プルシアンブルー"
+    },
+    "PAL-1UtBTf-05": {
+      "name": "インダストリアルイエロー"
+    },
+    "PAL-1UtBTf-06": {
+      "name": "レトロな墨緑"
+    },
+    "PAL-1UtBTf-07": {
+      "name": "煉瓦赤とグレー"
+    },
+    "PAL-1UtBTf-08": {
+      "name": "インダストリアルクールグレー"
+    },
+    "PAL-1xiwvF-01": {
+      "name": "カード01"
+    },
+    "PAL-1xiwvF-02": {
+      "name": "カード02"
+    },
+    "PAL-1xiwvF-03": {
+      "name": "カード03"
+    },
+    "PAL-1xiwvF-04": {
+      "name": "カード04"
+    },
+    "PAL-1xiwvF-05": {
+      "name": "カード05"
+    },
+    "PAL-1xiwvF-06": {
+      "name": "カード06"
+    },
+    "PAL-1xiwvF-07": {
+      "name": "カード07"
+    },
+    "PAL-1xiwvF-08": {
+      "name": "カード08"
+    },
+    "PAL-1xiwvF-09": {
+      "name": "カード09"
+    },
+    "PAL-3boEME-01": {
+      "name": "松と桃ピンク"
+    },
+    "PAL-3boEME-02": {
+      "name": "透明感のあるアイスブルー"
+    },
+    "PAL-3boEME-03": {
+      "name": "レトロな茶褐色"
+    },
+    "PAL-3boEME-04": {
+      "name": "広野の墨緑"
+    },
+    "PAL-3boEME-05": {
+      "name": "霧の島の灰色"
+    },
+    "PAL-3boEME-06": {
+      "name": "冷たい臙脂紫"
+    },
+    "PAL-3boEME-07": {
+      "name": "煉瓦赤と陶土色"
+    },
+    "PAL-3boEME-08": {
+      "name": "静かな青岩"
+    },
+    "PAL-6WlTsJ-01": {
+      "name": "トロピカルドリーム"
+    },
+    "PAL-6WlTsJ-02": {
+      "name": "烈火と氷霜"
+    },
+    "PAL-6WlTsJ-03": {
+      "name": "キャンディバースト"
+    },
+    "PAL-6WlTsJ-04": {
+      "name": "銀河の旅"
+    },
+    "PAL-6WlTsJ-05": {
+      "name": "溶ける夕陽の金"
+    },
+    "PAL-6WlTsJ-06": {
+      "name": "オーロラバースト"
+    },
+    "PAL-6WlTsJ-07": {
+      "name": "サイバーブルーバイオレット"
+    },
+    "PAL-6WlTsJ-08": {
+      "name": "深海の奇観"
+    },
+    "PAL-6WlTsJ-09": {
+      "name": "ネオンパーティー"
+    },
+    "PAL-7b0HG1-01": {
+      "name": "ニューメンフィス"
+    },
+    "PAL-7b0HG1-02": {
+      "name": "モダンミュージアム"
+    },
+    "PAL-7b0HG1-03": {
+      "name": "アシッドファッション"
+    },
+    "PAL-7b0HG1-04": {
+      "name": "未来のコミュニティ"
+    },
+    "PAL-7b0HG1-05": {
+      "name": "トロピカルスポーツ"
+    },
+    "PAL-7b0HG1-06": {
+      "name": "エレクトロ・ボールルーム"
+    },
+    "PAL-7b0HG1-07": {
+      "name": "ボートクラブ"
+    },
+    "PAL-7b0HG1-08": {
+      "name": "ガラスの街"
+    },
+    "PAL-7b0HG1-09": {
+      "name": "デジタルゼリー"
+    },
+    "PAL-7cUOSg-01": {
+      "name": "山霞の家"
+    },
+    "PAL-7cUOSg-02": {
+      "name": "湖畔の別荘"
+    },
+    "PAL-7cUOSg-03": {
+      "name": "庭付きの洋館"
+    },
+    "PAL-7cUOSg-04": {
+      "name": "谷のほとりの広場"
+    },
+    "PAL-7cUOSg-05": {
+      "name": "アートアパートメント"
+    },
+    "PAL-7cUOSg-06": {
+      "name": "熱帯雨林のツリーハウス"
+    },
+    "PAL-7cUOSg-07": {
+      "name": "断崖の海岸"
+    },
+    "PAL-7cUOSg-08": {
+      "name": "石垣の庭"
+    },
+    "PAL-7cUOSg-09": {
+      "name": "海風の宿"
+    },
+    "PAL-7MKU1m-01": {
+      "name": "前衛ミニマル・クールインダストリアル"
+    },
+    "PAL-7MKU1m-02": {
+      "name": "モダンな色の対比・ネオンキャンディ"
+    },
+    "PAL-7MKU1m-03": {
+      "name": "サイバーアート・未来のクールさ"
+    },
+    "PAL-7MKU1m-04": {
+      "name": "フレンチレトロ・やわらかな霞の甘さ"
+    },
+    "PAL-7MKU1m-05": {
+      "name": "ポップアート・元気なオレンジ"
+    },
+    "PAL-7MKU1m-06": {
+      "name": "印象派の水彩・透明感のある幻彩"
+    },
+    "PAL-7MKU1m-07": {
+      "name": "侘び寂び・灰色の陰影"
+    },
+    "PAL-7MKU1m-08": {
+      "name": "古い油絵・暗い琥珀色"
+    },
+    "PAL-8ouzv3-01": {
+      "name": "グミ"
+    },
+    "PAL-8ouzv3-02": {
+      "name": "ライム"
+    },
+    "PAL-8ouzv3-03": {
+      "name": "チェリー"
+    },
+    "PAL-8ouzv3-04": {
+      "name": "ポップ"
+    },
+    "PAL-8ouzv3-05": {
+      "name": "ハニーピーチ"
+    },
+    "PAL-8ouzv3-06": {
+      "name": "バブル"
+    },
+    "PAL-8ouzv3-07": {
+      "name": "ソーダ"
+    },
+    "PAL-8ouzv3-08": {
+      "name": "キャンディ"
+    },
+    "PAL-8ouzv3-09": {
+      "name": "ゼリー"
+    },
+    "PAL-8YY0LP-01": {
+      "name": "フィルム"
+    },
+    "PAL-8YY0LP-02": {
+      "name": "エコー"
+    },
+    "PAL-8YY0LP-03": {
+      "name": "果樹園"
+    },
+    "PAL-8YY0LP-04": {
+      "name": "流れ星"
+    },
+    "PAL-8YY0LP-05": {
+      "name": "マーケット"
+    },
+    "PAL-8YY0LP-06": {
+      "name": "パステル"
+    },
+    "PAL-8YY0LP-07": {
+      "name": "旅人"
+    },
+    "PAL-8YY0LP-08": {
+      "name": "アーケード"
+    },
+    "PAL-8YY0LP-09": {
+      "name": "ピクニック"
+    },
+    "PAL-9x8M7Y-01": {
+      "name": "緑・黒・灰のミニマル"
+    },
+    "PAL-9x8M7Y-02": {
+      "name": "黒・白・青のミニマル"
+    },
+    "PAL-9x8M7Y-03": {
+      "name": "クラシックな赤・青・黄"
+    },
+    "PAL-9x8M7Y-04": {
+      "name": "赤・青・灰のバランス"
+    },
+    "PAL-9x8M7Y-05": {
+      "name": "青緑・黒・ライトグレー"
+    },
+    "PAL-9x8M7Y-06": {
+      "name": "オレンジ・青・ライトグレー"
+    },
+    "PAL-9x8M7Y-07": {
+      "name": "クラシックな黒・白・赤"
+    },
+    "PAL-9x8M7Y-08": {
+      "name": "青緑と青の秩序"
+    },
+    "PAL-a5ripr-01": {
+      "name": "マルスグリーンとタイガーリリー"
+    },
+    "PAL-a5ripr-02": {
+      "name": "ブルゴーニュレッドと紙白"
+    },
+    "PAL-a5ripr-03": {
+      "name": "ヴァンダイクブラウンとベージュ"
+    },
+    "PAL-a5ripr-04": {
+      "name": "ティファニーブルーと玄青"
+    },
+    "PAL-a5ripr-05": {
+      "name": "クラインブルーと明るい黄色"
+    },
+    "PAL-a5ripr-06": {
+      "name": "中国紅と麂黄"
+    },
+    "PAL-a5ripr-07": {
+      "name": "エルメスオレンジと紺青"
+    },
+    "PAL-a5ripr-08": {
+      "name": "プルシアンブルーと浮かぶ光"
+    },
+    "PAL-B-3rZzj2-01": {
+      "name": "夕暮れ海の余光",
+      "note": "画像1 · 静かな海にやわらかなネオンがにじむ、控えめで未来的な配色。テック系アプリ、データダッシュボード、ブランドサイトに向いています。"
+    },
+    "PAL-B-3rZzj2-02": {
+      "name": "月影の航路",
+      "note": "画像2 · 夢のような藤紫に爽やかなミントグリーンを加えた、未来感たっぷりの配色。AIプロダクト、デジタルアート、クリエイティブなサイトに向いています。"
+    },
+    "PAL-B-3rZzj2-03": {
+      "name": "深いベリーの秘境",
+      "note": "画像3 · 大人びたベリー色とアイスブルーが、やわらかなサイバーの質感を作ります。女性向けブランドやビューティーアプリに向いています。"
+    },
+    "PAL-B-3rZzj2-04": {
+      "name": "深宇宙のブルー",
+      "note": "画像4 · 宇宙を思わせる青にやわらかなピンクのハイライト。冷たすぎず軽やかです。ショート動画のカバー、UIデザイン、小紅書の画像に向いています。"
+    },
+    "PAL-B-3rZzj2-05": {
+      "name": "夕映えの緋色",
+      "note": "画像5 · 深紅の夕暮れに夢のような紫の光を合わせた、層の豊かで印象に残る配色。アプリのホーム、キャンペーンページ、ショート動画のカバーに向いています。"
+    },
+    "PAL-B-3rZzj2-06": {
+      "name": "苔の島の秘境",
+      "note": "画像6 · 自然な鉱物の色合いにやわらかなピンクの光を合わせた、落ち着きのある上質な配色。アウトドアブランド、ヘルスケア製品、ブランドサイトに向いています。"
+    },
+    "PAL-B-3rZzj2-07": {
+      "name": "赤陶の幻境",
+      "note": "画像7 · 古風な陶土の色と澄んだ水の光が溶け合う、あたたかくて現代的な配色。インテリアブランド、コーヒーブランド、暮らしの美学のデザインに向いています。"
+    },
+    "PAL-B-3rZzj2-08": {
+      "name": "森の極夜",
+      "note": "画像8 · 静かな森に夢のようなネオンが出会う、やわらかで層のある配色。ライフスタイルアプリ、読書アプリ、ブログのトップページに向いています。"
+    },
+    "PAL-B-3rZzj2-09": {
+      "name": "ワインレッドの劇場",
+      "note": "画像9 · 上質なドラマ性と冷たい光が交わる、神秘的で優雅な配色。ファッションブランド、写真の作品集、ポスターデザインに向いています。"
+    },
+    "PAL-B-F1OJlB-01": {
+      "name": "墨玉と朱砂",
+      "note": "画像1 · 上品で控えめ、東洋の趣。新中国風の茶飲料、文化施設、陶芸の手仕事、国風の服飾に向いています。"
+    },
+    "PAL-B-F1OJlB-02": {
+      "name": "墨玉とターコイズ",
+      "note": "画像2 · 東洋的で静かな、格調のある配色。新中国風の茶飲料、翡翠のジュエリー、禅の空間、中国式の癒やしに向いています。"
+    },
+    "PAL-B-F1OJlB-03": {
+      "name": "晴れた海岸",
+      "note": "画像3 · 自由で開放的、明るい気分の配色。海辺の旅行、サーフクラブ、子ども向けの遊び場、炭酸水のブランドに向いています。"
+    },
+    "PAL-B-F1OJlB-04": {
+      "name": "レモンソーダ",
+      "note": "画像4 · 元気で明るい、甘酸っぱい配色。ジュースブランド、朝食のお店、カジュアルなスポーツウェア、旅行アプリに向いています。"
+    },
+    "PAL-B-F1OJlB-05": {
+      "name": "モネの庭",
+      "note": "画像5 · 優雅で自然、のんびりした配色。高級フラワースタジオ、フランス風の軽食、オーガニックスキンケア、アートギャラリーに向いています。"
+    },
+    "PAL-B-F1OJlB-06": {
+      "name": "ピーチマカロン",
+      "note": "画像6 · やさしく、ほろ酔いのように、くつろいだ配色。女性向けヘルスケアブランド、果実酒、リゾートホテル、ライフスタイルのセレクトショップに向いています。"
+    },
+    "PAL-B-F1OJlB-07": {
+      "name": "抹茶ラテ",
+      "note": "画像7 · 自然で有機的、純粋な配色。ヘルシーな軽食、茶葉ブランド、エコな暮らしの雑貨、植物園のカフェに向いています。"
+    },
+    "PAL-B-F1OJlB-08": {
+      "name": "極地の氷河",
+      "note": "画像8 · 澄んでいて落ち着いた、ミニマルな配色。ミネラルウォーターのブランド、テック系ウェルネス、スキーリゾート、ミニマリストの服飾に向いています。"
+    },
+    "PAL-B-F1OJlB-09": {
+      "name": "苔の灰緑",
+      "note": "画像9 · 素朴で自然、風通しのよい配色。オーガニックスキンケア、アウトドアキャンプ、エコな暮らしの雑貨、禅の茶室に向いています。"
+    },
+    "PAL-B-fM1vY9-01": {
+      "name": "活力のピンクと青緑：動的な変化"
+    },
+    "PAL-B-fM1vY9-02": {
+      "name": "澄んだ冷たい青：テクノロジーとデータ"
+    },
+    "PAL-B-fM1vY9-03": {
+      "name": "森のような青緑：環境と生物の研究"
+    },
+    "PAL-B-fM1vY9-04": {
+      "name": "濃い青・紫・赤：理論の導出と階層"
+    },
+    "PAL-B-fM1vY9-05": {
+      "name": "癒やしの青緑・オレンジ・緑：ゆったり読む"
+    },
+    "PAL-B-fM1vY9-06": {
+      "name": "高彩度の赤橙：重要なデータを強調"
+    },
+    "PAL-B-fM1vY9-07": {
+      "name": "深い紫と明るい黄：芸術性と識別性"
+    },
+    "PAL-B-fM1vY9-08": {
+      "name": "レトロなピンクと茶：歴史と人文"
+    },
+    "PAL-B-fM1vY9-09": {
+      "name": "暖かいニュートラル：総説の図版"
+    },
+    "PAL-B-fM1vY9-10": {
+      "name": "夢幻の紫・黄と氷河ブルー：革新の展示"
+    },
+    "PAL-B-Fp2FFX-01": {
+      "name": "無敵のピンク"
+    },
+    "PAL-B-Fp2FFX-02": {
+      "name": "奥深くて夢のよう"
+    },
+    "PAL-B-Fp2FFX-03": {
+      "name": "癒やされる配色"
+    },
+    "PAL-B-Fp2FFX-04": {
+      "name": "埋もれさせたくない配色"
+    },
+    "PAL-B-Fp2FFX-05": {
+      "name": "いいね・フォローではぐれない"
+    },
+    "PAL-B-Fp2FFX-06": {
+      "name": "夢中で恋に落ちる"
+    },
+    "PAL-B-Fp2FFX-07": {
+      "name": "何も言わず美しい"
+    },
+    "PAL-B-Fp2FFX-08": {
+      "name": "うっとりする「三高」グラデーション"
+    },
+    "PAL-B-Fp2FFX-09": {
+      "name": "赤と緑も美しい"
+    },
+    "PAL-B-Fp2FFX-10": {
+      "name": "モランディの上質なグレーグラデーション"
+    },
+    "PAL-B-Fp2FFX-11": {
+      "name": "濃紺と青緑の未来感"
+    },
+    "PAL-B-Fp2FFX-12": {
+      "name": "高級感のあるグレー"
+    },
+    "PAL-B-Fp2FFX-13": {
+      "name": "いいね・フォローではぐれない"
+    },
+    "PAL-B-Fp2FFX-14": {
+      "name": "青紫ピンクの定番の美しさ"
+    },
+    "PAL-B-Fp2FFX-15": {
+      "name": "モランディのグラデーションも絶品"
+    },
+    "PAL-B-Fp2FFX-16": {
+      "name": "おとぎの国の美しさ"
+    },
+    "PAL-B-Fp2FFX-17": {
+      "name": "ピンクにクリームを足して"
+    },
+    "PAL-B-Fp2FFX-18": {
+      "name": "背景なし素材はグループ参加で"
+    },
+    "PAL-BKg7Pe-01": {
+      "name": "YouTube"
+    },
+    "PAL-BKg7Pe-02": {
+      "name": "マクドナルド"
+    },
+    "PAL-BKg7Pe-03": {
+      "name": "スターバックス"
+    },
+    "PAL-BKg7Pe-04": {
+      "name": "VISA"
+    },
+    "PAL-BKg7Pe-05": {
+      "name": "マスターカード"
+    },
+    "PAL-BKg7Pe-06": {
+      "name": "FedEx"
+    },
+    "PAL-BKg7Pe-07": {
+      "name": "BMW"
+    },
+    "PAL-BKg7Pe-08": {
+      "name": "イケア"
+    },
+    "PAL-bV8-88-01": {
+      "name": "キャラメルバター"
+    },
+    "PAL-bV8-88-02": {
+      "name": "トマトドリア"
+    },
+    "PAL-bV8-88-03": {
+      "name": "焼き栗ココア"
+    },
+    "PAL-bV8-88-04": {
+      "name": "抹茶どら焼き"
+    },
+    "PAL-bV8-88-05": {
+      "name": "ブルーベリーヨーグルト"
+    },
+    "PAL-bV8-88-06": {
+      "name": "チリチーズ"
+    },
+    "PAL-bV8-88-07": {
+      "name": "海塩ピーチ"
+    },
+    "PAL-bV8-88-08": {
+      "name": "レモンサイダー"
+    },
+    "PAL-CgEI4p-01": {
+      "name": "深夜のビデオ上映室"
+    },
+    "PAL-CgEI4p-02": {
+      "name": "レトロダイナー"
+    },
+    "PAL-CgEI4p-03": {
+      "name": "レトロなファストフード"
+    },
+    "PAL-CgEI4p-04": {
+      "name": "アメリカのハイウェイ"
+    },
+    "PAL-CgEI4p-05": {
+      "name": "西部のカウボーイ"
+    },
+    "PAL-CgEI4p-06": {
+      "name": "懐かしのテレビ"
+    },
+    "PAL-CgEI4p-07": {
+      "name": "モーテル"
+    },
+    "PAL-CgEI4p-08": {
+      "name": "レコードの時代"
+    },
+    "PAL-Dqwtc2-01": {
+      "name": "帝国の紫と金"
+    },
+    "PAL-Dqwtc2-02": {
+      "name": "黒曜石"
+    },
+    "PAL-Dqwtc2-03": {
+      "name": "真夜中のエメラルド"
+    },
+    "PAL-Dqwtc2-04": {
+      "name": "深海のブルー"
+    },
+    "PAL-Dqwtc2-05": {
+      "name": "ブラックゴールドとシダー"
+    },
+    "PAL-Dqwtc2-06": {
+      "name": "アイボリーとナイト"
+    },
+    "PAL-Dqwtc2-07": {
+      "name": "ブルゴーニュの晩餐"
+    },
+    "PAL-Dqwtc2-08": {
+      "name": "冷たい銀のマット"
+    },
+    "PAL-dViGYS-01": {
+      "name": "テックブルーグレー"
+    },
+    "PAL-dViGYS-02": {
+      "name": "ミニマルな白黒"
+    },
+    "PAL-dViGYS-03": {
+      "name": "ブランドの赤と黒"
+    },
+    "PAL-dViGYS-04": {
+      "name": "質感のある茶色"
+    },
+    "PAL-dViGYS-05": {
+      "name": "冷たく潤った青緑"
+    },
+    "PAL-dViGYS-06": {
+      "name": "上質なグレーパープル"
+    },
+    "PAL-dViGYS-07": {
+      "name": "ビジネスブルー系"
+    },
+    "PAL-dViGYS-08": {
+      "name": "暖かいベージュグレー"
+    },
+    "PAL-gAgpwr-01": {
+      "name": "緑野のサロン"
+    },
+    "PAL-gAgpwr-02": {
+      "name": "ブルーベリーパン"
+    },
+    "PAL-gAgpwr-03": {
+      "name": "朝の光のギャラリー"
+    },
+    "PAL-gAgpwr-04": {
+      "name": "藤の庭"
+    },
+    "PAL-gAgpwr-05": {
+      "name": "夕焼けの邸宅"
+    },
+    "PAL-gAgpwr-06": {
+      "name": "ミステリアスなレコード"
+    },
+    "PAL-gAgpwr-07": {
+      "name": "バラのアーカイブ"
+    },
+    "PAL-gAgpwr-08": {
+      "name": "都会の庭"
+    },
+    "PAL-gAgpwr-09": {
+      "name": "暖色のジェントルマン"
+    },
+    "PAL-GtI0Dh-01": {
+      "name": "黄緑のグラデーション"
+    },
+    "PAL-GtI0Dh-02": {
+      "name": "明るい青と空色"
+    },
+    "PAL-GtI0Dh-03": {
+      "name": "濃い灰青と薄い灰青"
+    },
+    "PAL-GtI0Dh-04": {
+      "name": "ピンクと淡いオレンジ"
+    },
+    "PAL-GtI0Dh-05": {
+      "name": "青とシアンのグラデーション"
+    },
+    "PAL-GtI0Dh-06": {
+      "name": "紫とピンクのグラデーション"
+    },
+    "PAL-GtI0Dh-07": {
+      "name": "青緑・青・冷たい白青"
+    },
+    "PAL-GtI0Dh-08": {
+      "name": "ピンクとオレンジのグラデーション"
+    },
+    "PAL-i-ebHL-01": {
+      "name": "霧がかった青灰色"
+    },
+    "PAL-i-ebHL-02": {
+      "name": "灰ピンクのやわらかな霧"
+    },
+    "PAL-i-ebHL-03": {
+      "name": "低彩度のブルーとオレンジ"
+    },
+    "PAL-i-ebHL-04": {
+      "name": "オリーブの灰緑"
+    },
+    "PAL-i-ebHL-05": {
+      "name": "灰色の霧のマゼンタ"
+    },
+    "PAL-i-ebHL-06": {
+      "name": "冷たい灰紫"
+    },
+    "PAL-i-ebHL-07": {
+      "name": "霧のような青緑"
+    },
+    "PAL-i-ebHL-08": {
+      "name": "低彩度のベリーパープル"
+    },
+    "PAL-ipkzXx-01": {
+      "name": "海風の路面電車"
+    },
+    "PAL-ipkzXx-02": {
+      "name": "メタルの夜"
+    },
+    "PAL-ipkzXx-03": {
+      "name": "九龍の花火"
+    },
+    "PAL-ipkzXx-04": {
+      "name": "雨の夜の街並み"
+    },
+    "PAL-ipkzXx-05": {
+      "name": "黄金時代"
+    },
+    "PAL-ipkzXx-06": {
+      "name": "紫のシグナル"
+    },
+    "PAL-ipkzXx-07": {
+      "name": "ヴィクトリアハーバーの夜景"
+    },
+    "PAL-ipkzXx-08": {
+      "name": "香港島のネオン"
+    },
+    "PAL-ipkzXx-09": {
+      "name": "ブルーベリーベルベット"
+    },
+    "PAL-kwLorh-01": {
+      "name": "霧の島の白茶"
+    },
+    "PAL-kwLorh-02": {
+      "name": "雨上がりの森"
+    },
+    "PAL-kwLorh-03": {
+      "name": "東洋の寺院"
+    },
+    "PAL-kwLorh-04": {
+      "name": "月光のラベンダー"
+    },
+    "PAL-kwLorh-05": {
+      "name": "焙じた白檀と沈香"
+    },
+    "PAL-kwLorh-06": {
+      "name": "冷たい香りのグラファイト"
+    },
+    "PAL-kwLorh-07": {
+      "name": "深海のシルエット"
+    },
+    "PAL-kwLorh-08": {
+      "name": "バラの灰"
+    },
+    "PAL-l3ZIsQ-01": {
+      "name": "海塩ミント"
+    },
+    "PAL-l3ZIsQ-02": {
+      "name": "桃色の霧と夕焼け"
+    },
+    "PAL-l3ZIsQ-03": {
+      "name": "ライムの泡"
+    },
+    "PAL-l3ZIsQ-04": {
+      "name": "アイスベリーシェイク"
+    },
+    "PAL-l3ZIsQ-05": {
+      "name": "夕陽の流れる光"
+    },
+    "PAL-l3ZIsQ-06": {
+      "name": "オーロラと深海"
+    },
+    "PAL-l3ZIsQ-07": {
+      "name": "深海の冷光"
+    },
+    "PAL-l3ZIsQ-08": {
+      "name": "夢の星雲"
+    },
+    "PAL-meztBM-01": {
+      "name": "Lemonade / レモン"
+    },
+    "PAL-N5h7IV-01": {
+      "name": "アーカイブ"
+    },
+    "PAL-N5h7IV-02": {
+      "name": "鉱物"
+    },
+    "PAL-N5h7IV-03": {
+      "name": "オーロラ"
+    },
+    "PAL-N5h7IV-04": {
+      "name": "モーテル"
+    },
+    "PAL-N5h7IV-05": {
+      "name": "静電気"
+    },
+    "PAL-N5h7IV-06": {
+      "name": "ネオンの光"
+    },
+    "PAL-N5h7IV-07": {
+      "name": "ベルベット"
+    },
+    "PAL-N5h7IV-08": {
+      "name": "シグナル"
+    },
+    "PAL-NxUY2Y-01": {
+      "name": "電磁パルス"
+    },
+    "PAL-NxUY2Y-02": {
+      "name": "チタンシルバーのインダストリアル"
+    },
+    "PAL-NxUY2Y-03": {
+      "name": "マトリクスプロトコル"
+    },
+    "PAL-NxUY2Y-04": {
+      "name": "チタンゴールドのエネルギー"
+    },
+    "PAL-NxUY2Y-05": {
+      "name": "星間航路"
+    },
+    "PAL-NxUY2Y-06": {
+      "name": "氷の核"
+    },
+    "PAL-NxUY2Y-07": {
+      "name": "スペクトルの鼓動"
+    },
+    "PAL-NxUY2Y-08": {
+      "name": "白夜の街"
+    },
+    "PAL-O6MB5g-01": {
+      "name": "桃色の霧"
+    },
+    "PAL-O6MB5g-02": {
+      "name": "金箔のゴールド"
+    },
+    "PAL-O6MB5g-03": {
+      "name": "オーロラ"
+    },
+    "PAL-O6MB5g-04": {
+      "name": "レモンの野原"
+    },
+    "PAL-O6MB5g-05": {
+      "name": "紫の霧"
+    },
+    "PAL-O6MB5g-06": {
+      "name": "夕陽"
+    },
+    "PAL-O6MB5g-07": {
+      "name": "電光"
+    },
+    "PAL-O6MB5g-08": {
+      "name": "灼熱の炎"
+    },
+    "PAL-ojuPi_-01": {
+      "name": "バブルガム"
+    },
+    "PAL-ojuPi_-02": {
+      "name": "スイカの夏"
+    },
+    "PAL-ojuPi_-03": {
+      "name": "海塩ゼリー"
+    },
+    "PAL-ojuPi_-04": {
+      "name": "チェリーソーダ"
+    },
+    "PAL-ojuPi_-05": {
+      "name": "オレンジパーティー"
+    },
+    "PAL-ojuPi_-06": {
+      "name": "ブルーベリーバブル"
+    },
+    "PAL-ojuPi_-07": {
+      "name": "ストロベリーシェイク"
+    },
+    "PAL-ojuPi_-08": {
+      "name": "メロンギャラクシー"
+    },
+    "PAL-ojuPi_-09": {
+      "name": "ミントガム"
+    },
+    "PAL-RLFZUE-01": {
+      "name": "故宮の墨赤"
+    },
+    "PAL-RLFZUE-02": {
+      "name": "松風と静水"
+    },
+    "PAL-RLFZUE-04": {
+      "name": "夕暮れの結晶"
+    },
+    "PAL-RLFZUE-05": {
+      "name": "大地の焦げた朝"
+    },
+    "PAL-RLFZUE-06": {
+      "name": "霧に包まれた苔"
+    },
+    "PAL-RLFZUE-07": {
+      "name": "サイレント映画"
+    },
+    "PAL-RLFZUE-08": {
+      "name": "枯れ草の余熱"
+    },
+    "PAL-Tevmsx-01": {
+      "name": "カード01"
+    },
+    "PAL-Tevmsx-02": {
+      "name": "カード02"
+    },
+    "PAL-Tevmsx-03": {
+      "name": "カード03"
+    },
+    "PAL-Tevmsx-04": {
+      "name": "カード04"
+    },
+    "PAL-Tevmsx-05": {
+      "name": "カード05"
+    },
+    "PAL-Tevmsx-06": {
+      "name": "カード06"
+    },
+    "PAL-Tevmsx-07": {
+      "name": "カード07"
+    },
+    "PAL-Tevmsx-08": {
+      "name": "カード08"
+    },
+    "PAL-Tevmsx-09": {
+      "name": "カード09"
+    },
+    "PAL-TzlVLM-01": {
+      "name": "淡い灰白＋濃いグレー"
+    },
+    "PAL-TzlVLM-02": {
+      "name": "レモングリーン＋ディープブルー"
+    },
+    "PAL-TzlVLM-03": {
+      "name": "明るい黄＋濃い紫"
+    },
+    "PAL-TzlVLM-04": {
+      "name": "バイオレット＋エレクトリックシアン"
+    },
+    "PAL-TzlVLM-05": {
+      "name": "蛍光ピンク＋ほぼ黒"
+    },
+    "PAL-TzlVLM-06": {
+      "name": "青＋オレンジ"
+    },
+    "PAL-TzlVLM-07": {
+      "name": "朱色＋陰影"
+    },
+    "PAL-TzlVLM-08": {
+      "name": "黒＋蛍光グリーン"
+    },
+    "PAL-v9Eglw-01": {
+      "name": "バイオレットの煙灰"
+    },
+    "PAL-v9Eglw-02": {
+      "name": "未来のインダストリアル"
+    },
+    "PAL-v9Eglw-03": {
+      "name": "苔と石灰色"
+    },
+    "PAL-v9Eglw-04": {
+      "name": "クリームトマト"
+    },
+    "PAL-v9Eglw-05": {
+      "name": "深海の鉱物"
+    },
+    "PAL-v9Eglw-06": {
+      "name": "琥珀色の夜"
+    },
+    "PAL-v9Eglw-07": {
+      "name": "氷河の酸素"
+    },
+    "PAL-v9Eglw-08": {
+      "name": "墨金と茶色"
+    },
+    "PAL-VtGPNZ-01": {
+      "name": "ミントの涼風"
+    },
+    "PAL-VtGPNZ-02": {
+      "name": "深海のほのかな光"
+    },
+    "PAL-VtGPNZ-03": {
+      "name": "桜霞の暖かなピンク"
+    },
+    "PAL-VtGPNZ-04": {
+      "name": "森の朝日"
+    },
+    "PAL-VtGPNZ-05": {
+      "name": "夏の海岸"
+    },
+    "PAL-VtGPNZ-06": {
+      "name": "紅葉の秋"
+    },
+    "PAL-VtGPNZ-07": {
+      "name": "藤物語"
+    },
+    "PAL-VtGPNZ-08": {
+      "name": "琥珀の暖かな光"
+    },
+    "PAL-Vvzxzj-01": {
+      "name": "桜ピンク"
+    },
+    "PAL-Vvzxzj-02": {
+      "name": "夕焼けオレンジ"
+    },
+    "PAL-Vvzxzj-03": {
+      "name": "墨緑の森"
+    },
+    "PAL-Vvzxzj-04": {
+      "name": "青緑の海風"
+    },
+    "PAL-Vvzxzj-05": {
+      "name": "深海の青藍"
+    },
+    "PAL-Vvzxzj-06": {
+      "name": "氷河のグラデーション"
+    },
+    "PAL-Vvzxzj-07": {
+      "name": "パープルネオン"
+    },
+    "PAL-Vvzxzj-08": {
+      "name": "カフェオレのグラデーション"
+    },
+    "PAL-VzDJ8B-01": {
+      "name": "ライムネオン"
+    },
+    "PAL-VzDJ8B-02": {
+      "name": "未来のティール＆オレンジ"
+    },
+    "PAL-VzDJ8B-03": {
+      "name": "ローズレッドの電撃"
+    },
+    "PAL-VzDJ8B-04": {
+      "name": "未来のパープル＆グリーン"
+    },
+    "PAL-VzDJ8B-05": {
+      "name": "赤と黄のポップ"
+    },
+    "PAL-VzDJ8B-06": {
+      "name": "オレンジと青の対比"
+    },
+    "PAL-VzDJ8B-07": {
+      "name": "サイバーブルー＆オレンジ"
+    },
+    "PAL-VzDJ8B-08": {
+      "name": "レトロな高彩度"
+    },
+    "PAL-xfqo0z-01": {
+      "name": "深夜のレコード"
+    },
+    "PAL-xfqo0z-02": {
+      "name": "ピンクの庭"
+    },
+    "PAL-xfqo0z-03": {
+      "name": "月明かりの書斎"
+    },
+    "PAL-xfqo0z-04": {
+      "name": "日差しのマーケット"
+    },
+    "PAL-xfqo0z-05": {
+      "name": "熱帯雨林の宿駅"
+    },
+    "PAL-xfqo0z-06": {
+      "name": "藤の庭"
+    },
+    "PAL-xfqo0z-07": {
+      "name": "色ガラスの画報"
+    },
+    "PAL-xfqo0z-08": {
+      "name": "海風マガジン"
+    },
+    "PAL-XLCClc-01": {
+      "name": "ライチ翠の荘園"
+    },
+    "PAL-XLCClc-02": {
+      "name": "真夜中のオペラ"
+    },
+    "PAL-XLCClc-03": {
+      "name": "ブルースクラブ"
+    },
+    "PAL-XLCClc-04": {
+      "name": "冬の荘園"
+    },
+    "PAL-XLCClc-05": {
+      "name": "午後の美術館"
+    },
+    "PAL-XLCClc-06": {
+      "name": "月蝕のバラ"
+    },
+    "PAL-XLCClc-07": {
+      "name": "氷河期"
+    },
+    "PAL-XLCClc-08": {
+      "name": "北欧の石の島"
+    },
+    "PAL-yny5c1-01": {
+      "name": "チェリーソーダ"
+    },
+    "PAL-yny5c1-02": {
+      "name": "レモンサイダー"
+    },
+    "PAL-yny5c1-03": {
+      "name": "ライムアイス"
+    },
+    "PAL-yny5c1-04": {
+      "name": "冷やしスイカ"
+    },
+    "PAL-yny5c1-05": {
+      "name": "海岸のミント"
+    },
+    "PAL-yny5c1-06": {
+      "name": "海塩のブルー＆オレンジ"
+    },
+    "PAL-yny5c1-07": {
+      "name": "トロピカルマンゴー"
+    },
+    "PAL-yny5c1-08": {
+      "name": "夏のプール"
+    },
+    "PAL-ZBm6W4-01": {
+      "name": "深海の墨藍"
+    },
+    "PAL-ZBm6W4-02": {
+      "name": "スモーキーピンクのクォーツ"
+    },
+    "PAL-ZBm6W4-03": {
+      "name": "火山の鉱岩"
+    },
+    "PAL-ZBm6W4-04": {
+      "name": "月光のプロローグ"
+    },
+    "PAL-ZBm6W4-05": {
+      "name": "銅色の歳月"
+    },
+    "PAL-ZBm6W4-06": {
+      "name": "カシミアの砂丘"
+    },
+    "PAL-ZBm6W4-07": {
+      "name": "モミの霧の境"
+    },
+    "PAL-ZBm6W4-08": {
+      "name": "石灰岩の地層"
+    }
+  },
+  "sets": {
+    "SET-restrained": {
+      "name": "控えめ · ツール型",
+      "for": "SaaS、管理画面、効率化ツール、コンテンツ系サイト向け。動きは操作の確認と状態の説明だけを担い、注意を奪いません。",
+      "rules": [
+        "1画面に自動でループする動きは最大1つ（光のスイープか脈動）。ほかはすべてユーザーの操作で動かします。",
+        "時間は150〜400ms、基本はイーズアウト。スプリングはボタンの押下とタブのインジケーターだけに使います。",
+        "背景系の動きや枠の流れる光は使いません。カードに許すのはホバーの追従ライトだけです。",
+        "配色は低彩度で、ベージュかアイスブルーを下地に1色入れます。ダークテーマでは配色セットのダーク版をそのまま使います。ツール系のUIはまず「鴉青と褪せた黄」、寒色寄りなら「透明感のあるアイスブルー」を選びます。"
+      ],
+      "picks": [
+        {
+          "role": "メインボタン",
+          "why": "押すと0.97まで縮み、離すと弾んで戻り、ホバーでわずかに浮きます。サイト全体のボタンをこの手触りに揃えます。"
+        },
+        {
+          "role": "スイッチ",
+          "why": "重みのあるつまみの弾みで、ボタンの押下と同じ段階のスプリングです。"
+        },
+        {
+          "role": "タブ",
+          "why": "下線のインジケーターが滑って移動します。カプセルよりも静かです。"
+        },
+        {
+          "role": "折りたたみパネル",
+          "why": "高さの遷移と内容のフェードインだけで、余計な弾みがありません。FAQや設定のグループに使います。"
+        },
+        {
+          "role": "カルーセル",
+          "why": "ドラッグでき、インジケーターの点があり、弾みはありません。内容の紹介に使います。"
+        },
+        {
+          "role": "ツールチップ",
+          "why": "軽い拡大とフェードで、300msの遅延があるのでポインターが通り過ぎるときにちらつきません。"
+        },
+        {
+          "role": "モーダル",
+          "why": "中央で形を変え、内容を切り替えると高さも追従します。ひとつのモーダルで最後まで通せます。"
+        },
+        {
+          "role": "通知",
+          "why": "右下に積み重なり、最大3件まで。スワイプで消せます。"
+        },
+        {
+          "role": "数字",
+          "why": "ビューポートに入ってから目標値まで数え、前半は速く後半はゆっくりです。ダッシュボードや統計カードに使います。"
+        },
+        {
+          "role": "文字の登場",
+          "why": "6pxのずれとぼかしのフェードインです。段落もカードの登場もこれに統一します。"
+        },
+        {
+          "role": "カードのホバー",
+          "why": "追従ライトがポインターを追い、静止しているときは普通のカードと変わりません。"
+        },
+        {
+          "role": "ローディング",
+          "why": "いちばん普通のリング型のスピナーで、大きさと色は文字の色に従うので、どこにでも置けます。進み具合がわかるときは環状プログレスに替えます。"
+        },
+        {
+          "role": "スケルトン",
+          "why": "内容が届く前の、呼吸するプレースホルダーです。ローディングのリングとどちらか一方を選びます。"
+        }
+      ]
+    },
+    "SET-springy": {
+      "name": "弾む · 一般消費者向け",
+      "for": "一般消費者向けのアプリ、コミュニティ、ゲーム要素のあるプロダクト向け。すべての操作に重みと弾みがあり、全体が「さわって気持ちいい」感触になります。",
+      "rules": [
+        "サイト全体でスプリングを1段階に統一します（stiffness / damping を揃える）。ボタンごとに別の手触りにしません。",
+        "1画面で同時に動くスプリングは最大2つ。文字の登場は最初の画面で1回だけ使います。",
+        "ドラッグ系のコントロール（スライダー、スライドで確定）は、途中でもう一度つかめるようにします。速度の引き継ぎはapple-designでレビューします。",
+        "配色はマカロンとクリームのような色合いです。パステルがいちばん弾み、抹茶ラテがいちばん静かで、ハニーピーチはその中間です。ダークテーマでは主色を明るいままにして、暗くしません。"
+      ],
+      "picks": [
+        {
+          "role": "メインボタン",
+          "why": "ポインターが近づくと引き寄せられ、押すと弾んで戻ります。強さは0.5を超えないようにします。"
+        },
+        {
+          "role": "送信ボタン",
+          "why": "待機 → 読み込み中 → 成功が1つのボタンの中で流れ、幅も追従して変わります。"
+        },
+        {
+          "role": "危険な操作",
+          "why": "最後までスライドしたときだけ実行され、途中で離すと戻ります。削除や支払いに使います。"
+        },
+        {
+          "role": "ツールバー",
+          "why": "丸いアイコンボタンを押すと文字が広がり、閉じるときは弾んで戻ります。"
+        },
+        {
+          "role": "下部ナビゲーション",
+          "why": "選択中のプレートがアイコンの間を跳びます。ドック風です。"
+        },
+        {
+          "role": "折りたたみパネル",
+          "why": "開いた項目が隣の項目から少し弾んで離れ、閉じると元に戻ります。"
+        },
+        {
+          "role": "カルーセル",
+          "why": "ドラッグできて慣性のあるカルーセルです。商品やカードの一覧に使います。"
+        },
+        {
+          "role": "スライダー",
+          "why": "つまみが目盛りに乗ると、少し弾みます。"
+        },
+        {
+          "role": "数字",
+          "why": "1桁ずつ回ります。価格や変化するカウントに使います。"
+        },
+        {
+          "role": "見出しの登場",
+          "why": "単語ごとに弾んで浮かび上がり、ぼかしが解けます。最初の画面の見出しだけに使います。"
+        },
+        {
+          "role": "カード",
+          "why": "ポインターに合わせて傾きます。10°以内で十分です。"
+        },
+        {
+          "role": "ドット格子の反応",
+          "why": "ポインターが近づくとドットの格子が避けて、「さわって気持ちいい」感触をもう一層足します。"
+        },
+        {
+          "role": "モーダル",
+          "why": "下から形を変えながら立ち上がるので、スマホでより扱いやすくなります。"
+        },
+        {
+          "role": "通知",
+          "why": "上中央に積み重なり、通知は読み込み中から成功へ変わります。"
+        },
+        {
+          "role": "ローディング",
+          "why": "3つの点が弾みます。サイト全体のスプリングと同じ気質です。"
+        }
+      ]
+    },
+    "SET-showy": {
+      "name": "華やか · ブランドのランディングページ",
+      "for": "製品のトップページ、発表ページ、キャンペーンページ向け。目を引く大きな動きを1、2か所だけ許し、ほかは控えめにして引き立て役にします。",
+      "rules": [
+        "1画面の主役はひとつです。背景（流星や軌道）かカードの流れる光のどちらか一方にして、重ねません。",
+        "文字の動きは最初の画面の見出しと副題の1文だけに使います。本文の段落は「控えめ」のセットのぼかしフェードインを使います。",
+        "紙吹雪は、本当に何かが完了したとき（支払い、登録の成功）に1回だけまきます。",
+        "配色は、濃い下地に彩度の高い対比色を合わせます。ランディングページの最初の画面はダークテーマにします。3つの配色セットはどれも、大きなグラデーションや光の演出の背景を支えられます。"
+      ],
+      "picks": [
+        {
+          "role": "メインボタン",
+          "why": "縁を一筋の光が周回します。ページの中でメインのCTAだけに使います。"
+        },
+        {
+          "role": "サブボタン",
+          "why": "ホバーすると片側から色が満ち、メインボタンの光とで主従の関係を作ります。"
+        },
+        {
+          "role": "最初の画面の見出し",
+          "why": "単語ごとにぼけた状態から浮かび上がって登場します。"
+        },
+        {
+          "role": "副題 / バッジ",
+          "why": "ひとすじの光が繰り返しかすめます。「New」「Beta」のような小さなラベルに使います。"
+        },
+        {
+          "role": "入れ替わる言葉",
+          "why": "見出しの中の1語が2.5秒ごとに入れ替わります。"
+        },
+        {
+          "role": "ホバーする文字",
+          "why": "ポインターがなぞると1文字ずつ太くなります。ナビや大きな見出しのホバーの仕掛けです。"
+        },
+        {
+          "role": "物理の仕掛け",
+          "why": "落ちてきて、ドラッグもできる要素です。置くのは1か所だけにします。"
+        },
+        {
+          "role": "背景",
+          "why": "最初の画面の背後に流星群を敷きます。もう少し「製品らしく」したいときは、軌道を回るアイコンに替えます。"
+        },
+        {
+          "role": "特長カード",
+          "why": "光がカードの枠に沿って走ります。背景とどちらか一方を選びます。"
+        },
+        {
+          "role": "データ",
+          "why": "スプリングで動く転がる数字です。「10,000+ ユーザー」のような表示に使います。"
+        },
+        {
+          "role": "実績の見せ方",
+          "why": "レビューやロゴのマーキーで、ホバーすると止まります。"
+        },
+        {
+          "role": "成功のお祝い",
+          "why": "登録や支払いが成功したときに、紙吹雪を1回まきます。"
+        },
+        {
+          "role": "ローディング",
+          "why": "尾を引く彗星のスピナーで、華やかな最初の画面にふさわしい動きです。"
+        }
+      ]
+    }
+  },
+  "refs": {
+    "REF-designspells": {
+      "summary": "実在するプロダクトのマイクロインタラクション、隠し機能、季節の驚きを集めた338本の録画です（Sudoku a Dayのシートの遷移、Pinterestの長押しメニュー、ChatGPTの選択肢のアニメーションなど）。1件ごとに短い動画があります。サイト内のタグ Mobile / Desktop / Interaction / Easter Egg / Skeuomorphic / Fun / Apple / Animation / 404 / Motion / Occasion はページ内の絞り込みで、独立したリンクはありません。",
+      "when": "アイデアが出ないとき、小さな細部で驚きを生む工夫を見たいとき、プロダクトに隠し機能や季節限定の仕掛けを足したいときに、10分ほど眺めに来る場所です。",
+      "access_note": "無料",
+      "title": "実在するプロダクトの魔法のような細部"
+    },
+    "REF-ripplix": {
+      "summary": "コンポーネントとジェスチャー別に整理された、実在アプリの動きの録画です。スマホ、Web、ウォッチを網羅しています。すでに公開されているものを見られます。",
+      "when": "モバイルの操作を作るとき、あるジェスチャー（引き下げ、スワイプで削除、ボトムシート）が実在のアプリでどんなテンポで動くかを見たいときに。",
+      "access_note": "無料 / 有料（未確認）",
+      "title": "7,000本以上の実在アプリの動きの録画"
+    },
+    "REF-pageflows": {
+      "summary": "Airbnb、Uber、Netflixなどのプロダクトの、登録、導入ガイド、決済、検索といった一連の流れの録画です。フローの種類で検索できます。",
+      "when": "1つのコンポーネントではなく、一連の流れ（導入ガイド、チェックアウト、招待）を設計するときに。",
+      "access_note": "主に有料",
+      "title": "10万件の実在プロダクトのユーザーフロー録画"
+    },
+    "REF-mobbin": {
+      "summary": "プロダクト、ページの種類、UI要素で検索できる実在のスクリーンショット集で、モバイルもWebもあります。velaのデザインチェックリストでプロダクトのUIを調べるときにも使います。",
+      "when": "ページ全体のレイアウトを決めるときや、ある種類のページ（設定、空の状態、ペイウォール）の主流の見た目を見たいときに。",
+      "access_note": "無料は一部 / 有料",
+      "title": "40万枚の実在アプリとWebのスクリーンショット"
+    },
+    "REF-refero": {
+      "summary": "数万枚のWebとiOSのスクリーンショットを、ページ、コンポーネント、業界で検索できます。姉妹サイトのRefero Stylesは、2,000以上のプロダクトのスタイルをAIが読めるDESIGN.mdにまとめています。",
+      "when": "特定のコンポーネント（料金表、フィルター、空の状態）の成熟した作り方を探すときに。",
+      "access_note": "無料は一部 / 有料",
+      "title": "WebとiOSのUI参考ライブラリ"
+    },
+    "REF-refero-styles": {
+      "summary": "プロダクトごとに1ページ。スクリーンショット、配色、フォント、余白に加え、AIが直接読めるDESIGN.mdが付きます。私たちの「先にスタイルを決めてから、ページをまとめて作る」やり方と同じ道筋です。",
+      "when": "新しいプロジェクトでスタイルの土台を決めたいとき、成熟したプロダクトの規範を手本に始めたいときに、そのDESIGN.mdを出発点にします。",
+      "access_note": "無料は一部 / 有料",
+      "title": "2,000以上のプロダクトのDESIGN.mdスタイル集"
+    },
+    "REF-godly": {
+      "summary": "人の手で選ばれたWebサイトの作品集で、ブランドサイトやポートフォリオ寄りです。スクリーンショット全体とリンク先があります。",
+      "when": "ブランドのランディングページやポートフォリオを作るとき、この1年でいちばん流行しているWebサイトの見た目を知りたいときに。",
+      "access_note": "無料",
+      "title": "厳選されたWebデザインのインスピレーション"
+    },
+    "REF-lapa": {
+      "summary": "ランディングページ専門のライブラリで、SaaS、EC、ポートフォリオを網羅し、スクリーンショットと動画が付きます。",
+      "when": "トップページや発表ページを作るとき、同じ業界の最初の画面とコンバージョンの構成を見たいときに。",
+      "access_note": "無料",
+      "title": "7,300以上のランディングページ事例"
+    },
+    "REF-saasui": {
+      "summary": "100以上のSaaSプロダクトの実際の画面を、パターン別に整理しています。設定、表、サイドバー、空の状態、導入ガイドがあります。",
+      "when": "管理画面やツール系プロダクトを作るとき、LinearやNotionのようなプロダクトが特定の画面をどう扱っているかを見たいときに。",
+      "access_note": "無料",
+      "title": "NotionやLinearなどSaaSの画面パターン"
+    },
+    "REF-darkmode": {
+      "summary": "ダークモードがうまく作られているサイトだけを集めています。",
+      "when": "プロダクトがダークを基調に決まっていて、ダークでの階層、光の効果、コントラストの扱いを見たいときに。",
+      "access_note": "無料",
+      "title": "ダークモードのサイト厳選集"
+    },
+    "REF-apple-design-awards": {
+      "summary": "毎年の受賞アプリと最終選考に残ったアプリに共通するのは、控えめですっきりしていること、細部まで磨かれていること、余白、配色、動きが心地よいことです。iOSの画面を作る前にまず見て、そのあとapple-higと合わせます。",
+      "when": "アプリを作るとき、「上質さ」の基準を合わせるために、まず一通り見てください。",
+      "access_note": "無料",
+      "title": "歴代のApple Design Award受賞アプリ"
+    },
+    "REF-component-gallery": {
+      "summary": "数十のデザインシステムの同名のコンポーネントを並べて見られます。ボタン、ダイアログ、アラートを、それぞれがどう呼び、どう作っているかがわかります。正しい用語で伝えると、私が作るものもより標準的になります。",
+      "when": "要件を説明するとき、あるコントロールの名前や標準的な見た目がわからないときに。",
+      "access_note": "無料",
+      "title": "主要なデザインシステムのコンポーネント比較"
+    },
+    "REF-brand-archive": {
+      "summary": "ブランドが使うフォントや色、ロゴの運用方法を調べられます。自分のブランドのビジュアル体系を作るのに使います。",
+      "when": "ブランドのビジュアルを決めるとき、配色やフォントの組み合わせの参考を探すときに。",
+      "access_note": "主に無料",
+      "title": "世界のブランドのロゴ、フォント、配色のデータベース"
+    },
+    "REF-the-index": {
+      "summary": "デザインスタジオ、個人のデザイナー、フォントのレーベルを厳選した索引で、ニッチで洗練されています。",
+      "when": "テンプレートっぽさから抜け出して、個性のあるビジュアルの方向を見つけたいときに。",
+      "access_note": "無料",
+      "title": "トップデザイナーとスタジオの作品インデックス"
+    },
+    "REF-deck-gallery": {
+      "summary": "ブランドガイドライン、ポートフォリオ、プロジェクト報告、ビジネスピッチの資料を厳選しています。",
+      "when": "スライド、ブランドブック、ピッチ資料を作る際の参考を探すときに（huashu-designと併用）。",
+      "access_note": "無料",
+      "title": "質の高いプレゼン資料とブランドブック"
+    },
+    "REF-uilabs": {
+      "summary": "Sonner / Vaulの作者による動きの実験で、どれも「どう動かすべきか」の教科書です。対応するemil-design-engスキルはすでに入っています。",
+      "when": "マイクロインタラクション（トースト、ドロワー、ボタン）を突き詰めるとどうなるかを見たいときに。",
+      "access_note": "無料",
+      "title": "Emilの緻密なUI実験室"
+    },
+    "REF-rauno-craft": {
+      "summary": "Vercelのデザインエンジニアによるインタラクションのノートで、1つの細部がなぜそうなっているかを項目ごとに解説します。Skiper UIはこの考え方に沿って作られました。",
+      "when": "なぜこの動きが正しく、あの動きは違うのかを理解したいときに。",
+      "access_note": "無料",
+      "title": "Raunoのインタラクションの細部についての手記"
+    },
+    "REF-motion-examples": {
+      "summary": "アニメーションエンジンの公式サンプルです。レイアウトアニメーション、ジェスチャー、スクロール連動、SVGパス、共有要素のトランジションがあり、ソースコードが全部付いています。",
+      "when": "カタログのコンポーネントでは足りず、仕組みを自分で書く必要があるとき（共有レイアウトのトランジション、スクロール連動）に。",
+      "access_note": "主に無料、Motion+ は有料",
+      "title": "Motion公式の330以上のサンプル"
+    },
+    "REF-codrops": {
+      "summary": "2009年から現在までのクリエイティブなWebの実験集です。全画面スクロール、画像の切り替え、WebGLのトランジションがあり、それぞれチュートリアルとソースが付きます。",
+      "when": "派手なページ全体の演出や、WebGLのトランジションを作るときに。",
+      "access_note": "無料（各デモのライセンスは別途確認）",
+      "title": "クリエイティブなWebの実験とチュートリアル"
+    },
+    "REF-holynova": {
+      "summary": "中国語と英語のバイリンガルで、150〜400msの控えめなWebの動きが60個あります。各カードで調整済みのAIプロンプトをワンクリックでコピーできます。",
+      "when": "Reactを使わないプロジェクトで、純粋なCSSのトランジションだけが必要なときに。",
+      "access_note": "無料（ISC）",
+      "title": "控えめなWebの動き60個とAIプロンプト"
+    },
+    "REF-21st": {
+      "summary": "Motion Primitives、Fancy、SmoothUIなど数十のライブラリを一か所に集め、プレビュー、コピー、AIによるそのままのインストールができます。",
+      "when": "カタログにないものを、多くのライブラリを横断して探したいときに。気に入ったものの番号を教えてもらえれば、同じ手順でカタログに固定します。",
+      "access_note": "主に無料",
+      "title": "1.2万個のReactコンポーネントのマーケット"
+    },
+    "REF-beui-docs": {
+      "summary": "カタログには20個を入れてあります。本家サイトにはAIチャット系、グラフ系、表系など100個以上がさらにあります。",
+      "when": "カタログに欲しいバリエーションがないときや、コンポーネントのすべてのpropsを見たいときに。",
+      "access_note": "無料（MIT）+ Pro",
+      "title": "接続済みライブラリの本家サイト（125個のコンポーネント）",
+      "name": "beUI ドキュメント"
+    },
+    "REF-magicui-docs": {
+      "summary": "カタログには20個を入れてあります。本家サイトには、デバイスのモックアップ、背景のテクスチャ、地球儀、ターミナルなど、ランディングページ向けのコンポーネントもあります。",
+      "when": "ランディングページで、より華やかな部品が必要なときに。",
+      "access_note": "無料（MIT）+ Proテンプレート",
+      "title": "接続済みライブラリの本家サイト（78個のコンポーネント）",
+      "name": "Magic UI ドキュメント"
+    },
+    "REF-iconify": {
+      "summary": "主要なオープンソースのアイコンセットをまとめて検索できます。Lucide、Tabler、Phosphor、Heroicons、Materialなどを一か所で探せます。カタログのアイコンの項目にはLucideしか入れていないので、ほかのセットはここで探します。",
+      "when": "Lucideに欲しいアイコンがないときに。",
+      "access_note": "無料（セットごとにライセンスが異なる）",
+      "title": "222のオープンソースアイコンセット、37万個のアイコン"
+    },
+    "REF-svgl": {
+      "summary": "GitHub、Vercel、OpenAIなどのブランドの公式SVGロゴで、「パートナー」や「使用技術」の欄に使います。",
+      "when": "ページにサードパーティのブランドロゴを置くときに。商標の扱いは各ブランドのガイドラインで確認してください。",
+      "access_note": "無料（MIT。ロゴ自体は各ブランドに帰属）",
+      "title": "670ブランドのロゴのSVG"
+    },
+    "REF-soundcn": {
+      "summary": "クリック、切り替え、成功、エラーなどのUI効果音で、オンラインで試聴でき、shadcnのコマンドで導入します（それぞれbase64で埋め込まれたmp3です）。同じ種類のものにCuelume（厳選17個）とUI SFX（936個）もあります。",
+      "when": "クリック、切り替え、完了に音の層を加えたいときに。「控えめ」のセットは、初期設定では音を加えません。",
+      "access_note": "無料（MIT）",
+      "title": "700以上のUI効果音、コマンド1つで導入"
+    },
+    "REF-uisdc": {
+      "summary": "UISDCのデザインのディレクトリで、AI制作、UIデザイン、素材、画像ライブラリ、アプリとWebのデザインのカテゴリがそろい、毎週更新されます。",
+      "when": "上のサイトで見つからず、中国語圏でもう一巡探したいときに。",
+      "access_note": "無料",
+      "title": "中国国内のデザインサイトのディレクトリ",
+      "name": "優設ナビ（UISDC）"
+    },
+    "REF-remocn": {
+      "summary": "AIエージェントでRemotionのTSXの動画コードを生成し、プレビューしてMP4に書き出せます。オープンソースのリポジトリとmacOSアプリがあります。",
+      "when": "文章での依頼から動画を作りたいときや、Reactのコードで動画を組み立てたいときに。",
+      "title": "Remocn ビデオアニメーションコンポーネント"
+    },
+    "REF-motionsites": {
+      "summary": "ランディングページ、SaaS、ポートフォリオ向けのWebプロンプトを整理していて、有料のコンポーネントテンプレートとMCP連携もあります。",
+      "when": "Webページを作るとき、まず自分の場面に近いプロンプトや開発用テンプレートを探したいときに。",
+      "title": "Motionsites Webプロンプト集"
+    },
+    "REF-reactbits": {
+      "summary": "Reactの背景、文字、創造的な操作の演出を提供し、コードはJS、TS、CSS、Tailwindの組み合わせで用意されています。有料テンプレートもあります。",
+      "when": "表現力のあるReactの動きを探していて、コードをコピーするかshadcn経由で導入するつもりのときに。",
+      "title": "React Bits クリエイティブな動きのコンポーネント"
+    },
+    "REF-uiverse": {
+      "summary": "コミュニティが集めた無料のUI部品で、HTML/CSS、Tailwind、Reactのコードがあり、Figma形式もあります。",
+      "when": "ボタンやカードなどの小さな部品が必要で、コードをそのまま取って試したいときに。",
+      "title": "Uiverse 小さなUI部品の宝箱"
+    },
+    "REF-aceternity": {
+      "summary": "ReactとNext.js向けの背景、カード、カルーセル、文字のコンポーネントがあり、有料のページセクションやテンプレートも提供しています。",
+      "when": "ブランドのランディングページを作るとき、最初の画面、機能紹介、料金のセクションを探したいときに。",
+      "title": "Aceternity 上質なページモジュール"
+    },
+    "REF-originkit": {
+      "summary": "無料のReactアニメーションコンポーネントを提供し、Framerとの連携とMCPにも対応しています。",
+      "when": "コピーして使えるReactのアニメーションを探しているときや、Framerで動きのあるページを作るときに。",
+      "title": "Originkit アニメーションコンポーネント"
+    },
+    "REF-lottiefiles": {
+      "summary": "Lottieのアニメーション素材、オンラインでの制作、アセット管理を提供しています。コミュニティの無料コンテンツと有料サービスがあり、Web、iOS、React Nativeでの再生に対応しています。",
+      "when": "アプリやWebでLottieのアニメーションを再生する必要があり、素材やプレーヤーの組み込み方法を探すときに。",
+      "title": "LottieFiles アニメーション素材"
+    },
+    "REF-jitter": {
+      "summary": "ブラウザー上で動きをデザインでき、アニメーションのキャンバスとAIによる演出の生成があり、動画、GIF、Lottieに書き出せます。",
+      "when": "先に動きの素材を作ってから、Webページ、アプリ、動画に渡す必要があるときに。",
+      "title": "Jitter オンラインのモーションデザイン"
+    },
+    "REF-swishy": {
+      "summary": "AIで文字、ロゴ、SNS向けのアニメーションを作れます。テンプレート、一括生成、サイズ調整に対応し、動画またはGIFに書き出せます。",
+      "when": "ブランドやSNS向けのアニメーション素材を作るとき、テンプレートとAIで数パターンを素早く出したいときに。",
+      "title": "Swishy AIモーションデザイン"
+    },
+    "REF-youmotion": {
+      "summary": "動画テンプレート、トランジション、エフェクト、オーバーレイ、音楽と効果音を提供しています。無料のコンテンツにはダウンロード枠があり、Primeでは有料素材と商用ライセンスが提供されます。",
+      "when": "動画を編集していて、トランジション、エフェクト、音の素材を補いたいときに。",
+      "title": "YouMotion 動画テンプレート"
+    },
+    "REF-canvas-app-icon": {
+      "summary": "1つのプロンプトでプロダクトの用途、ビジュアルのスタイル、色の要件を伝え、モデルにJS + Canvasでアイコンを生成させます。この種の表現ではSVGよりも向いていて、先に複数案を出してから1案を選んで調整を続けられます。",
+      "when": "新しいアプリのアイコンを作るのに、手元にデザイナーがいないときに",
+      "title": "JS Canvasで描くアプリアイコン"
+    }
+  },
+  "icon_categories": {
+    "accessibility": "アクセシビリティ",
+    "account": "アカウント",
+    "animals": "動物",
+    "arrows": "矢印",
+    "buildings": "建物",
+    "charts": "チャート",
+    "communication": "コミュニケーション",
+    "connectivity": "接続",
+    "cursors": "カーソル",
+    "design": "デザイン",
+    "development": "開発",
+    "devices": "デバイス",
+    "emoji": "絵文字",
+    "files": "ファイル",
+    "finance": "金融",
+    "food-beverage": "飲食",
+    "gaming": "ゲーム",
+    "home": "家・住まい",
+    "layout": "レイアウト",
+    "mail": "メール",
+    "math": "数学",
+    "medical": "医療",
+    "multimedia": "マルチメディア",
+    "nature": "自然",
+    "navigation": "ナビゲーション",
+    "notifications": "通知",
+    "people": "人物",
+    "photography": "写真",
+    "science": "科学",
+    "seasons": "季節",
+    "security": "セキュリティ",
+    "shapes": "図形",
+    "shopping": "ショッピング",
+    "social": "ソーシャル",
+    "sports": "スポーツ",
+    "sustainability": "サステナビリティ",
+    "text": "文字",
+    "time": "時間",
+    "tools": "ツール",
+    "transportation": "交通",
+    "travel": "旅行",
+    "weather": "天気"
+  },
+  "demo_text": {
+    "正在上传 3 个文件…": "3個のファイルをアップロード中…",
+    "上传完成": "アップロード完了",
+    "3 个文件已同步到云端": "3個のファイルをクラウドに同期しました",
+    "已加入稍后阅读": "「あとで読む」に追加しました",
+    "普通": "標準",
+    "有新版本可用": "新しいバージョンがあります",
+    "v2.4 修复了 3 个已知问题": "v2.4で既知の問題3件を修正しました",
+    "信息": "情報",
+    "已保存": "保存しました",
+    "所有修改已同步": "すべての変更を同期しました",
+    "成功": "成功",
+    "发送失败": "送信に失敗しました",
+    "网络超时，请稍后重试": "ネットワークがタイムアウトしました。しばらくしてからもう一度お試しください。",
+    "错误": "エラー",
+    "上传（加载 → 成功）": "アップロード（読み込み中 → 成功）",
+    "通知": "通知",
+    "评论、@提及和任务到期会推送到手机；每日摘要在早上 9 点发送。": "コメント、@メンション、タスクの期限がスマホに通知されます。毎日のダイジェストは朝9時に送信されます。",
+    "隐私与安全": "プライバシーとセキュリティ",
+    "两步验证已开启。上次登录来自东京，设备为 MacBook Pro。": "2段階認証はオンです。前回のログインは東京から、デバイスはMacBook Proでした。",
+    "外观": "外観",
+    "跟随系统切换深浅色；强调色与字号可单独调整。": "システムに合わせてライトとダークが切り替わります。アクセントカラーとフォントサイズは個別に調整できます。",
+    "开始使用": "はじめる",
+    "靠近我": "近づいてみて",
+    "保存修改": "変更を保存",
+    "点按换一个数": "タップして数字を変える",
+    "首页": "ホーム",
+    "发现": "発見",
+    "音乐": "ミュージック",
+    "消息": "メッセージ",
+    "设置": "設定",
+    "设计稿 v3": "デザイン案 v3",
+    "移除标签": "タグを削除",
+    "继续按住…": "そのまま押し続けて…",
+    "已确认": "確認しました",
+    "按住确认删除": "長押しで削除を確定",
+    "打开操作面板": "操作パネルを開く",
+    "确认删除这个项目？": "このプロジェクトを削除しますか？",
+    "删除后 30 天内可以从回收站恢复，协作者会收到通知。": "削除後30日以内であればごみ箱から復元できます。共同編集者には通知が送られます。",
+    "返回": "戻る",
+    "删除": "削除",
+    "项目操作": "プロジェクトの操作",
+    "季度复盘 · 最后编辑于 2 小时前": "四半期レビュー · 2時間前に最終編集",
+    "重命名": "名前を変更",
+    "复制链接": "リンクをコピー",
+    "删除项目…": "プロジェクトを削除…",
+    "音量": "音量",
+    "已解锁": "解除しました",
+    "滑动解锁": "スライドで解除",
+    "开关": "スイッチ",
+    "总览": "概要",
+    "本周新增 1,284 位用户，留存率 41%。": "今週の新規ユーザーは1,284人で、継続率は41%です。",
+    "动态": "アクティビティ",
+    "最近一次部署在 12 分钟前完成。": "直近のデプロイは12分前に完了しました。",
+    "成员": "メンバー",
+    "团队共 8 人，2 人待接受邀请。": "チームは8人で、2人が招待の承諾待ちです。",
+    "通知、权限与计费都在这里。": "通知、権限、請求はすべてここにあります。",
+    "动效展示平台": "モーションショーケース",
+    "正在生成回答…": "回答を生成中…",
+    "移动指针，卡片跟着倾斜，追光跟着走。": "ポインターを動かすとカードが傾き、光もついてきます。",
+    "保存到云端 · ⌘S": "クラウドに保存 · ⌘S",
+    "悬停我": "ホバーしてみて",
+    "色块在后面慢慢漂": "色のかたまりが後ろでゆっくり漂います",
+    "← 上一张": "← 前へ",
+    "下一张 →": "次へ →",
+    "Geist 变量字体 · wght 100 ↔ 800": "Geist可変フォント · wght 100 ↔ 800",
+    "拖我": "ドラッグしてね",
+    "正面": "正面",
+    "左": "左",
+    "顶": "上",
+    "背面": "背面",
+    "扔出去": "投げてみて",
+    "抓我": "つかんでみて",
+    "飘": "ふわり",
+    "物理": "物理",
+    "重力": "重力",
+    "在这里划动指针": "ここでポインターを動かしてください",
+    "每一行都会换一次": "どの行も1回入れ替わります",
+    "弹簧让它不生硬": "スプリングで硬さをなくします",
+    "再往下就到底了": "もう少しで一番下です",
+    "↓ 往下滚": "↓ 下へスクロール",
+    "雨天的窗": "雨の日の窓",
+    "手账": "手帳",
+    "drag · 拖": "drag · ドラッグ",
+    "好玩": "楽しい",
+    "华丽": "華やか",
+    "动效": "モーション",
+    "第一张": "1枚目",
+    "往下滚，我会贴在顶上。": "下へスクロールすると、私は上に貼り付きます。",
+    "我盖住上一张，它缩小一点。": "私が前のカードを覆うと、前のカードは少し縮みます。",
+    "第三张": "3枚目",
+    "层次就这么叠出来。": "こうして奥行きが重なっていきます。",
+    "到底了，回头看那一摞。": "一番下まで来ました。振り返って重なりを見てみてください。",
+    "往下滚，卡片会一张张叠起来 ↓": "下へスクロールすると、カードが1枚ずつ重なっていきます ↓",
+    "FANCY MOTION · RURU LIBRARY · 动效展示平台 · ": "FANCY MOTION · RURU LIBRARY · モーションショーケース · ",
+    "读到这里，": "ここまで読んだら、",
+    "这句才是重点": "この一文が要点",
+    "，其他都是铺垫。": "。ほかは前置きです。",
+    "做一个会动的标题": "動くタイトルを作る",
+    "然后删掉再来一句": "そして消して、もう一文書く",
+    "关于我们": "私たちについて",
+    "联系": "お問い合わせ",
+    "看全文": "全文を読む",
+    "作品集": "作品集",
+    "打个招呼": "あいさつする",
+    "Fancy things\n从切口里\n弹出来": "Fancy things\n切れ目から\n飛び出す",
+    "Fancy things 从切口里弹出来": "Fancy things 切れ目から飛び出す",
+    "粒子顺着噪声场漂流，拖出发光的尾迹。": "粒子がノイズの場に沿って漂い、光る尾を引きます。",
+    "正在生成…": "生成中…",
+    "正在生成": "生成中",
+    "正在思考…": "考え中…",
+    "推进进度": "進捗を進める",
+    "庆祝一下": "お祝いする",
+    "怎么装进项目？": "プロジェクトにはどう入れますか？",
+    "从目录里选好编号，按钉住的 registry item 离线安装，组件文件会落到 src/registry 下，不改你现有的依赖。": "カタログから番号を選ぶと、固定されたregistry itemからオフラインで導入されます。コンポーネントのファイルはsrc/registryの下に置かれ、既存の依存関係は変更されません。",
+    "支持深浅色吗？": "ライトとダークに対応していますか？",
+    "组件只用 Tailwind 类和 CSS 变量，跟随页面的 dark 类切换，不需要额外配置。": "コンポーネントはTailwindのクラスとCSS変数だけを使い、ページのdarkクラスに合わせて切り替わります。追加の設定は不要です。",
+    "许可怎么算？": "ライセンスはどうなりますか？",
+    "上游是 MIT，安装时会把许可通知一并写进项目，商用与二次分发都允许。": "上流はMITライセンスで、導入時にライセンスの通知もプロジェクトに書き込まれます。商用利用も再配布も許可されています。",
+    "文档": "ドキュメント",
+    "定价": "料金",
+    "博客": "ブログ",
+    "设计": "デザイン",
+    "开发": "開発",
+    "测试": "テスト",
+    "发布": "リリース",
+    "复盘": "振り返り",
+    "迭代": "イテレーション",
+    "点按再加一笔": "タップしてもう一件追加",
+    "正在生成摘要": "要約を生成中",
+    "预计还需 12 秒，完成后会自动打开。": "あと約12秒です。完了すると自動で開きます。",
+    "春": "春",
+    "夏": "夏",
+    "秋": "秋",
+    "冬": "冬",
+    "看这里": "こちらを見て",
+    "把指针移进来": "ポインターをここに入れてください",
+    "邀请协作者": "共同編集者を招待",
+    "对方会收到一封邀请邮件，接受后即可编辑这个项目。": "相手に招待メールが届き、承諾すればこのプロジェクトを編集できます。",
+    "邮箱": "メールアドレス",
+    "权限": "権限",
+    "可编辑": "編集可",
+    "仅查看": "閲覧のみ",
+    "发送邀请": "招待を送る",
+    "运费与配送说明": "送料と配送について",
+    "满 99 元包邮，其余订单收 8 元运费。工作日 16 点前下单当天发出，一般 2 到 3 天送达。": "99元以上のご注文は送料無料、それ以外は送料8元です。平日16時までのご注文は当日発送で、通常2〜3日でお届けします。",
+    "生鲜与易碎品走冷链专线，签收时请当面检查。": "生鮮品と割れ物は冷蔵の専用便で届きます。受け取りの際、その場でご確認ください。",
+    "邮件": "メール",
+    "健康": "ヘルスケア",
+    "¥ 68 / 月": "¥ 68 / 月",
+    "无限项目，团队协作，优先支持。": "プロジェクト無制限、チームでの共同作業、優先サポート。",
+    "原图": "元の画像",
+    "调色后": "色調整後",
+    "先写目录条目": "まずカタログの項目を書く",
+    "id、分类、触发方式、控制项，全部落在 meta.ts 里。": "番号、カテゴリ、きっかけ、コントロール項目は、すべてmeta.tsに書きます。",
+    "再包一层 demo": "次にデモで包む",
+    "真组件原样渲染，只加布局和示例文案。": "実物のコンポーネントはそのまま表示し、レイアウトとサンプルの文言だけを足します。",
+    "最后跑验证": "最後に検証を走らせる",
+    "Playwright 打开每条 demo，确认真的触发了。": "Playwrightで各デモを開き、本当に動くことを確認します。",
+    "向下滚动 ↓": "下へスクロール ↓",
+    "吸过来": "吸い寄せられてね",
+    "山间小屋的傍晚": "山小屋の夕暮れ",
+    "山间小屋": "山小屋",
+    "傍晚 · 海拔 1,800 米": "夕暮れ · 標高1,800m",
+    "日落后山风会一下子凉下来，屋里烧着柴炉。窗外那片针叶林在冬天会被雪压弯，春天又直起来。": "日が沈むと山風が急に冷たくなり、小屋の中では薪ストーブが焚かれています。窓の外の針葉樹林は、冬には雪でたわみ、春にはまたまっすぐに戻ります。",
+    "离最近的小镇 40 分钟车程，带上够吃三天的食材最稳妥。": "最寄りの町まで車で40分です。3日分の食材を持っていくのが安心です。",
+    "写个便签": "メモを書く",
+    "关闭": "閉じる",
+    "保存": "保存",
+    "火烧云": "燃える夕焼け",
+    "2026 年 9 月 · 日落后十分钟": "2026年9月 · 日没の10分後",
+    "动效不是装饰，它在回答一个问题：刚才发生了什么。面板从哪里来，就该回到哪里去；数值变了，就该让人看见它是怎么变的。": "動きは装飾ではなく、ひとつの問いに答えるものです。いま何が起きたのか。パネルがどこから来たなら、そこへ戻るべきで、数値が変わったなら、どう変わったかを見せるべきです。",
+    "时长要和距离匹配。小元素挪几十像素用 150 毫秒足够，整块面板进出留到 300 毫秒左右；再长就会觉得在等它。": "時間は距離に合わせます。小さな要素が数十ピクセル動くなら150ミリ秒で十分で、パネル全体の出入りは300ミリ秒ほどにとどめます。それ以上長いと、待たされている気分になります。",
+    "弹簧比缓动曲线更容易调出手感，但也更容易过头。回弹超过 0.3 之后，大多数界面都会开始显得轻浮。": "スプリングはイージング曲線よりも手触りを調整しやすい反面、やりすぎにもなりやすいものです。弾みが0.3を超えると、たいていのUIは軽薄に見え始めます。",
+    "能被打断的动画才像真的。用户中途改变主意，元素应该从当前位置继续，而不是先播完再说。": "途中で中断できるアニメーションこそ本物らしく感じられます。ユーザーが途中で気を変えたら、要素は最後まで再生し終えるのを待たず、いまの位置から続けるべきです。",
+    "减少动效模式不是关掉一切，而是把位移换成淡入淡出，把连续变化换成直接到位。": "「動きを減らす」設定は、すべてを消すものではありません。移動をフェードに、連続した変化をその場での切り替えに置き換えるものです。",
+    "最后一条：先做没有动效的版本。能用的界面加上动效才是锦上添花，反过来只是掩盖问题。": "最後にひとつ。まず動きのないバージョンを作ること。使えるUIに動きを足してこそ花を添えられるのであって、逆では問題を隠すだけです。",
+    "写动效的六条笔记": "動きを書くための6つのメモ",
+    "— 到底了": "— ここまで",
+    "跟手的边缘高光": "手についてくる縁のハイライト",
+    "光只从边框那圈缝里透出来。": "光は枠のまわりのすき間からだけ漏れ出します。",
+    "克制": "控えめ",
+    "有弹性": "弾力がある",
+    "像物理": "物理的",
+    "不抢戏": "出しゃばらない",
+    "好的动效应该": "良い動きは",
+    "点按换词": "タップして言葉を替える",
+    "正在生成代码…": "コードを生成中…",
+    "海边的清晨": "海辺の朝",
+    "指针在哪一角，哪一角就抬起来。": "ポインターのある角が持ち上がります。",
+    "先定信息层级和状态，再谈动效。没有动效也能用的界面，加上动效才是锦上添花。": "まず情報の階層と状態を決めて、動きの話はそれからです。動きがなくても使えるUIに動きを足してこそ、花を添えられます。",
+    "组件从目录里按编号装，preset 逐项写进 JSX，许可通知随安装一并落进项目。": "コンポーネントはカタログから番号で導入し、presetは項目ごとにJSXへ書き込み、ライセンスの通知は導入時にいっしょにプロジェクトへ入ります。",
+    "上线前跑一遍 review-animations，重点看时长、可中断性和减少动效模式。": "公開前にreview-animationsを一通り走らせて、時間、中断できること、「動きを減らす」設定を重点的に見ます。",
+    "保存中": "保存中",
+    "新建文件": "新規ファイル",
+    "添加成员": "メンバーを追加",
+    "自动保存": "自動保存",
+    "需要管理员权限": "管理者権限が必要です",
+    "搜索全网…": "ウェブ全体を検索…",
+    "联网": "ウェブ検索",
+    "今天想做点什么？": "今日は何をしますか？",
+    "今日活动": "今日のアクティビティ",
+    "流动的线": "流れる線",
+    "设计系统": "デザインシステム",
+    "从基础开始": "基本から始める",
+    "正在准备工作区…": "ワークスペースを準備中…",
+    "让界面": "画面が",
+    "自己会动": "自分で動く",
+    "正在生成回答": "回答を生成中",
+    "分享": "共有",
+    "能力": "機能",
+    "你需要的都在这": "必要なものはすべてここに",
+    "团队人数": "チームの人数",
+    "格": "マス",
+    "秒": "秒"
+  }
+}
